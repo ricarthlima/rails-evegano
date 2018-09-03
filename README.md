@@ -40,9 +40,7 @@ Esses se darão na forma de um CSV. (Verificar arquivo example.csv)
   - Código da Lista de Compras (Chave primária)
   - Data
   - Supermercado (Chave estrangeria)
-  - Lista dos produtos (Atributo multivalorado)
-    - Nome
-    - Preço do produto (Esperado)
+  - Lista dos produtos (Código dos produtos)
 
 * Endereços devem ter: Número, Rua, Bairro, Cidade, Estado e País
 
