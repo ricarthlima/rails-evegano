@@ -23,7 +23,7 @@ Esses se darão na forma de um CSV. (Verificar arquivo example.csv)
   - Nome completo
   - Endereço (Atributo composto)*
 - **Supermercado**
-  - Código do supermercado
+  - Código do supermercado (chave primária)
   - Nome
   - Endereço (Atributo composto)*
 - **Produto**
