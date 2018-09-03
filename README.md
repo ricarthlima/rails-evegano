@@ -39,7 +39,7 @@ Esses se darão na forma de um CSV. (Verificar arquivo example.csv)
   - Código do usuário (Chave primária - estrangeira)
   - Código da Lista de Compras (Chave primária)
   - Data
-  - Supermercado
+  - Supermercado (Chave estrangeria)
   - Lista dos produtos (Atributo multivalorado)
     - Nome
     - Preço do produto (Esperado)
