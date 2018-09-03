@@ -32,6 +32,7 @@ Esses se darão na forma de um CSV. (Verificar arquivo example.csv)
   - Marca
   - Descrição
   - Preço atual
+  - Data do preço
   - Supermercado (chave estrangeira)   #Trata-se do supermercado onde se conseguiu o preço atual
   - Histórico de preços (tupla: (Data, Supermercado, Preço))
 - **Lista de compras (Entidade Fraca)**
