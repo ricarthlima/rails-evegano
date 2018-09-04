@@ -1,8 +1,9 @@
+| [Home](https://github.com/ricarthlima/eo-project-es) | [Iterations](https://github.com/ricarthlima/eo-project-es/tree/master/Iterations)  |
 # Lista de Compras
 
 ## 1. Objetivo
-Exercício de treinamento de Ruby e Git colaborativo. 
-O objetivo é o desenvolvimento de um CRUD (Create, Read, Update, Delete) para um banco de dados de uma lista de compras para uso pessoal. 
+Exercício de treinamento de Ruby e Git colaborativo.
+O objetivo é o desenvolvimento de um CRUD (Create, Read, Update, Delete) para um banco de dados de uma lista de compras para uso pessoal.
 Ao final, o programa deve ser capaz de:
 - Cadastrar, Ler, Atualizar e Deletar novos usuários;
 - Fazer login e logout;
