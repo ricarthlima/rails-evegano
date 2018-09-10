@@ -1,4 +1,4 @@
-| [Home](https://github.com/ricarthlima/eo-project-es) | [Time](https://github.com/ricarthlima/eo-project-es#2-time) | [Iterations](https://github.com/ricarthlima/eo-project-es/tree/master/Iterations)  | [Banco de Dados](https://github.com/ricarthlima/eo-project-es/tree/master/Modelagem-BD) |
+| [Home](https://github.com/ricarthlima/eo-project-es) | [Time]() | [Iterations](https://github.com/ricarthlima/eo-project-es/tree/master/Iterations)  | [Banco de Dados](https://github.com/ricarthlima/eo-project-es/tree/master/Modelagem-BD) |
 # GreenList (Nome Provisório)
 
 ## 1. Objetivo
@@ -6,9 +6,11 @@ Esse repositório é destinado ao desenvolvimento de um SaaS ([Software as a Ser
 
 A aplicação será um serviço de criação e gerenciamento de listas de compras domésticas, capaz de armazenar informações sobre os hábitos e características do consumidor, a fim de tornar o ato de fazer compras mais prático e mais eficaz. Além disso, o sistema será inclusivo com o público vegano, mostrando informações úteis que lhes darão a mesma facilidade proposta.
 
-## 2. [Equipe One!] ()
+## 2. Equipe One!
 |![Guilherme](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/gps2.png) <br>Guilherme Prado<br><gps2@cin.ufpe.br>| ![Monalisa](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/mmss.png) <br>Monalisa Sousa<br><mmss@cin.ufpe.br>|![Ricarth](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/rrsl.png) <br>Ricarth Lima<br><rrsl@cin.ufpe.br>|![Warley](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/wss.png) <br>Warley Souza<br><wss@cin.ufpe.br>
 |-|-|-|-|
+
+Para ler mais sobre a Equipe One! nesse projeto, [vá para a página "Time"]().
 
 ## 3. Do software e suas tecnologias
 As principais tecnologias que pretendemos usar são:
