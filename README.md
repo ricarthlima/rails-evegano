@@ -1,4 +1,4 @@
-| [Home](https://github.com/ricarthlima/eo-project-es) | [Iterations](https://github.com/ricarthlima/eo-project-es/tree/master/Iterations)  | [Modelagem](https://github.com/ricarthlima/eo-project-es/tree/master/Modelagem-BD) |
+| [Home](https://github.com/ricarthlima/eo-project-es) | [Time](https://github.com/ricarthlima/eo-project-es#2-time) | [Iterations](https://github.com/ricarthlima/eo-project-es/tree/master/Iterations)  | [Banco de Dados](https://github.com/ricarthlima/eo-project-es/tree/master/Modelagem-BD) |
 # GreenList (Nome Provisório)
 
 ## 1. Objetivo
@@ -6,13 +6,14 @@ Esse repositório é destinado ao desenvolvimento de um SaaS ([Software as a Ser
 
 A aplicação será um serviço de criação e gerenciamento de listas de compras domésticas, capaz de armazenar informações sobre os hábitos e características do consumidor, a fim de tornar o ato de fazer compras mais prático e mais eficaz. Além disso, o sistema será inclusivo com o público vegano, mostrando informações úteis que lhes darão a mesma facilidade proposta.
 
-## 2. Time
-
+## 2. [Equipe One!] ()
+|![Guilherme](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/gps2.png) <br>Guilherme Prado<br><gps2@cin.ufpe.br>| ![Monalisa](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/mmss.png) <br>Monalisa Sousa<br><mmss@cin.ufpe.br>|![Ricarth](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/rrsl.png) <br>Ricarth Lima<br><rrsl@cin.ufpe.br>|![Warley](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/wss.png) <br>Warley Souza<br><wss@cin.ufpe.br>
+|-|-|-|-|
 
 ## 3. Do software e suas tecnologias
 As principais tecnologias que pretendemos usar são:
 
-### Geolocalização 
+### Geolocalização
 Importante para obter os dados dos usuários, dos supermercados e dos produtos. Assim informar, baseado nessas informações, qual o lugar onde ele deveria fazer suas compras (mais economia e conforto). Também informar quando há promoções de produtos que ele se interessa, perto dele.
 
 ### Crowndsensing
@@ -52,9 +53,13 @@ Cada **usuário** possui um login, que é sua identificação única, e uma senh
 **Componentes** possuem um código identificador único, nome, uma descrição e uma classificação binária sobre se é vegano ou não.
 
 
-## 4. Next Steps
+## 5. Next Steps
+Esses são os próximos passos que vamos seguir, não necessariamente em ordem:
+
 - Aprofundamento na validação com os usuários, via protótipo e MVP. (Em especial para o público vegano)
+- História do Usuário
+- Protótipo Low-Fi
+- Protótipo Hi-Fi
 - Início do desenvolvimento
 - Povoamento do banco de dados
 - Testes contínuos
-
