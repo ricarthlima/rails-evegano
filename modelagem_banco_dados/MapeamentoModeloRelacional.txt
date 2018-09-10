@@ -1,16 +1,15 @@
 usuario(login(PK), senha, e-mail, p_nome, sobrenome, país, estado, cidade, bairro, rua, numero,
-	*falta o vegano
 
 usuario_telefone(login_u(PK), telefone(PK),)
 	login_u referencia usuario.login
 	
 
-lista_compras(codigo(PK), data,
+lista_compras(codigo(PK), data,)
 
 produto(codigo(PK), descricao, data_registro, preco_recente, eh_vegano, nome, codigo_marca, )
 	codigo_marca referencia marca.codigo
 
-supermercado(codigo(PK), nome, país, estado, cidade, bairro, rua, numero, 
+supermercado(codigo(PK), nome, país, estado, cidade, bairro, rua, numero,)
 
 marca(codigo(PK), nome, descricao, classificacao,)
 
@@ -30,4 +29,6 @@ listaCompras_supermercado(codigo_listaCompras, codigo_supermercado, )
 produto_componente(codigo_componente, codigo_produto)
 	cod_componente referencia componente.codigo
 	cod_produto referencia produto.codigo
-	
+
+usuario_vegano(login_usuario)
+	login_usuario referencia usuario.login
