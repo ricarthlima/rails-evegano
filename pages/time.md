@@ -1,4 +1,4 @@
-| [Home](https://github.com/ricarthlima/eo-project-es) | [Time]() | [Iterations](https://github.com/ricarthlima/eo-project-es/tree/master/Iterations)  | [Banco de Dados](https://github.com/ricarthlima/eo-project-es/tree/master/Modelagem-BD) |
+| [Home](https://github.com/ricarthlima/eo-project-es) | [Time](https://github.com/ricarthlima/eo-project-es/blob/master/pages/time.md) | [Iterations](https://github.com/ricarthlima/eo-project-es/tree/master/Iterations)  | [Banco de Dados](https://github.com/ricarthlima/eo-project-es/tree/master/Modelagem-BD) |
 
 # Sobre o Time
 |![Guilherme](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/gps2.png) <br>Guilherme Prado<br><gps2@cin.ufpe.br>| ![Monalisa](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/mmss.png) <br>Monalisa Sousa<br><mmss@cin.ufpe.br>|![Ricarth](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/rrsl.png) <br>Ricarth Lima<br><rrsl@cin.ufpe.br>|![Warley](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/wss.png) <br>Warley Souza<br><wss@cin.ufpe.br>
@@ -10,7 +10,7 @@ A Equipe One! Se formou em 2017 como um grupo de estudos e para projetos acadêm
 
 ## Frameworks e Metodologias
 
-|![Lean]()|**Lean Startup**|
+|![Lean](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/lean.png)|**Lean Startup**|
 |-|-|
 #### Descrição
 Lean startup é um conjunto de processos usados por empreendedores para desenvolver produtos e mercados, combinando Desenvolvimento ágil de software, desenvolvimento de clientela (Customer Development) e plataformas existentes de software (usualmente FOSS). O conceito foi introduzido por Eric Ries.
@@ -21,7 +21,7 @@ Em desenvolvimento de produto, o MVP é uma estratégia usada para testes quanti
 #### Motivação
 Essa é nossa principal filosofia de desenvolvimento.
 
-|![Scrum]()|**Scrum**|
+|![Scrum](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/scrum.png)|**Scrum**|
 |-|-|
 #### Descrição
 O Scrum é um framework de trabalho que emprega diversas ferramentas para o desenvolvimento iterativo e incremental utilizado no gerenciamento de projetos diversos e no desenvolvimento de software ágil. Scrum possui seu foco no gerenciamento e projeto da organização onde é difícil planejar à frente, e não é um processo prescribente, ou seja, ele não descreve o que fazer em cada situação. Ele é usado para trabalhos complexos nos quais é impossível predizer tudo o que irá ocorrer. Além disso, apesar de Scrum ter sido destinado para gerenciamento de projetos de software, ele pode ser utilizado em equipes de manutenção de software ou como uma abordagem geral de gerenciamento de projetos/programas.  
@@ -30,7 +30,7 @@ O mesmo está sendo usado por nossa equipe devido as ferramentas, valores, princ
 
 ## Tecnologias
 
-|![Todoist]()|**Todoist**|
+|![Todoist](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/todoist.png)|**Todoist**|
 |-|-|
 #### Descrição
 Todoist é um serviço SaaS, multiplataforma e um conjunto de softwares de gerenciamento de tarefas. Nele as tarefas podem conter notas com arquivos de qualquer tipo, as mesmas também podem ser colocadas em projetos, classificadas por filtros, atribuídas etiquetas, editadas e exportadas.
@@ -38,21 +38,21 @@ O mesmo contem integrações com diversas aplicações, além de oferecer backup
 #### Motivação
 O mesmo está sendo usado por nossa equipe devido a organização e, principalmente a produtividade que nos proporciona na execução de nossas tarefas.
 
-|![GitHub]()|**GitHub**|
+|![GitHub](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/github.png)|**GitHub**|
 |-|-|
 #### Descrição
 Github é uma plataforma de hospedagem de código-fonte com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source de qualquer lugar do mundo.
 #### Motivação
 O mesmo está sendo usado por nossa equipe devido a disponibilização da hospedagem dos arquivos referentes ao nosso site, e do próprio site. Além, de contribuir para nossa organização através do controle de versão que o mesmo possui.
 
-|![Drive]()|**Google Drive**|
+|![Drive](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/drive.png)|**Google Drive**|
 |-|-|
 #### Descrição
 Google Drive é um serviço de armazenamento e sincronização de arquivos. O mesmo abriga agora o Google Docs, um leque de aplicações de produtividade, que oferece a edição de documentos, folhas de cálculo, apresentações, e muito mais. O Google Drive baseia-se no conceito de computação em nuvem, pois o internauta poderá armazenar arquivos através deste serviço e acedê-los a partir de qualquer computador ou outros dispositivos compatíveis, desde que ligados à internet. Além disso, o Google Drive disponibiliza vários aplicativos online, sem que esses programas estejam instalados no computador da pessoa que os utiliza.
 #### Motivação
 O mesmo está sendo usado por nossa equipe devido a grande disponibilização de armazenamento de arquivos referentes ao nosso site de forma prática e rápida.
 
-|![Meet]()|**Google Meet**|
+|![Meet](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/meet.png)|**Google Meet**|
 |-|-|
 
 #### Descrição
@@ -60,5 +60,5 @@ Google Meet é um serviço desenvolvido pela Google, que inclui mensagens, víde
 #### Motivação
 O mesmo está sendo usado por nossa equipe devido a facilidade e rapidez que o mesmo nos proporciona em reuniões remotas da nossa equipe.
 
-
+## ----
 [1] Disponível em: https://pt.wikipedia.org/wiki/Lean_startup
