@@ -2,7 +2,7 @@
 # GreenList (Nome Provisório)
 
 ## 1. Objetivo
-Esse repositório é destinado ao desenvolvimento de um SaaS ([Software as a Service](https://blog.deskmanager.com.br/o-que-e-saas/)) para (num primeiro momento) os projetos das disciplinas de Engenharia de Software e Banco de Dados, do curso de Sistemas de Informação do Centro de Informática a Universidade Federal de Pernambuco.
+Esse repositório é destinado ao desenvolvimento de um SaaS ([Software as a Service](https://blog.deskmanager.com.br/o-que-e-saas/)) para (num primeiro momento) os projetos das disciplinas de Engenharia de Software e Banco de Dados, do curso de Sistemas de Informação do Centro de Informática da Universidade Federal de Pernambuco.
 
 A aplicação será um serviço de criação e gerenciamento de listas de compras domésticas, capaz de armazenar informações sobre os hábitos e características do consumidor, a fim de tornar o ato de fazer compras mais prático e mais eficaz. Além disso, o sistema será inclusivo com o público vegano, mostrando informações úteis que lhes darão a mesma facilidade proposta.
 
@@ -10,7 +10,7 @@ A aplicação será um serviço de criação e gerenciamento de listas de compra
 |![Guilherme](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/gps2.png) <br>Guilherme Prado<br><gps2@cin.ufpe.br>| ![Monalisa](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/mmss.png) <br>Monalisa Sousa<br><mmss@cin.ufpe.br>|![Ricarth](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/rrsl.png) <br>Ricarth Lima<br><rrsl@cin.ufpe.br>|![Warley](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/wss.png) <br>Warley Souza<br><wss@cin.ufpe.br>
 |-|-|-|-|
 
-Para ler mais sobre a Equipe One! nesse projeto, [vá para a página "Time"]().
+Para ler mais sobre a Equipe One! nesse projeto, [vá para a página "Time"](https://github.com/ricarthlima/eo-project-es/blob/master/pages/time.md).
 
 ## 3. Do software e suas tecnologias
 As principais tecnologias que pretendemos usar são:
