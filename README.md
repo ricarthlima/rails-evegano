@@ -1,4 +1,4 @@
-| [Home](https://github.com/ricarthlima/eo-project-es) | [Time](https://github.com/ricarthlima/eo-project-es/blob/master/pages/time.md) | [Iterations](https://github.com/ricarthlima/eo-project-es/tree/master/Iterations)  | [Banco de Dados](https://github.com/ricarthlima/eo-project-es/tree/master/Modelagem-BD) |
+| [Home](https://github.com/ricarthlima/eo-project-es) | [Time](https://github.com/ricarthlima/eo-project-es/blob/master/pages/time.md) | [Atas de Reunião](https://github.com/ricarthlima/eo-project-es/tree/master/atas_reuniao) | [Iterations](https://github.com/ricarthlima/eo-project-es/tree/master/iterations_output)  | [Banco de Dados](https://github.com/ricarthlima/eo-project-es/tree/master/modelagem_banco_dados) |
 # GreenList (Nome Provisório)
 
 ## 1. Objetivo

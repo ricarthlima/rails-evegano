@@ -1,4 +1,4 @@
-| [Home](https://github.com/ricarthlima/eo-project-es) | [Time](https://github.com/ricarthlima/eo-project-es/blob/master/pages/time.md) | [Iterations](https://github.com/ricarthlima/eo-project-es/tree/master/Iterations)  | [Banco de Dados](https://github.com/ricarthlima/eo-project-es/tree/master/Modelagem-BD) |
+| [Home](https://github.com/ricarthlima/eo-project-es) | [Time](https://github.com/ricarthlima/eo-project-es/blob/master/pages/time.md) | [Atas de Reunião](https://github.com/ricarthlima/eo-project-es/tree/master/atas_reuniao) | [Iterations](https://github.com/ricarthlima/eo-project-es/tree/master/iterations_output)  | [Banco de Dados](https://github.com/ricarthlima/eo-project-es/tree/master/modelagem_banco_dados) |
 
 # Sobre o Time
 |![Guilherme](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/gps2.png) <br>Guilherme Prado<br><gps2@cin.ufpe.br>| ![Monalisa](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/mmss.png) <br>Monalisa Sousa<br><mmss@cin.ufpe.br>|![Ricarth](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/rrsl.png) <br>Ricarth Lima<br><rrsl@cin.ufpe.br>|![Warley](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/wss.png) <br>Warley Souza<br><wss@cin.ufpe.br>
@@ -16,8 +16,8 @@ A Equipe One! Se formou em 2017 como um grupo de estudos e para projetos acadêm
 Lean startup é um conjunto de processos usados por empreendedores para desenvolver produtos e mercados, combinando Desenvolvimento ágil de software, desenvolvimento de clientela (Customer Development) e plataformas existentes de software (usualmente FOSS). O conceito foi introduzido por Eric Ries.
 A iniciativa lean startup defende a criação de protótipos rápidos, projetados para validar suposições de mercado, e usa feedback dos clientes para desenvolvê-los muito mais rapidamente do que através de práticas de desenvolvimento de software mais tradicionais, como o Waterfall model. Não é incomum ver lean startups colocando um novo código em produção várias vezes por dia, usando práticas conhecidas como continuous deployment.
 Lean startup é às vezes descrito como o "pensamento enxuto" (lean thinking) aplicado ao processo empreendedor. Um princípio central no pensamento enxuto é reduzir o desperdício. Os processos de lean startup usam o desenvolvimento de clientela para reduzir o desperdício, incrementando a frequência de contato com clientes reais e assim validando ou eliminando, o mais cedo possível, suposições incorretas sobre mercado. Esta abordagem se propõe a melhorar as táticas empreendedoras, reduzindo o trabalho, o custo de validar suposições sobre o mercado e o tempo necessário ao negócio para encontrar tração de mercado. É referida como "produto minimamente viável" (minimum viable produto ou MVP).
-Em desenvolvimento de produto, o MVP é uma estratégia usada para testes quantitativos e rápidos do mercado de um produto ou das características de um produto, popularizada por Eric Ries, para aplicações web.
-[1]
+Em desenvolvimento de produto, o MVP é uma estratégia usada para testes quantitativos e rápidos do mercado de um produto ou das características de um produto, popularizada por Eric Ries, para aplicações web.  
+Disponível em: https://pt.wikipedia.org/wiki/Lean_startup
 #### Motivação
 Essa é nossa principal filosofia de desenvolvimento.
 
@@ -59,6 +59,3 @@ O mesmo está sendo usado por nossa equipe devido a grande disponibilização de
 Google Meet é um serviço desenvolvido pela Google, que inclui mensagens, vídeo chat, SMS e VOIP.
 #### Motivação
 O mesmo está sendo usado por nossa equipe devido a facilidade e rapidez que o mesmo nos proporciona em reuniões remotas da nossa equipe.
-
-## ----
-[1] Disponível em: https://pt.wikipedia.org/wiki/Lean_startup
