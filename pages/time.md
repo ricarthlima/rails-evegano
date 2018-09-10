@@ -4,7 +4,7 @@
 |![Guilherme](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/gps2.png) <br>Guilherme Prado<br><gps2@cin.ufpe.br>| ![Monalisa](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/mmss.png) <br>Monalisa Sousa<br><mmss@cin.ufpe.br>|![Ricarth](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/rrsl.png) <br>Ricarth Lima<br><rrsl@cin.ufpe.br>|![Warley](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/wss.png) <br>Warley Souza<br><wss@cin.ufpe.br>
 |-|-|-|-|
 
-A Equipe One! Se formou em 2017 como um grupo de estudos e para projetos acadêmicos. Hoje além desses aspectos buscamos crescer como startup. Nosso foco é sempre buscar a excelência em primeiro lugar.
+A "Equipe One!" se formou em 2017 como um grupo de estudos, e para projetos acadêmicos. Hoje além desses aspectos buscamos crescer como startup. Nosso foco é sempre buscar a excelência em primeiro lugar.
 
 # Como fazemos o que fazemos?
 
