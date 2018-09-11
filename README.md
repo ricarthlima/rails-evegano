@@ -1,4 +1,4 @@
-| [Home](https://github.com/ricarthlima/eo-project-es) | [Time](https://github.com/ricarthlima/eo-project-es/blob/master/pages/time.md) | [Atas de Reunião](https://github.com/ricarthlima/eo-project-es/tree/master/atas_reuniao) | [Iterations](https://github.com/ricarthlima/eo-project-es/tree/master/iterations_output)  | [Banco de Dados](https://github.com/ricarthlima/eo-project-es/tree/master/modelagem_banco_dados) |
+| [Home](https://github.com/ricarthlima/eo-project-es) | [Time](https://github.com/ricarthlima/eo-project-es/blob/master/pages/time.md) | [Atas de Reunião](https://github.com/ricarthlima/eo-project-es/tree/master/atas_reuniao) | [Iterations](https://github.com/ricarthlima/eo-project-es/tree/master/iterations_output)  | [Banco de Dados](https://github.com/ricarthlima/eo-project-es#4-banco-de-dados) |
 # GreenList (Nome Provisório)
 
 ## 1. Objetivo
@@ -28,11 +28,13 @@ Será usada para facilitar a vida do usuário quando for possível, pois ele pod
 Útil para quem tiver interesse em saber sobre a composição do produto que está comprando (em especial o público vegano), uma vez que esse produto ainda não esteja no banco de dados, essa leitura analisará (quando possível) todos os componentes descritos no rótulo.
 
 ## 4. Banco de Dados
-O banco de dados está em fase de modelagem. Segue as etapas a serem seguidas:
+As entregas relacionadas à cadeira IF976 - Banco de Dados serão feitas pelo Google Drive que pode ser acessado através desse [link](https://goo.gl/u5o5YJ).
+Atualmente estamos na fase de modelagem.
+Segue as etapas a serem seguidas:
 
 - ~~Definição do minimundo~~
 - ~~Modelagem lógica (Entidade-Relacionamento)~~
-- Modelagem conceitual (Modelo Relacional)
+- ~~Modelagem conceitual (Modelo Relacional)~~
 - Modelagem física (PL/SQL)
 - Povoamento
 
