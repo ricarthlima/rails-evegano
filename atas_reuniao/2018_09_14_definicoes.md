@@ -53,4 +53,4 @@ Para tal, as tecnologias que pensamos em usar serão principalmente Banco de Dad
   - Atualizar site (repositorio Git) com as decisões tomadas nessa reunião
   - Falar com Bernadette sobre alterações que impactam na Entrega 01 (já realizada)
 - **Warley**
-  - Conversar com os monitores sobre toda nossa histórias, em especial os spin-offs dados e o escopo atual
+  - Conversar com os monitores sobre toda nossa histórias, em especial os spin-off dados e o escopo atual
