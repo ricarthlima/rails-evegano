@@ -26,7 +26,7 @@ Sua proposta afunilou e precisou a proposta de Warley, e chegou na descrita acim
 #### Ricarth: Um foco no público veganos
 Ser um software que entregue ao público vegano um método prático de consultar quais produtos/marcas são ou não veganos e porque. Como *plus* informar produtos/promoções perto do usuário.
 
-### Monalisa
+#### Monalisa
 Sua proposta afunilou e precisou a proposta de Ricarth, e chegou na descrita acima.
 
 ## Registro das Decisões
