@@ -1,10 +1,10 @@
 # Ata de Reunião (Definições)
 
 ## Informações
-**Data:** 14/09/2018
-**Horário:** 16:30 até 17:40
-**Local:** Bloco E
-**Participantes:** Monalisa Sousa, Guilherme Prado, Ricarth Lima e Warley Souza
+**Data:** 14/09/2018  
+**Horário:** 16:30 até 17:40  
+**Local:** Bloco E  
+**Participantes:** Monalisa Sousa, Guilherme Prado, Ricarth Lima e Warley Souza  
 
 
 ## Pauta da Reunião
