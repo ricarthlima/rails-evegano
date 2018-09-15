@@ -8,8 +8,8 @@
 
 
 ## Pauta da Reunião
-Nos reunimos para definir nossa **Proposta Única de Valor**. Como preparação para essa reunião, cada um estudou as decisões que tinhamos tomado até então, e imergiu em informações para poder embasar suas propostas de PUV. Iniciamos a reunião com a apresentação dessas informações.  
-Como embasamento dessas informações também usamos pesquisas através de formulários (Google Forms), divulgados no grupo de emails do Centro de Informática, no grupo do Facebook da UFPE e em um grupo de pessoas veganas também no facebook. Os resultados podem ser encontrados aqui (14/09/2018):
+Nos reunimos para definir nossa **Proposta Única de Valor**. Como preparação para essa reunião, cada um estudou as decisões que tinhamos tomado até então, e imergiu em informações para poder embasar suas propostas de PUV. Iniciamos com a apresentação dessas informações.  
+Para embasamento dessa decisão também usamos pesquisas através de formulários (Google Forms), divulgados no grupo de emails do Centro de Informática, no grupo do Facebook da UFPE e em um grupo de pessoas veganas também no Facebook. Os resultados podem ser encontrados aqui (14/09/2018):
 - [Público Geral (CIn)](https://docs.google.com/spreadsheets/d/1463FYpAdL8OkHsnFbAfysbV6gd-fzZe5khUM0L9cyvQ/edit?usp=sharing)
 - [Público Geral](https://docs.google.com/spreadsheets/d/1qfiJz4kCz_MxVJVrNbxC9NyPa6X6ORXz-6KQmrQ_Oxw/edit?usp=sharing)
 - [Público Vegano](https://docs.google.com/spreadsheets/d/1jmPaownoZHLAo3sVHkxiBq_r6XL7HKaCP0T3lF-wF9I/edit?usp=sharing)
@@ -18,21 +18,22 @@ Como embasamento dessas informações também usamos pesquisas através de formu
 
 ### Propostas de PUV
 #### Warley: Uma abordagem menos segregada
-Sua principal proposta foi a de entregar um software de criação/gestão de listas de compras inteligentes, que tivesse recursos como os de análise de compontentes, crowndsensing e geolocalização para propor o melhor lugar para executar uma feira, e promoções por perto. O grande diferencial seria que isso seria feito independentemente de dividir usuários (entre veganos e não-veganos).
+Sua principal proposta foi a de entregar um software de criação/gestão de listas de compras inteligentes, que possibilita a análise dos compontentes do produto. O software também seria capaz de sugerir o melhor lugar para executar uma feira, e promoções por perto. O grande diferencial seria que isso seria feito independentemente de dividir usuários (entre veganos e não-veganos).
 
 #### Guilherme
-Sua proposta afunilou e precisou a proposta de Warley, e chegou na descrita acima.
+Sua proposta afunilou e precisou a proposta de Warley, chegando assim na descrição acima.
 
 #### Ricarth: Um foco no público veganos
 Ser um software que entregue ao público vegano um método prático de consultar quais produtos/marcas são ou não veganos e porque. Como *plus* informar produtos/promoções perto do usuário.
 
 #### Monalisa
-Sua proposta afunilou e precisou a proposta de Ricarth, e chegou na descrita acima.
+Sua proposta afunilou e precisou a proposta de Ricarth, chegando assim na descrição acima.
 
 ## Registro das Decisões
-Grande parte dessa reunião foi o debate para tomar essa decisão. Ao final, decidimos por escolher a PUV de foco no público vegano dada alguns levantamentos de inviabilidade no que pretendiamos na proposta anteriror, em especial sobre a obtenção dos inputs do crowndsensing.
-Portanto nossa PUV ficou decida como:
-  Ser um software que entregue ao público vegano um método prático de consultar quais produtos/marcas são ou não veganos e porque. Como *plus* informar produtos/promoções perto do usuário.
+Grande parte dessa reunião foi o debate para tomar essa decisão. Ao final, decidimos por escolher a PUV de foco no público vegano dado alguns levantamentos de inviabilidade no que pretendiamos fazer na proposta anteriror, em especial sobre a obtenção dos inputs do crowndsensing.
+Portanto nossa PUV ficou decida como:  
+
+Ser um software que entregue ao público vegano um método prático de consultar quais produtos/marcas são ou não veganos e o motivo. Como *plus* informar produtos/promoções perto do usuário.
 
 Para tal, as tecnologias que pensamos em usar serão principalmente Banco de Dados, Leitura de Código de Barras, Reconhecimento Ótico de Caracteres, Google/Facebook Auth
 
