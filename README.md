@@ -1,10 +1,10 @@
 | [Home](https://github.com/ricarthlima/eo-project-es) | [Time](https://github.com/ricarthlima/eo-project-es/blob/master/pages/time.md) | [Atas de Reunião](https://github.com/ricarthlima/eo-project-es/tree/master/atas_reuniao) | [Iterations](https://github.com/ricarthlima/eo-project-es/tree/master/iterations_output)  | [Banco de Dados](https://github.com/ricarthlima/eo-project-es#4-banco-de-dados) |
-# GreenList (Nome Provisório)
+# É vegano? (Nome provisório)
 
 ## 1. Objetivo
 Esse repositório é destinado ao desenvolvimento de um SaaS ([Software as a Service](https://blog.deskmanager.com.br/o-que-e-saas/)) para (num primeiro momento) os projetos das disciplinas de Engenharia de Software e Banco de Dados, do curso de Sistemas de Informação do Centro de Informática da Universidade Federal de Pernambuco.
 
-A aplicação será um serviço de criação e gerenciamento de listas de compras domésticas, capaz de armazenar informações sobre os hábitos e características do consumidor, a fim de tornar o ato de fazer compras mais prático e mais eficaz. Além disso, o sistema será inclusivo com o público vegano, mostrando informações úteis que lhes darão a mesma facilidade proposta.
+A aplicação será um serviço de software que entregue ao **público vegano** um método prático de consultar quais produtos/marcas são ou não veganos e o porquê. Como adicional, pretendemos informar produtos/promoções perto do usuário.
 
 ## 2. Equipe One!
 |![Guilherme](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/gps2.png) <br>Guilherme Prado<br><gps2@cin.ufpe.br>| ![Monalisa](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/mmss.png) <br>Monalisa Sousa<br><mmss@cin.ufpe.br>|![Ricarth](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/rrsl.png) <br>Ricarth Lima<br><rrsl@cin.ufpe.br>|![Warley](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/wss.png) <br>Warley Souza<br><wss@cin.ufpe.br>
@@ -15,21 +15,20 @@ Para ler mais sobre a Equipe One! nesse projeto, [vá para a página "Time"](htt
 ## 3. Do software e suas tecnologias
 As principais tecnologias que pretendemos usar são:
 
-### Geolocalização
-Importante para obter os dados dos usuários, dos supermercados e dos produtos. Assim informar, baseado nessas informações, qual o lugar onde ele deveria fazer suas compras (mais economia e conforto). Também informar quando há promoções de produtos que ele se interessa, perto dele.
-
-### Crowndsensing
-Não pretendemos ter os supermercados como fornecedores de informação, portanto para atender os objetivos citados acima, iremos usar os próprios inputs dos usuários para criar uma rede de informações. Depois de validada, a informação passa a integrar nosso banco de dados e poderá ser distribuida para os demais usuários.
 
 ### Leitura de Código de Barras
-Será usada para facilitar a vida do usuário quando for possível, pois ele poderá armazenar/consultar/adicionar informações de um produto apenas o associando a um código de barras.
+É a base do software. Ao receber um código de barras, procurará no Banco de Dados registro desse produto. Se encontrar, devolverá ao usuário informações sobre seus componentes, e uma indiciação se o produto é vegano, se é potencialmente vegano, ou se não é vegano.
 
 ### OCR (Reconhecimento ótico de caracteres)
-Útil para quem tiver interesse em saber sobre a composição do produto que está comprando (em especial o público vegano), uma vez que esse produto ainda não esteja no banco de dados, essa leitura analisará (quando possível) todos os componentes descritos no rótulo.
+Caso o produto não esteja cadastrado no Banco de Dados, o usuário receberá a possibilidade de cadastrá-lo. Para isso ele poderá usar OCR para enviar para o sistema os componentes, e daí descobrir como se classifica o produto. Essa informação também servirá para alimentar o código de barras.
+
+### Outras tecnologias
+Na implementação da sugestão de ofertas perto do cliente, usaremos também **Crowndsensing** e **Geolocalização**.
 
 ## 4. Banco de Dados
 As entregas relacionadas à cadeira IF976 - Banco de Dados serão feitas pelo Google Drive que pode ser acessado através desse [link](https://goo.gl/u5o5YJ).
-Atualmente estamos na fase de modelagem.
+**Status:** Por conta do spin-off que demos no projeto, as etapas a seguir deverão ser refeitas.
+
 Segue as etapas a serem seguidas:
 
 - ~~Definição do minimundo~~
@@ -41,29 +40,30 @@ Segue as etapas a serem seguidas:
 (Todas etapas passarão por testes de lógica, redundância e eficiência quando for cabido, e poderão sofrer alterações)
 
 ### 4.1 Descrição informal das entidades e dos relacionamentos
+**Obs.:** Por conta do spin-off que demos no projeto, as seguintes informação ainda serão validadas.
 
-Cada **usuário** possui um login, que é sua identificação única, e uma senha de acesso. Também possui um email, um nome (composto de primeiro nome e sobrenome) e um endereço (composto de número, rua, bairro, cidade, estado e país), e um ou vários telefones. Possui também um identificador binário que diz se ele se considera vegano ou não.
+Cada **usuário** possui um login, que é sua identificação única, e uma senha de acesso. Também possui um email, um nome (composto de primeiro nome e sobrenome), uma foto, e um endereço (composto de número, rua, bairro, cidade, estado e país), e um ou vários telefones. Usuários consultam produtos, e esses produtos ficam salvos no seu histórico. Usuários também podem comentar e avaliar produtos.
 
-**Usuários** possuem **listas de compras**. Cada lista possuem seu código identificador único e a data que foi realizada.
+**Produtos** possuem um código identificador único, um código de barras, um nome, uma marca, uma imagem descritiva, uma descrição, uma lista de componentes e uma classificação ternária (sim, não, talvez) sobre se é vegano.
 
-**Listas de compras** possuem **produtos**. Cada produto possui seu código identificador único, nome, **marca***, descrição, seu preço mais recente e a data de registro desse preço. Os produtos também contém uma informação sobre sua possibilidade de ser vegano, essa informação é armazenada como um número de 0 a 2, onde 0 quer dizer que o produto não é vegano, 1 é que ele é possivelmente vegano, 2 que ele é vegano. Para tal, produtos contém uma lista dos seus **componentes*** de fabricação.
+**Marcas** possuem um código identificador único, nome, lista de nomes alternativos, uma breve descrição, e sua classificação sobre se ela é vegana ou não, diferente do dos produtos, ela é binária. Uma marca pode conter outra marca, e isso determina a classificação vegana.
 
-**Produtos** guardam vários **históricos de preços**, que armazenam informações sobre o preço registrado, a data que esse preço foi registrado e o supermercado* onde foi registrado.
-
-**Lista de compras** são realizadas em **supermercados**.  Cada supermercado possui seu código identificador único, nome e endereço (composto pelas mesmas características do endereço do usuário). Supermercados contém produtos*.
-
-**Marcas** possuem um código identificador único, nome, uma breve descrição, e sua classificação sobre se ela é vegana ou não, diferente do dos produtos, ela é binárias.
-
-**Componentes** possuem um código identificador único, nome, uma descrição e uma classificação binária sobre se é vegano ou não.
-
+**Componentes** possuem um código identificador único, código europeu, código INS, nome, lista de nomes alternativos, uma categoria, uma descrição e uma classificação binária sobre se é vegano ou não.
 
 ## 5. Next Steps
-Esses são os próximos passos que vamos seguir, não necessariamente em ordem:
 
-- Aprofundamento na validação com os usuários, via protótipo e MVP. (Em especial para o público vegano)
-- História do Usuário
+### Desenvolvimento:
+- Aprofundamento na validação com os usuários, via protótipo e MVP. 
+- Históriasdo Usuários
 - Protótipo Low-Fi
 - Protótipo Hi-Fi
 - Início do desenvolvimento
 - Povoamento do banco de dados
 - Testes contínuos
+
+### Ideias:
+- Funcionar offline;
+- Sugestão de receitas veganas;
+- Sugestão de bons hábitos veganos;
+- Feed de notícias sobre marcas;
+- Maior interação entre os usuários;
