@@ -31,7 +31,7 @@ Caso o produto não esteja cadastrado no Banco de Dados, o usuário receberá a 
 Na implementação da sugestão de ofertas perto do cliente, usaremos também **Crowndsensing** e **Geolocalização**.
 
 ## 4. Banco de Dados
-As entregas relacionadas à cadeira IF976 - Banco de Dados serão feitas pelo Google Drive que pode ser acessado através desse [link](https://goo.gl/u5o5YJ).
+As entregas relacionadas à cadeira IF976 - Banco de Dados serão feitas pelo Google Drive que pode ser acessado através desse [link](https://goo.gl/u5o5YJ).  
 **Status:** Por conta do spin-off que demos no projeto, as etapas a seguir deverão ser refeitas.
 
 Segue as etapas a serem seguidas:
