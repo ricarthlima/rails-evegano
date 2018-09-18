@@ -7,7 +7,11 @@
 A "Equipe One!" se formou em 2017 como um grupo de estudos, e para projetos acadêmicos. Hoje além desses aspectos buscamos crescer como startup. Nosso foco é sempre buscar a excelência em primeiro lugar.
 
 # Como fazemos o que fazemos?
-
+## Filosofias adotadas
+- **Nivelamento de conhecimento:** Todos devem saber sobre tudo referente ao projeto;
+- **Códigos uniformes:** Por exemplo, variáveis semelhantes, com mesma linguagem e com boas práticas;
+- **DRY:** Não repita seu próprio código;
+- **Produtividade:** Usar estilos já feito do Bootstrap, ao invés de na unha com CSS.
 ## Frameworks e Metodologias
 
 |![Lean](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/lean.png)|**Lean Startup**|
