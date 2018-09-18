@@ -56,10 +56,10 @@ Google Drive é um serviço de armazenamento e sincronização de arquivos. O me
 #### Motivação
 O mesmo está sendo usado por nossa equipe devido a grande disponibilização de armazenamento de arquivos referentes ao nosso site de forma prática e rápida.
 
-|![Meet](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/meet.png)|**Google Meet**|
+|![Discord](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/discord.png)|**Discord App**|
 |-|-|
 
 #### Descrição
-Google Meet é um serviço desenvolvido pela Google, que inclui mensagens, vídeo chat, SMS e VOIP.
+Discord é um aplicativo de voz sobre IP, proprietário e gratuito, projetado para comunidades de jogos.
 #### Motivação
-O mesmo está sendo usado por nossa equipe devido a facilidade e rapidez que o mesmo nos proporciona em reuniões remotas da nossa equipe.
+O mesmo está sendo usado por nossa equipe devido a facilidade e rapidez que o mesmo nos proporciona em reuniões remotas da nossa equipe, através dos recursos fundamentais de texto baseados em bate-papo, suporte a chamadas de vídeo e compartilhamento de tela.
