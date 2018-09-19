@@ -9,7 +9,7 @@ A rigidez pela busca de produtos ou marcas livres de exploração e crueldade co
 ## Quem faz?
 A "Equipe One!" se formou em 2017 como um grupo de estudos, e para projetos acadêmicos. Hoje além desses aspectos buscamos crescer como startup. Nosso foco é sempre buscar a excelência em primeiro lugar.
 
-|![Guilherme](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/gps2.png) <br>Guilherme Prado<br><gps2@cin.ufpe.br>| ![Monalisa](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/mmss.png) <br>Monalisa Sousa<br><mmss@cin.ufpe.br>|![Ricarth](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/rrsl.png) <br>Ricarth Lima<br><rrsl@cin.ufpe.br>|![Warley](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/wss.png) <br>Warley Souza<br><wss@cin.ufpe.br>
+|![Guilherme](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/gps2.png) <br>Guilherme Prado<br><gps2@cin.ufpe.br>| ![Monalisa](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/mmss.png) <br>Monalisa Sousa<br><mmss@cin.ufpe.br>|![Ricarth](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/rrsl.png) <br>Ricarth Lima<br><rrsl@cin.ufpe.br>|![Warley](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/wss.png) <br>Warley Souza<br><wss@cin.ufpe.br>
 |-|-|-|-|
 
 ## Ok? Mas cadê o sistema?
