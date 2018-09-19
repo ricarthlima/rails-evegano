@@ -1,11 +1,11 @@
-| [Home](https://github.com/ricarthlima/eo-project-es) | [Time](https://github.com/ricarthlima/eo-project-es/blob/master/pages/time.md) | [Atas de Reunião](https://github.com/ricarthlima/eo-project-es/tree/master/atas_reuniao) | [Iterations](https://github.com/ricarthlima/eo-project-es/tree/master/iterations_output)  | [Banco de Dados](https://github.com/ricarthlima/eo-project-es#4-banco-de-dados) |
+| [Home](https://github.com/ricarthlima/eo-project-es) | [Time](/docs/paginas/time.md) | [Entregas](/docs/entregas_iterations)  | [Banco de Dados](https://github.com/ricarthlima/eo-project-es#5-banco-de-dados) |
 # É vegano? (Nome provisório)
-|  [1. Objetivo](https://github.com/ricarthlima/eo-project-es#1-objetivo)
-|  [2. Motivação]()
-|  [3. Time](https://github.com/ricarthlima/eo-project-es#2-equipe-one)
-|  [4. Tecnologias](https://github.com/ricarthlima/eo-project-es#3-do-software-e-suas-tecnologias)
-|  [5. Banco de Dados](https://github.com/ricarthlima/eo-project-es#4-banco-de-dados)
-|  [6. Next Steps](https://github.com/ricarthlima/eo-project-es#5-next-steps)
+|  [1. Objetivo](#1-objetivo)
+|  [2. Motivação](#2-motiva%C3%A7%C3%A3o)
+|  [3. Time](#3-equipe-one)
+|  [4. Tecnologias](#4-do-software-e-suas-tecnologias)
+|  [5. Banco de Dados](#5-banco-de-dados)
+|  [6. Next Steps](#6-next-steps)
 
 ## 1. Objetivo
 Esse repositório é destinado ao desenvolvimento de um SaaS ([Software as a Service](https://blog.deskmanager.com.br/o-que-e-saas/)) para (num primeiro momento) os projetos das disciplinas de Engenharia de Software e Banco de Dados, do curso de Sistemas de Informação do Centro de Informática da Universidade Federal de Pernambuco.
@@ -13,17 +13,18 @@ Esse repositório é destinado ao desenvolvimento de um SaaS ([Software as a Ser
 A aplicação será um serviço de software que entrega ao **público vegano** um método prático de consultar quais produtos/marcas são ou não veganos e o porquê. Como adicional, pretendemos informar produtos/promoções perto do usuário.
 
 ## 2. Motivação
-No Brasil, 14% da população tem uma alimentação vegetariana, [segundo a Sociedade Vegetariana Brasileira](https://g1.globo.com/bemestar/noticia/brasil-tem-14-de-vegetarianos-e-81-de-adeptos-a-dieta-com-carne-diz-pesquisa-ibope.ghtml). O mercado consumidor de alimentação plant-based (low or no meat) [cresce no mundo todo](http://revistapegn.globo.com/Revista/Common/0,,EMI130934-17153,00-CRESCE+O+MERCADO+VEGANO.html). A rigidez pela busca de produtos ou marcas livres de exploração e crueldade com os animais é uma realidade. Assim, o "É vegano?" entra num mercado crescente com o objetivo de facilitar a vida de quem precisa sempre verificar informações confiáveis sobre a composição do produto e condutas das marcas. Além disso, temos como ambição ajudar o mundo a trilhar o caminho para um futuro mais ético, onde nenhum animal precise sofrer para nos alimentar, divertir, vestir ou quaisquer outros motivos.
+No Brasil, 14% da população tem uma alimentação vegetariana, [segundo a Sociedade Vegetariana Brasileira](https://g1.globo.com/bemestar/noticia/brasil-tem-14-de-vegetarianos-e-81-de-adeptos-a-dieta-com-carne-diz-pesquisa-ibope.ghtml). O mercado consumidor de alimentação plant-based (low or no meat) [cresce no mundo todo](http://revistapegn.globo.com/Revista/Common/0,,EMI130934-17153,00-CRESCE+O+MERCADO+VEGANO.html).  
+
+A rigidez pela busca de produtos ou marcas livres de exploração e crueldade com os animais é uma realidade. Assim, o "É vegano?" entra num mercado crescente com **o objetivo de facilitar a vida de quem precisa sempre verificar informações confiáveis sobre a composição do produto e condutas das marcas**. Além disso, temos como ambição ajudar o mundo a trilhar o caminho para um futuro mais ético, onde nenhum animal precise sofrer para nos alimentar, divertir, vestir ou quaisquer outros motivos.
 
 ## 3. Equipe One!
-|![Guilherme](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/gps2.png) <br>Guilherme Prado<br><gps2@cin.ufpe.br>| ![Monalisa](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/mmss.png) <br>Monalisa Sousa<br><mmss@cin.ufpe.br>|![Ricarth](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/rrsl.png) <br>Ricarth Lima<br><rrsl@cin.ufpe.br>|![Warley](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/pages/images/wss.png) <br>Warley Souza<br><wss@cin.ufpe.br>
+|![Guilherme](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/gps2.png) <br>Guilherme Prado<br><gps2@cin.ufpe.br>| ![Monalisa](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/mmss.png) <br>Monalisa Sousa<br><mmss@cin.ufpe.br>|![Ricarth](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/rrsl.png) <br>Ricarth Lima<br><rrsl@cin.ufpe.br>|![Warley](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/wss.png) <br>Warley Souza<br><wss@cin.ufpe.br>
 |-|-|-|-|
 
-Para ler mais sobre a Equipe One! nesse projeto, [vá para a página "Time"](https://github.com/ricarthlima/eo-project-es/blob/master/pages/time.md).
+Para ler mais sobre a Equipe One! nesse projeto, [vá para a página "Time"](/docs/paginas/time.md).
 
 ## 4. Do software e suas tecnologias
 As principais tecnologias que pretendemos usar são:
-
 
 ### Leitura de Código de Barras
 É a base do software. Ao receber um código de barras, procurará no Banco de Dados registro desse produto. Se encontrar, devolverá ao usuário informações sobre seus componentes, e uma indiciação se o produto é vegano, se é potencialmente vegano, ou se não é vegano.
