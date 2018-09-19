@@ -1,11 +1,11 @@
 | [Home](https://github.com/ricarthlima/eo-project-es) | [Time](/docs/paginas/time.md) | [Entregas](/docs/entregas_iterations)  | [Banco de Dados](https://github.com/ricarthlima/eo-project-es#5-banco-de-dados) |
-# É vegano? (Nome provisório)
-|  [1. Objetivo](#1-objetivo)
-|  [2. Motivação](#2-motiva%C3%A7%C3%A3o)
-|  [3. Time](#3-equipe-one)
-|  [4. Tecnologias](#4-do-software-e-suas-tecnologias)
-|  [5. Banco de Dados](#5-banco-de-dados)
-|  [6. Next Steps](#6-next-steps)
+|-|-|-|-|
+# É vegano? 
+***Nota:** Nome não definitivo.*  
+  
+![logo](/logo.png)  
+
+##### [1. Objetivo](#1-objetivo) - [2. Motivação](#2-motiva%C3%A7%C3%A3o) - [3. Time](#3-equipe-one) - [4. Tecnologias](#4-do-software-e-suas-tecnologias) - [5. Banco de Dados](#5-banco-de-dados) - [6. Next Steps](#6-next-steps)
 
 ## 1. Objetivo
 Esse repositório é destinado ao desenvolvimento de um SaaS ([Software as a Service](https://blog.deskmanager.com.br/o-que-e-saas/)) para (num primeiro momento) os projetos das disciplinas de Engenharia de Software e Banco de Dados, do curso de Sistemas de Informação do Centro de Informática da Universidade Federal de Pernambuco.
@@ -18,14 +18,12 @@ No Brasil, 14% da população tem uma alimentação vegetariana, [segundo a Soci
 A rigidez pela busca de produtos ou marcas livres de exploração e crueldade com os animais é uma realidade. Assim, o "É vegano?" entra num mercado crescente com **o objetivo de facilitar a vida de quem precisa sempre verificar informações confiáveis sobre a composição do produto e condutas das marcas**. Além disso, temos como ambição ajudar o mundo a trilhar o caminho para um futuro mais ético, onde nenhum animal precise sofrer para nos alimentar, divertir, vestir ou quaisquer outros motivos.
 
 ## 3. Equipe One!
+*Para ler mais sobre a Equipe One! nesse projeto, visite: [Time](/docs/paginas/time.md)*
 
 |![Guilherme](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/gps2.png) <br>Guilherme Prado<br>*Product Owner*<br><gps2@cin.ufpe.br> |![Monalisa](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/mmss.png) <br>Monalisa Sousa<br>*Analísta de Requisitos*<br><mmss@cin.ufpe.br>|![Ricarth](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/rrsl.png) <br>Ricarth Lima<br>*Gerente de Projeto*<br><rrsl@cin.ufpe.br>|![Warley](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/wss.png) <br>Warley Souza<br>*Scrum Master*<br><wss@cin.ufpe.br>
 |-|-|-|-|
 
 **Nós acreditamos que em uma equipe todos são desenvolvedores.**
-
-<br><br>
-Para ler mais sobre a Equipe One! nesse projeto, [vá para a página "Time"](/docs/paginas/time.md).
 
 ## 4. Do software e suas tecnologias
 As principais tecnologias que pretendemos usar são:
@@ -54,7 +52,7 @@ Segue as etapas a serem seguidas:
 (Todas etapas passarão por testes de lógica, redundância e eficiência quando for cabido, e poderão sofrer alterações)
 
 ### 5.1 Descrição informal das entidades e dos relacionamentos
-**Obs.:** Por conta do spin-off que demos no projeto, as seguintes informação ainda serão validadas.
+***Obs.:** Por conta do spin-off que demos no projeto, as seguintes informação ainda serão validadas.*
 
 Cada **usuário** possui um login, que é sua identificação única, e uma senha de acesso. Também possui um email, um nome (composto de primeiro nome e sobrenome), uma foto, e um endereço (composto de número, rua, bairro, cidade, estado e país), e um ou vários telefones. Usuários consultam produtos, e esses produtos ficam salvos no seu histórico. Usuários também podem comentar e avaliar produtos.
 
@@ -66,7 +64,7 @@ Cada **usuário** possui um login, que é sua identificação única, e uma senh
 
 ## 6. Next Steps
 
-### Desenvolvimento:
+### 6.1 Desenvolvimento:
 - Aprofundamento na validação com os usuários, via protótipo e MVP.
 - Histórias do Usuários
 - Protótipo Low-Fi
@@ -75,7 +73,7 @@ Cada **usuário** possui um login, que é sua identificação única, e uma senh
 - Povoamento do banco de dados
 - Testes contínuos
 
-### Ideias:
+### 6.2 Ideias:
 - Funcionar offline;
 - Sugestão de receitas veganas;
 - Sugestão de bons hábitos veganos;
