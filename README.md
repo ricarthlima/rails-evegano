@@ -54,11 +54,22 @@ Segue as etapas a serem seguidas:
 ### 5.1 Descrição informal das entidades e dos relacionamentos
 ***Obs.:** Por conta do spin-off que demos no projeto, as seguintes informação ainda serão validadas.*
 
-Cada **usuário** possui um login, que é sua identificação única, e uma senha de acesso. Também possui um email, um nome (composto de primeiro nome e sobrenome), uma foto, e um endereço (composto de número, rua, bairro, cidade, estado e país), e um ou vários telefones. Usuários consultam produtos, e esses produtos ficam salvos no seu histórico. Usuários também podem comentar e avaliar produtos.
+Cada **usuário** possui um login, que é sua identificação única, e uma senha de acesso. Também possui um email, um nome (composto de primeiro nome e sobrenome), uma foto, e um endereço (composto de número, rua, bairro, cidade, estado e país), e um ou vários telefones.  
+Um usuário pode ser **premium**, caso seja, ele possui uma data de assinatura e uma data de término da assinatura.
 
-**Produtos** possuem um código identificador único, um código de barras, um nome, uma marca, uma imagem descritiva, uma descrição, uma lista de componentes e uma classificação ternária (sim, não, talvez) sobre se é vegano.
+- Usuários consultam produtos. Essa consulta guarda a data que foi realizada;
+- Usuários podem avaliar produto. Essa avaliação guarda a quantidade de estrelas dadas (INT 0-5), o comentário deixado e a data de realização;
+- Usuários podem avalair marcas da mesma forma.
 
-**Marcas** possuem um código identificador único, nome, lista de nomes alternativos, uma breve descrição, e sua classificação sobre se ela é vegana ou não, diferente do dos produtos, ela é binária. Uma marca pode conter outra marca, e isso determina a classificação vegana.
+**Produtos** possuem um código identificador único, um código de barras, um nome, uma imagem descritiva, uma descrição, e uma classificação ternária (sim, não, talvez) sobre se é vegano.
+
+- Todo produto possui também uma (e no máximo uma) marca.
+- Todo produto possui um ou mais componentes.
+- Todo produto possui um histórico de preços (esse que só existem por pertencerem a um produto) que registra o preço, a data do registro desse preço e as coordenadas geográficas de onde esse preço foi registrado.
+
+**Marcas** possuem um código identificador único, nome, lista de nomes alternativos, uma breve descrição, e sua classificação sobre se ela é vegana ou não, diferente do dos produtos, ela é binária. 
+
+- Uma marca pode conter outra marca, e isso determina a classificação como vegana.
 
 **Componentes** possuem um código identificador único, código europeu, código INS, nome, lista de nomes alternativos, uma categoria, uma descrição e uma classificação binária sobre se é vegano ou não.
 
