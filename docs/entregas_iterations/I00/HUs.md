@@ -1,4 +1,16 @@
 # Histórias do usuário
+O desenvolvimento dessas histórias do usuário foi baseada em um aprofundamento e conversas para entendimento do público alvo. Além disso foram usadas pesquisas de opinião para embasar essas decisões. O modelo de HU utiliziado foi o da Connextra (2000).
+
+## Histórias escolhida
+
+||
+|---|
+|**Como um** novo usuário do sistema, **para que eu** não tenha dificuldades em aprender a usá-lo, **quero** que ele tenha as funcionalidades principais já na primeira tela. (Intuitivo)|
+|**Como um** novo usuário, **para que eu** possa ter detalhes relevantes (nome, marca, reputação da marca, classificação vegana, motivo, componentes, componentes não veganos em destaque) sobre os produtos que eu consumo e perder menos tempo nas compras, **eu quero** identificar se o produto que está na prateleira do supermercado é vegano, não é, ou talvez seja (questões sobre reputação da marca) usando a câmera do meu celular.|
+|**Como um** chef de um restaurante vegano, **para que eu** possa ver informações detalhadas da justificativa da classificação vegana dos produtos, **eu quero** um botão que me leve para uma tela essa informações.| 
+|**Como uma** mãe de uma filha vegana, **para que eu** possa ver as marca/empresas "veganas", **eu quero** poder consultar diretamente as informações da marca em até 3 cliques.|
+|**Como um** usuário vegano, **para que eu** possa saber sempre que meus produtos favoritos abaixarem de preço em locais próximos a mim , **eu quero** receber uma notificação com o nome do produto, preço do produto e a distância de mim.| 
+
 
 ## Primeiro Brainstorm
 
