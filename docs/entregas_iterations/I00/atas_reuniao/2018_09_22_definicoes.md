@@ -21,7 +21,8 @@ Dentre as 16 que tinhamos gerado na nossa dinâmica precisavamos decidir por pel
 Definição de papeis.
 
 ## Registro das Decisões
-Decidimos nossas que nossas 5 histórias do usuário iniciais serão:
+Decidimos nossas que nossas 5 histórias do usuário iniciais serão:  
+
 ||
 |---|
 |**Como um** novo usuário do sistema, **para que eu** não tenha dificuldades em aprender a usá-lo, **quero** que ele tenha as funcionalidades principais já na primeira tela. (Intuitivo)|
