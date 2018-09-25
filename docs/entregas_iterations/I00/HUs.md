@@ -3,7 +3,7 @@ O desenvolvimento dessas histórias do usuário foi baseada em um aprofundamento
 
 ## Histórias escolhida
 
-||
+|Principais|
 |---|
 |**Como um** novo usuário do sistema, **para que eu** não tenha dificuldades em aprender a usá-lo, **quero** que ele tenha as funcionalidades principais já na primeira tela. (Intuitivo)|
 |**Como um** novo usuário, **para que eu** possa ter detalhes relevantes (nome, marca, reputação da marca, classificação vegana, motivo, componentes, componentes não veganos em destaque) sobre os produtos que eu consumo e perder menos tempo nas compras, **eu quero** identificar se o produto que está na prateleira do supermercado é vegano, não é, ou talvez seja (questões sobre reputação da marca) usando a câmera do meu celular.|
@@ -11,6 +11,11 @@ O desenvolvimento dessas histórias do usuário foi baseada em um aprofundamento
 |**Como uma** mãe de uma filha vegana, **para que eu** possa ver as marca/empresas "veganas", **eu quero** poder consultar diretamente as informações da marca em até 3 cliques.|
 |**Como um** usuário vegano, **para que eu** possa saber sempre que meus produtos favoritos abaixarem de preço em locais próximos a mim , **eu quero** receber uma notificação com o nome do produto, preço do produto e a distância de mim.| 
 
+|Outras|
+|------|
+|**Como novo** usuario, **para que** eu possa me registrar no sistema, **eu quero** não precisar inserir nenhuma informação manualmente.|
+|**Como um usuário** ovolactovegetariano, **para que** o sistema de recomende produtos menos restritos, **eu quero** informar minhas características alimentares com 1 clique apenas uma vez.|
+|**Como usuário** que nao possui contas em serviços como Google ou Facebook, **para que eu** possa me registrar, **eu quero* que esse registro não demore mais de 30 segundos para ser preenchido.|
 
 ## Primeiro Brainstorm
 
