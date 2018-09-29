@@ -1,7 +1,7 @@
 # Histórias do usuário
 O desenvolvimento dessas histórias do usuário foi baseada em um aprofundamento e conversas para entendimento do público alvo. Além disso foram usadas pesquisas de opinião para embasar essas decisões. O modelo de HU utiliziado foi o da Connextra (2000).
 
-## Histórias escolhida
+## Histórias escolhidas
 
 |Principais|
 |---|
@@ -15,7 +15,7 @@ O desenvolvimento dessas histórias do usuário foi baseada em um aprofundamento
 |------|
 |**Como novo** usuario, **para que** eu possa me registrar no sistema, **eu quero** não precisar inserir nenhuma informação manualmente.|
 |**Como um usuário** ovolactovegetariano, **para que** o sistema de recomende produtos menos restritos, **eu quero** informar minhas características alimentares com 1 clique apenas uma vez.|
-|**Como usuário** que nao possui contas em serviços como Google ou Facebook, **para que eu** possa me registrar, **eu quero* que esse registro não demore mais de 30 segundos para ser preenchido.|
+|**Como usuário** que nao possui contas em serviços como Google ou Facebook, **para que eu** possa me registrar, **eu quero** que esse registro não demore mais de 30 segundos para ser preenchido.|
 
 ## Primeiro Brainstorm
 
