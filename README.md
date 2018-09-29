@@ -54,7 +54,7 @@ Segue as etapas a serem seguidas:
 ### 5.1 Descrição informal das entidades e dos relacionamentos
 ***Obs.:** Por conta do spin-off que demos no projeto, as seguintes informação ainda serão validadas.*
 
-Cada **usuário** possui um login, que é sua identificação única, e uma senha de acesso. Também possui um email, um nome (composto de primeiro nome e sobrenome), uma foto, e um endereço (composto de número, rua, bairro, cidade, estado e país), e um ou vários telefones.  
+Cada **usuário** possui um login, que é sua identificação única, e uma senha de acesso. Também possui um email, um nome (composto de primeiro nome e sobrenome), uma foto, e um endereço (composto de número, rua, bairro, cidade, estado e país), e um ou vários telefones. Usuários também possuem a informação sobre o tipo de filosofia ele segue, isso quer dizer que ele varia entre "vegetariano", que compram **produtos alimentícios livres de componentes de origem animal**, "lactovegetariano" que são como os vegetarianos porém **eles consomem leite e derivados**, o "ovolactovegetariano" que são como os lactovegetarianos mas **consomem também ovo e derivados**, e finalmente os "veganos" que são tão restritivos quanto os vegetarianos, mas também aplicam essa filosofia para **produtos não-alimentícios**, e **levam em consideração a reputação e práticas das marcas que produzem o produto**.
 Um usuário pode ser **premium**, caso seja, ele possui uma data de assinatura e uma data de término da assinatura.
 
 - Usuários consultam produtos. Essa consulta guarda a data que foi realizada;
@@ -76,9 +76,9 @@ Um usuário pode ser **premium**, caso seja, ele possui uma data de assinatura e
 ## 6. Next Steps
 
 ### 6.1 Desenvolvimento:
+- ~~Histórias do Usuários iniciais~~
+- ~~Protótipo Low-Fi iniciais~~
 - Aprofundamento na validação com os usuários, via protótipo e MVP.
-- Histórias do Usuários
-- Protótipo Low-Fi
 - Protótipo Hi-Fi
 - Início do desenvolvimento
 - Povoamento do banco de dados
