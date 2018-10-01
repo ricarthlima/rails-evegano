@@ -7,7 +7,7 @@ Pasta destinada às entregas da cadeira IF977 - Engenharia de Software.
 Elas estão dividas em:
 
 - [Iteração Zero](https://github.com/ricarthlima/eo-project-es/tree/master/docs/entregas_iterations/I00) (27/08/2018 -> 24/09/2018)
-- Primeira Iteração
+- [Primeira Iteração](https://github.com/ricarthlima/eo-project-es/tree/master/docs/entregas_iterations/I01)(24/09/2018 -> 08/10/2018)
 - Segunda Iteração
 - Terceira Iteração
 - Quarta Iteração
