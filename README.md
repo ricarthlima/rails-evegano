@@ -18,9 +18,9 @@ No Brasil, 14% da população tem uma alimentação vegetariana, [segundo a Soci
 A rigidez pela busca de produtos ou marcas livres de exploração e crueldade com os animais é uma realidade. Assim, o "É vegano?" entra num mercado crescente com **o objetivo de facilitar a vida de quem precisa sempre verificar informações confiáveis sobre a composição do produto e condutas das marcas**. Além disso, temos como ambição ajudar o mundo a trilhar o caminho para um futuro mais ético, onde nenhum animal precise sofrer para nos alimentar, divertir, vestir ou quaisquer outros motivos.
 
 ## 3. Equipe One!
-*Para ler mais sobre a Equipe One! nesse projeto, visite: [Time](/docs/paginas/time.md)*
+*Para ler mais sobre a "Equipe One!" nesse projeto, visite: [Time](/docs/paginas/time.md)*
 
-|![Guilherme](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/gps2.png) <br>Guilherme Prado<br>*Product Owner*<br><gps2@cin.ufpe.br> |![Monalisa](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/mmss.png) <br>Monalisa Sousa<br>*Analísta de Requisitos*<br><mmss@cin.ufpe.br>|![Ricarth](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/rrsl.png) <br>Ricarth Lima<br>*Gerente de Projeto*<br><rrsl@cin.ufpe.br>|![Warley](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/wss.png) <br>Warley Souza<br>*Scrum Master*<br><wss@cin.ufpe.br>
+|![Guilherme](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/gps2.png) <br>Guilherme Prado<br>*Analista de testes*<br><gps2@cin.ufpe.br> |![Monalisa](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/mmss.png) <br>Monalisa Sousa<br>*Analista de Requisitos*<br><mmss@cin.ufpe.br>|![Ricarth](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/rrsl.png) <br>Ricarth Lima<br>*Gerente de Projeto/Scrum Master*<br><rrsl@cin.ufpe.br>|![Warley](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/wss.png) <br>Warley Souza<br>*Product Owner*<br><wss@cin.ufpe.br>
 |-|-|-|-|
 
 **Nós acreditamos que em uma equipe todos são desenvolvedores.**
@@ -39,7 +39,7 @@ Na implementação da sugestão de ofertas perto do cliente, usaremos também **
 
 ## 5. Banco de Dados
 As entregas relacionadas à cadeira IF976 - Banco de Dados serão feitas pelo Google Drive que pode ser acessado através desse [link](https://goo.gl/u5o5YJ).  
-**Status:** Por conta do spin-off que demos no projeto, as etapas a seguir foram refeitas. 
+**Status:** Por conta do spin-off que demos no projeto, as etapas a seguir que estão tachadas foram refeitas. 
 
 Segue as etapas a serem seguidas:
 
