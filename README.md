@@ -1,8 +1,7 @@
 | [Home](https://github.com/ricarthlima/eo-project-es) | [Time](/docs/paginas/time.md) | [Entregas](/docs/entregas_iterations)  | [Banco de Dados](https://github.com/ricarthlima/eo-project-es#5-banco-de-dados) |
 |-|-|-|-|
 # É vegano? 
-***Nota:** Nome não definitivo.*  
-  
+
 ![logo](/logo.png)  
 
 ##### [1. Objetivo](#1-objetivo) - [2. Motivação](#2-motiva%C3%A7%C3%A3o) - [3. Time](#3-equipe-one) - [4. Tecnologias](#4-do-software-e-suas-tecnologias) - [5. Banco de Dados](#5-banco-de-dados) - [6. Next Steps](#6-next-steps)
