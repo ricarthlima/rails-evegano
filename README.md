@@ -20,7 +20,7 @@ A rigidez pela busca de produtos ou marcas livres de exploração e crueldade co
 ## 3. Equipe One!
 *Para ler mais sobre a "Equipe One!" nesse projeto, visite: [Time](/docs/paginas/time.md)*
 
-|![Guilherme](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/gps2.png) <br>Guilherme Prado<br>*Analista de testes*<br><gps2@cin.ufpe.br> |![Monalisa](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/mmss.png) <br>Monalisa Sousa<br>*Analista de Requisitos*<br><mmss@cin.ufpe.br>|![Ricarth](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/rrsl.png) <br>Ricarth Lima<br>*Gerente de Projeto/Scrum Master*<br><rrsl@cin.ufpe.br>|![Warley](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/wss.png) <br>Warley Souza<br>*Product Owner*<br><wss@cin.ufpe.br>
+|![Guilherme](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/gps2.png) <br>Guilherme Prado<br>*Analista de Testes*<br><gps2@cin.ufpe.br> |![Monalisa](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/mmss.png) <br>Monalisa Sousa<br>*Analista de Requisitos*<br><mmss@cin.ufpe.br>|![Ricarth](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/rrsl.png) <br>Ricarth Lima<br>*Gerente de Projeto/Scrum Master*<br><rrsl@cin.ufpe.br>|![Warley](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/paginas/imagens/wss.png) <br>Warley Souza<br>*Product Owner*<br><wss@cin.ufpe.br>
 |-|-|-|-|
 
 **Nós acreditamos que em uma equipe todos são desenvolvedores.**
