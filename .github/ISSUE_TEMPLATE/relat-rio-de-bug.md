@@ -7,7 +7,7 @@ about: Criar um relatório de um bug
 **Descreva o bug**
 Uma limpa de concisa descrição do bug.
 
-**To Reproduce**
+**Para reproduzir**
 Passos para reproduzir o comportamento
 1. Vá para '...'
 2. Clique em '....'
