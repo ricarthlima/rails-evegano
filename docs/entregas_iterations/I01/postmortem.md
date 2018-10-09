@@ -10,7 +10,8 @@
 |--------------------|:-------:|:------:|:-----:|:----:|:-----------:|
 |Reuniões todas seg, qua, sex|X|X|X|X||
 |Definição (definitiva) de papéis|X|X|X|X||
-|**Postmortem da Iteração 1**|||X|||
+|Criação e atualização de documento de definições para a equipe|X|X|X|X||
+|**Postmortem da Iteração 1**|X|X|X|X||
 
 
 ### Interação com Cliente
