@@ -78,11 +78,11 @@ Um usuário pode ser **premium**, caso seja, ele possui uma data de assinatura e
 ### 6.1 Desenvolvimento:
 - ~~Histórias do Usuários iniciais~~
 - ~~Protótipo Low-Fi iniciais~~
-- Aprofundamento na validação com os usuários, via protótipo e MVP.
+- ~~Início do desenvolvimento~~
+- Criação dos testes
 - Protótipo Hi-Fi
-- Início do desenvolvimento
+- Aprofundamento na validação com os usuários, via protótipo e MVP.
 - Povoamento do banco de dados
-- Testes contínuos
 
 ### 6.2 Ideias:
 - Funcionar offline;
