@@ -8,9 +8,9 @@
 ### Conceito, gestão e negócio
 |O que foi planejado?|Guilherme|Monalisa|Ricarth|Warley|Não foi feito|
 |--------------------|:-------:|:------:|:-----:|:----:|:-----------:|
-|**Postmortem da iteração 0**|||X|||
 |Reuniões todas seg, qua, sex|X|X|X|X||
 |Definição (definitiva) de papéis|X|X|X|X||
+|**Postmortem da Iteração 1**|||X|||
 
 
 ### Interação com Cliente
@@ -18,8 +18,8 @@
 |--------------------|:-------:|:------:|:-----:|:----:|:-----------:|
 |Encontrar um cliente participador||||X||
 |Reunião com o cliente participador||||X||
+|Valicação das HUs da I00 com o cliente||||X||
 |Criar HUs junto ao cliente|X|X|X|X||
-
 
 ### Repositório GitHub
 |O que foi planejado?|Guilherme|Monalisa|Ricarth|Warley|Não foi feito|
@@ -29,8 +29,14 @@
 ### Desenvolvimento
 |O que foi planejado?|Guilherme|Monalisa|Ricarth|Warley|Não foi feito|
 |--------------------|:-------:|:------:|:-----:|:----:|:-----------:|
-|Programação em par|||||X|
+|Nivelar o conhecimento de Ruby do time|||||X|
+|Programação em par||X|X|||
+|Aprofundar o entendimento sobre testes|||||X|
+|Criar os testes necessários|||||X|
+|Instalação do Rails|X|X|X|X||
 |Início do desenvolvimento|X|X|X|X||
+|Aprendizagem e utilização do Heroku|X|X|X|X||
+|Deploy no Heroku|||X|||
 
 ## O que está planejado para a próxima iteração?
 |Objetivo|Encarregado|Como faremos?|
