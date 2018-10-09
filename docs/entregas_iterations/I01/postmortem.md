@@ -9,18 +9,18 @@
 |O que foi planejado?|Guilherme|Monalisa|Ricarth|Warley|Não foi feito|
 |--------------------|:-------:|:------:|:-----:|:----:|:-----------:|
 |||||||
-|**Postmortem da iteração 0**||||||
+|**Postmortem da iteração 0**|||X|||
 
 ### Interação com Cliente
 |O que foi planejado?|Guilherme|Monalisa|Ricarth|Warley|Não foi feito|
 |--------------------|:-------:|:------:|:-----:|:----:|:-----------:|
-|Encontrar um cliente participador||||||
+|Encontrar um cliente participador||||X||
 
 
 ### Repositório GitHub
 |O que foi planejado?|Guilherme|Monalisa|Ricarth|Warley|Não foi feito|
 |--------------------|:-------:|:------:|:-----:|:----:|:-----------:|
-|Construção do README||||||
+|Construção do README|X|X|X|X||
 
 ### Desenvolvimento
 |O que foi planejado?|Guilherme|Monalisa|Ricarth|Warley|Não foi feito|
