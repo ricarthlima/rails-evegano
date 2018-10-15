@@ -1,10 +1,10 @@
 # Manual de Uso da Identidade Visual
 
 ## Fontes
-### Títulos e destaques
+### Títulos 
 Mali [(Google Fonts)](https://fonts.google.com/?selection.family=Mali)
 
-### Textos em geral
+### Textos em geral e destaques
 Source Sans Pro [(Google Fonts)](https://fonts.google.com/?selection.family=Source+Sans+Pro)
 
 ## Paleta de Cores
