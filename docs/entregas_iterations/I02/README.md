@@ -7,6 +7,7 @@
 - [Storyboards - Parte 01](https://github.com/ricarthlima/eo-project-es/blob/master/docs/entregas_iterations/I02/SB01_1.jpg)
 - [Storyboards - Parte 02](https://github.com/ricarthlima/eo-project-es/blob/master/docs/entregas_iterations/I02/SB01_2.jpg)
 - [ID Visual e Logo](https://github.com/ricarthlima/eo-project-es/tree/master/docs/id_visual)
+- [Protótipo Hi-Fi](https://github.com/ricarthlima/eo-project-es/blob/master/docs/entregas_iterations/I02/mockup_prototipo_hi-fi)
 
 # Entregas
 
