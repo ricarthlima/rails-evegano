@@ -80,9 +80,8 @@ Um usuário pode ser **premium**, caso seja, ele possui uma data de assinatura e
 - ~~Protótipo Low-Fi iniciais~~
 - ~~Início do desenvolvimento~~
 - Criação dos testes
-- Protótipo Hi-Fi
+- ~~Protótipo Hi-Fi~~
 - Aprofundamento na validação com os usuários, via protótipo e MVP.
-- Povoamento do banco de dados
 
 ### 6.2 Ideias:
 - Funcionar offline;
