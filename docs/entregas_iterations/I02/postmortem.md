@@ -35,7 +35,8 @@
 |Objetivo|Encarregado|Como faremos?|
 |--------|:---------:|-------------|
 |Continuar o desenvolvimento|Todos|Aprofundando mais os conhecimentos em ruby e rails|
-|Criar os testes necessários|Guilherme|Criar em RSPEC e Cucumber|
+|Criar os testes necessários|Guilherme|Criar em RSPEC|
+|Criar os testes necessários|Monalisa|Criar em Cucumber|
 
 ## Lições aprendidas
 - Precisamos ficar atentos aos prazos e datas
