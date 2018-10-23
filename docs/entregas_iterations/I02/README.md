@@ -12,3 +12,4 @@
 # Entregas
 
 - [I02D01](https://github.com/ricarthlima/eo-project-es/tree/master/docs/entregas_iterations/I02)
+- [Postmortem](https://github.com/ricarthlima/eo-project-es/blob/master/docs/entregas_iterations/I02/postmortem.md)
