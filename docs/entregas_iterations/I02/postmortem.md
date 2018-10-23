@@ -27,7 +27,9 @@
 |--------------------|:-------:|:------:|:-----:|:----:|:-----------:|
 |Nivelar o conhecimento de Ruby do time|||||X|
 |Aprofundar o entendimento sobre testes|||||X|
-|Criar os testes necessários|||||X|
+|Configurar app para uso do Cucumber|X|X|X|X||
+|Criar primeira feature||||X||
+|Testes com TDD|||||X|
 |Criação do storyboard|X|X|X|X||
 |Criação do mockup Hi-Fi||X|X|||
 
@@ -39,8 +41,14 @@
 |Criar os testes necessários|Monalisa|Criar em Cucumber|
 
 ## Lições aprendidas
-- Precisamos ficar atentos aos prazos e datas
-- Precisamos nos desenvolver mais nas questões relacionadas ao desenvolvimento
+- Precisamos ficar atentos aos prazos e datas;
+- Precisamos nos desenvolver mais nas questões relacionadas ao desenvolvimento;
+- Ao criar uma nova maquina virtual no C9, instalar novamente o Rails atualizado, e instalar (e setar) a versão correta do ruby;
+- A relação entre postgresql, cloud9 e rails pode ser mais complicada do que a gente imaginava. Ao fazer um rake:migrate nos deparamos com um erro de conexão, que foi resolvido com a ajuda dos seguintes links:
+  - **https://community.c9.io/t/setting-up-postgresql/1573**
+  - **https://community.c9.io/t/how-do-i-set-up-postgresql-on-c9-for-my-rails-app/2614**
+  - https://stackoverflow.com/questions/26545746/cloud9-postgres/29379969#29379969
+  - https://www.digitalocean.com/community/tutorials/how-to-setup-ruby-on-rails-with-postgres
 
 ## Referências
 - [The Project Postmortem: An Essential Tool for the Savvy Developer](https://www.developer.com/design/article.php/3637441)
