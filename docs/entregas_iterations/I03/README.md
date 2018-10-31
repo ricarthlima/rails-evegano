@@ -1,6 +1,6 @@
 # Iteration 03
 
-## Deadlines
-
-- Deadline 1 - **07/11** - Continuação do desenvolvimento
-- Deadline 2 - **14/11** - Criação de testes; Modelo ER; Postmortem da iteração 3
+## Entregas
+## Documentos
+- [Backlog de desenvolvimento;](https://docs.google.com/spreadsheets/d/15OTisLVk0JriY4PNo446hDKpV-mkyFO-Wu7jnc1-Lpw/edit?usp=sharing)
+- [Arquivos de estudo;](https://drive.google.com/drive/folders/1QCKQ4nIoWnaTcPAg-H_qGRhriaFVaNOS?usp=sharing)
