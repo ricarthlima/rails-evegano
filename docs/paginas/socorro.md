@@ -9,6 +9,8 @@ Algo já não funcionou no passado! Como a gente fez para resolver mesmo?!
 - Criar nova máquina no C9, clonando o repositório.
 - Atualizar Ruby `rvm install ruby 2.5.1`
 - Atualizar/Instalar Rails `gem install rails --no-ri --no-rdoc`
+- Atualizar o Bundler `gem install bundler`
+- `bundle install`
 - Seguir passos para iniciar PostgreSQL numa nova máquina
 
 ## 2. Iniciar PostgreSQL numa nova máquina
@@ -35,6 +37,8 @@ Algo já não funcionou no passado! Como a gente fez para resolver mesmo?!
   - `cd ..`
   - `rails new workspace --database=postgresql`
   - `cd workspace`
+- Atualizar o Bundler `gem install bundler`
+- `bundle install`
 - [TRABALHO EM RAILS]
 - Push para GitHub
 - Conexão de deploy na plataforma do Heroku
