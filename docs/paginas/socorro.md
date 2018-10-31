@@ -50,4 +50,9 @@ text
 integer
 decimal
 
+## 5. Testar aplicação no Cloud9
+- Rodar no terminal o comando `rails server -p $PORT -b $IP`
+- Se tudo estiver certo o servidor deve começar a rodar
+- Acesse-o em: http://<nome_da_maquina>-<username_dono_maquina>.c9users.io/
+- Exemplo: http://curso-alura-ricarthlima.c9users.io/
 
