@@ -1,35 +1,24 @@
-# PostgreSQL. Versions 9.1 and up are supported.
-#
-# Install the pg driver:
-#   gem install pg
-# On OS X with Homebrew:
-#   gem install pg -- --with-pg-config=/usr/local/bin/pg_config
-# On OS X with MacPorts:
-#   gem install pg -- --with-pg-config=/opt/local/lib/postgresql84/bin/pg_config
-# On Windows:
-#   gem install pg
-#       Choose the win32 build.
-#       Install PostgreSQL and put its /bin directory on your path.
-#
-# Configure Using Gemfile
-# gem 'pg'
-#
+# Arquivo de configuração do BD
+# Para criar banco use rake db:create
+
+#-- CONFIGURAÇÕES "PADRÃO"
 default: &default
   adapter: postgresql
-  encoding: unicode
-  # For details on connection pooling, see Rails configuration guide
+  encoding: SQL_ASCII
+  # Define a quantidade de conexões simultâneas no banco, para ler mais:
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
+#-- BANCO "DESENVOLVIMENTO"
 development:
   <<: *default
-  database: evegano
-  
-  adapter: postgresql
-  encoding: SQL_ASCII
-  pool: 5
-  username: ubuntu
-  password: equipeone11
+  database: dev_db_evegano  # Nome do banco
+  adapter: postgresql       # SQL Adapter usado
+  encoding: SQL_ASCII       # Codificação usada
+  pool: 5                   # Número de conexões simultâneas
+    
+  #username: ubuntu
+  #password: equipeone11
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -59,30 +48,38 @@ development:
   #min_messages: notice
 
 
-# Warning: The database defined as "test" will be erased and
-# re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
+#-- BANCO DE TESTE
+# ATENÇÃO: O banco de dados definido como "teste" será apagado e
+# regenerado da sua database de desenvolvimento sompre que você rodar um "rake".
+# Nunca use esse banco como m mesmo de "desenvolvimento" ou "produção".
 test: &test
   <<: *default
 
-  database: evegano
+  database: test_db_evegano
   adapter: postgresql
   encoding: SQL_ASCII
   pool: 5
-  username: ubuntu
-  password: equipeone11
+  #username: ubuntu
+  #password: equipeone11
   
-# As with config/secrets.yml, you never want to store sensitive information,
-# like your database password, in your source code. If your source code is
-# ever seen by anyone, they now have access to your database.
+# Com o config/secrets.yml, você não guarada informações sensíveis,
+# como a senha do teu banco de dados no código fonte. Se em algum momento teu
+# código for visto pro qualquer um, você perdeu sua segurança.
 #
-# Instead, provide the password as a unix environment variable when you boot
-# the app. Read http://guides.rubyonrails.org/configuring.html#configuring-a-database
-# for a full rundown on how to provide these environment variables in a
-# production deployment.
+# Porém, o próprio rails não saber que no Rails 5.2.1 o secrets.yml foi descontinuado
+# e substituido por uns lances de credenciais. Lê mais sobre isso aqui:
+# https://www.engineyard.com/blog/rails-encrypted-credentials-on-rails-5.2
 #
-# On Heroku and other platform providers, you may have a full connection URL
-# available as an environment variable. For example:
+
+#-- BANCO DE PRODUÇÃO (HEROKU)
+production:
+  <<: *default
+  database: evegano_production
+  username: workspace
+  password: <%= ENV['WORKSPACE_DATABASE_PASSWORD'] %>
+  
+# No Heroku ou outras plataformas provedoreas, voceê pode acessar uma URL
+# dispoível numa variavel do ambiente. Por exemplo:
 #
 #   DATABASE_URL="postgres://myuser:mypass@localhost/somedatabase"
 #
@@ -91,10 +88,7 @@ test: &test
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: workspace_production
-  username: workspace
-  password: <%= ENV['WORKSPACE_DATABASE_PASSWORD'] %>
+  
+#-- BANCO DO CUCUMBER
 cucumber:
   <<: *test
