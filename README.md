@@ -76,7 +76,7 @@ Um usuário pode ser **premium**, caso seja, ele possui uma data de assinatura e
 ## 6. Next Steps
 
 ### 6.1 Desenvolvimento:
-- ~~Histórias do Usuários iniciais~~
+- ~~Histórias do usuários iniciais~~
 - ~~Protótipo Low-Fi iniciais~~
 - ~~Início do desenvolvimento~~
 - Criação dos testes
