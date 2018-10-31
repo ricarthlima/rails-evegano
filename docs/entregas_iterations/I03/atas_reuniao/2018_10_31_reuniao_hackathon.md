@@ -1,40 +1,38 @@
-# Ata de Reunião (Sprint)
-**Escopo do Sprint**:  10/10/2018 --> 22/10/2018
+# Ata de Reunião ("Hackathon")
 
 ## Informações
-**Data:** 22/10/2018  
-**Horário:** 15:30 até 17    
+**Data:** 31/10/2018  
+**Horário:** 10:00 - 17:00  
 **Local:** Bloco E  
-**Participantes:** Monalisa Sousa, Guilherme Prado, Ricarth Lima e Warley Souza     
-
+**Participantes:** Monalisa Sousa, Guilherme Prado, Ricarth Lima e Warley Souza    
 
 ## Pauta da Reunião
-Nos reunimos para conversar sobre as entregas do segundo prazo final da iteração dois e do inicio definitivo do desenvolvimento. Dentre isso, as atividades seriam: Definição de reunião de desenvolvimento para sábado, Conversa com monitor Lerrisson sobre desenvolvimento, Tarefas para cada membro do time.
+||Guilherme|Monalisa|Warley|
+|:-:|:-----|:-------|:-----|
+|**Estudo**|Pesquisar sobre API de autenticação do Google. (Para Rails)|Pesquisar sobre API de autenticação do Facebook. (Para Rails)| Pesquisar sobre gems de autenticação|
+|**Treino**|Você consegue fazer um app rails que receba informações da API do Google?|Você consegue fazer um app rails que receba informações da API do Facebook?| Você consegue fazer um app rails que funcione com uma gem de autenticação?
+|**Coding**|HU7|HU7|HU7|
 
 ## Discussões Abordadas
 
-### Definição de reunião de desenvolvimento para sábado
-### Conversa com monitor Lerrisson sobre desenvolvimento
-### Tarefas definidas para cada membro do time
-### Postmortem da Iteração 2
+### 10:00 - 10:30 | Pré-Reunião: Preparação inicial
+Foi definido o que seria feito durante a reunião, tempo para configuração das maquinas, e outros apontamentos.
+### 10:30 - 11:30 | Cumprimento das tarefas de "Estudo".
+Cada um estudou o que lhe foi delegado e tinha como objetivo gerar um documento (ou apresentação) à ser apresentado para os demais integrantes entenderem o que foi feito.
+### 11:30 - 12:30 | Desenvolvimento das tarefas de "Treino".
+O objetivo foi codar um exemplo da funcionalidade onde o estado de Pronto seria rodando em máquina C9 capaz de demonstrar funcionalidade.
+### 14:00 - 16:00 | Coding
+Implementar o que foi aprendido no nosso App.
+
+### 16:00 - 17:00 | Encerra-se o coding e incia-se discussões sobre a Apresentação 02.
+Demos últimos retoques na apresentação que se deu no mesmo dia.
+
 
 ## Registro das Decisões
-- Reunião presencial para inicio do desenvolvimento no sábado (27/10/2018)
-- Tarefa para cada um terminar um curso de Rails(Alura ou CodeAcademy) até sábado, afim de nivelamento para o desenvolvimento
-- Tarefa para cada um estudar sobre testes até sábado
+Ficou decidido que teremos outra reunião dia 05/10.
 
 ## Compromissos
-- **Ricarth:**
-  - Estruturar diagrama da apresentação
-- **Warley**:
-  - Complementar e estudar a apresentação.
-- **Monalisa**:
-   - Complementar e estudar a apresentação.
-- **Guilherme**:
-   - Complementar e estudar a apresentação.
-   - Postmortem
-- **Todos:**
-  - Tarefas descritas no registro de decisões
-- **Próximas reuniões**:
-  - Segunda, quarta e sexta; Bloco E, 16:00 até as 17:00.
-  - Reunião sábado.
+
+-**Próximas reuniões**:
+  - Segunda, quarta e sexta; Bloco E, 16:00~17:00.
+  - 05/10, Sala E201, Bloco E, 10:00~17:00.
