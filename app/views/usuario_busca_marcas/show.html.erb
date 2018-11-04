@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @usuario_busca_marca.usuario %>
+</p>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @usuario_busca_marca.marca %>
+</p>
+
+<p>
+  <strong>Dt busca:</strong>
+  <%= @usuario_busca_marca.dt_busca %>
+</p>
+
+<%= link_to 'Edit', edit_usuario_busca_marca_path(@usuario_busca_marca) %> |
+<%= link_to 'Back', usuario_busca_marcas_path %>

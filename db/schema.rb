@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_04_211022) do
+ActiveRecord::Schema.define(version: 2018_11_04_211230) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -82,6 +82,16 @@ ActiveRecord::Schema.define(version: 2018_11_04_211022) do
     t.index ["usuario_id"], name: "index_usuario_busca_componentes_on_usuario_id"
   end
 
+  create_table "usuario_busca_marcas", force: :cascade do |t|
+    t.bigint "usuario_id"
+    t.bigint "marca_id"
+    t.string "dt_busca"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["marca_id"], name: "index_usuario_busca_marcas_on_marca_id"
+    t.index ["usuario_id"], name: "index_usuario_busca_marcas_on_usuario_id"
+  end
+
   create_table "usuario_busca_produtos", force: :cascade do |t|
     t.bigint "usuario_id"
     t.bigint "produto_id"
@@ -117,6 +127,8 @@ ActiveRecord::Schema.define(version: 2018_11_04_211022) do
   add_foreign_key "produtos", "marcas"
   add_foreign_key "usuario_busca_componentes", "componentes"
   add_foreign_key "usuario_busca_componentes", "usuarios"
+  add_foreign_key "usuario_busca_marcas", "marcas"
+  add_foreign_key "usuario_busca_marcas", "usuarios"
   add_foreign_key "usuario_busca_produtos", "produtos"
   add_foreign_key "usuario_busca_produtos", "usuarios"
 end
