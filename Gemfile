@@ -50,6 +50,7 @@ gem 'devise'
 
 gem 'twitter-bootstrap-rails'
 
+gem 'therubyracer'
 
 # GEMs de Desenvolvimento e Teste
 group :development, :test do
