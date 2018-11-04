@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Usuario Avalia Marcas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Usuario</th>
+      <th>Marca</th>
+      <th>Estrelas</th>
+      <th>Comentario</th>
+      <th>Dt avaliacao</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @usuario_avalia_marcas.each do |usuario_avalia_marca| %>
+      <tr>
+        <td><%= usuario_avalia_marca.usuario %></td>
+        <td><%= usuario_avalia_marca.marca %></td>
+        <td><%= usuario_avalia_marca.estrelas %></td>
+        <td><%= usuario_avalia_marca.comentario %></td>
+        <td><%= usuario_avalia_marca.dt_avaliacao %></td>
+        <td><%= link_to 'Show', usuario_avalia_marca %></td>
+        <td><%= link_to 'Edit', edit_usuario_avalia_marca_path(usuario_avalia_marca) %></td>
+        <td><%= link_to 'Destroy', usuario_avalia_marca, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Usuario Avalia Marca', new_usuario_avalia_marca_path %>

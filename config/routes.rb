@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :usuario_avalia_marcas
+  resources :usuario_avalia_produtos
   resources :usuario_busca_marcas
   resources :usuario_busca_produtos
   resources :usuario_busca_componentes

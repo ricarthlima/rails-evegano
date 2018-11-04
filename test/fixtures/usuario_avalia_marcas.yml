@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  usuario: one
+  marca: one
+  estrelas: 1
+  comentario: MyText
+  dt_avaliacao: MyString
+
+two:
+  usuario: two
+  marca: two
+  estrelas: 1
+  comentario: MyText
+  dt_avaliacao: MyString

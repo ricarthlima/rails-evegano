@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_04_211230) do
+ActiveRecord::Schema.define(version: 2018_11_04_211808) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -72,6 +72,30 @@ ActiveRecord::Schema.define(version: 2018_11_04_211230) do
     t.index ["marca_id"], name: "index_produtos_on_marca_id"
   end
 
+  create_table "usuario_avalia_marcas", force: :cascade do |t|
+    t.bigint "usuario_id"
+    t.bigint "marca_id"
+    t.integer "estrelas"
+    t.text "comentario"
+    t.string "dt_avaliacao"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["marca_id"], name: "index_usuario_avalia_marcas_on_marca_id"
+    t.index ["usuario_id"], name: "index_usuario_avalia_marcas_on_usuario_id"
+  end
+
+  create_table "usuario_avalia_produtos", force: :cascade do |t|
+    t.bigint "usuario_id"
+    t.bigint "produto_id"
+    t.integer "estrelas"
+    t.text "comentario"
+    t.string "dt_avaliacao"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["produto_id"], name: "index_usuario_avalia_produtos_on_produto_id"
+    t.index ["usuario_id"], name: "index_usuario_avalia_produtos_on_usuario_id"
+  end
+
   create_table "usuario_busca_componentes", force: :cascade do |t|
     t.bigint "usuario_id"
     t.bigint "componente_id"
@@ -125,6 +149,10 @@ ActiveRecord::Schema.define(version: 2018_11_04_211230) do
   add_foreign_key "produto_possui_componentes", "componentes"
   add_foreign_key "produto_possui_componentes", "produtos"
   add_foreign_key "produtos", "marcas"
+  add_foreign_key "usuario_avalia_marcas", "marcas"
+  add_foreign_key "usuario_avalia_marcas", "usuarios"
+  add_foreign_key "usuario_avalia_produtos", "produtos"
+  add_foreign_key "usuario_avalia_produtos", "usuarios"
   add_foreign_key "usuario_busca_componentes", "componentes"
   add_foreign_key "usuario_busca_componentes", "usuarios"
   add_foreign_key "usuario_busca_marcas", "marcas"
