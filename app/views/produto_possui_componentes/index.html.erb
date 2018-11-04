@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Produto Possui Componentes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Produto</th>
+      <th>Componente</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @produto_possui_componentes.each do |produto_possui_componente| %>
+      <tr>
+        <td><%= produto_possui_componente.produto %></td>
+        <td><%= produto_possui_componente.componente %></td>
+        <td><%= link_to 'Show', produto_possui_componente %></td>
+        <td><%= link_to 'Edit', edit_produto_possui_componente_path(produto_possui_componente) %></td>
+        <td><%= link_to 'Destroy', produto_possui_componente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Produto Possui Componente', new_produto_possui_componente_path %>

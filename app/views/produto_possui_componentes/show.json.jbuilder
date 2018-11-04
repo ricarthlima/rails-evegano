@@ -1,0 +1,1 @@
+json.partial! "produto_possui_componentes/produto_possui_componente", produto_possui_componente: @produto_possui_componente

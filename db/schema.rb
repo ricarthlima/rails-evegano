@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_04_193939) do
+ActiveRecord::Schema.define(version: 2018_11_04_194414) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,6 +51,15 @@ ActiveRecord::Schema.define(version: 2018_11_04_193939) do
     t.index ["produto_id"], name: "index_produto_nome_alternativos_on_produto_id"
   end
 
+  create_table "produto_possui_componentes", force: :cascade do |t|
+    t.bigint "produto_id"
+    t.bigint "componente_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["componente_id"], name: "index_produto_possui_componentes_on_componente_id"
+    t.index ["produto_id"], name: "index_produto_possui_componentes_on_produto_id"
+  end
+
   create_table "produtos", force: :cascade do |t|
     t.string "cod_barras"
     t.string "nome"
@@ -77,5 +86,7 @@ ActiveRecord::Schema.define(version: 2018_11_04_193939) do
 
   add_foreign_key "componente_nome_alternativos", "componentes"
   add_foreign_key "produto_nome_alternativos", "produtos"
+  add_foreign_key "produto_possui_componentes", "componentes"
+  add_foreign_key "produto_possui_componentes", "produtos"
   add_foreign_key "produtos", "marcas"
 end
