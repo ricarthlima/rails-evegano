@@ -5,6 +5,7 @@
 default: &default
   adapter: postgresql
   encoding: UTF-8
+  template: template0
   # Define a quantidade de conexões simultâneas no banco, para ler mais:
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
