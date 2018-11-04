@@ -43,7 +43,7 @@ Algo já não funcionou no passado! Como a gente fez para resolver mesmo?!
 - Push para GitHub
 - Conexão de deploy na plataforma do Heroku
 
-## 4. Criar modelo usando o rails
+## 4. Criar modelo usando o Rails
 ```ruby
 rails generate model <nome_model> <nome_atributo>:<tipo_atributo> <nome_atributo>:<tipo_atributo>
 rake db:migrate
@@ -54,7 +54,26 @@ text
 integer
 decimal
 
-## 5. Testar aplicação no Cloud9
+## 5. Criar CRUD usando o Rails
+Esse comando já cria todo o MVC para um CRUD e uma entidade
+```ruby
+rails g scaffold <Nome_Entidade_Singular> <nome_atributo>:<tipo_atributo> <nome_atributo>:<tipo_atributo>
+rake db:migrate
+```
+
+## 6. Adicionar ou Remover campos de um Model
+### Adicionar
+```ruby
+rails g migration Add<campo>To<model> <campo><tipo>
+rake db:migrate
+```
+### Remover
+```ruby
+rails g migration Remove<campo>From<model> <campo><tipo>
+rake db:migrate
+```
+
+## 7. Testar aplicação no Cloud9
 - Rodar no terminal o comando `rails server -p $PORT -b $IP`
 - Se tudo estiver certo o servidor deve começar a rodar
 - Acesse-o em: http://<nome_da_maquina>-<username_dono_maquina>.c9users.io/
