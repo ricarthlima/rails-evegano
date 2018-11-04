@@ -1,0 +1,27 @@
+<%= form_with(model: marca_pertence_marca, local: true) do |form| %>
+  <% if marca_pertence_marca.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(marca_pertence_marca.errors.count, "error") %> prohibited this marca_pertence_marca from being saved:</h2>
+
+      <ul>
+      <% marca_pertence_marca.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :marca_id %>
+    <%= form.text_field :marca_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :marca_id %>
+    <%= form.text_field :marca_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
