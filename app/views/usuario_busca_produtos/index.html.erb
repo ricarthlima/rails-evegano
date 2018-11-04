@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Usuario Busca Produtos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Usuario</th>
+      <th>Produto</th>
+      <th>Dt busca</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @usuario_busca_produtos.each do |usuario_busca_produto| %>
+      <tr>
+        <td><%= usuario_busca_produto.usuario %></td>
+        <td><%= usuario_busca_produto.produto %></td>
+        <td><%= usuario_busca_produto.dt_busca %></td>
+        <td><%= link_to 'Show', usuario_busca_produto %></td>
+        <td><%= link_to 'Edit', edit_usuario_busca_produto_path(usuario_busca_produto) %></td>
+        <td><%= link_to 'Destroy', usuario_busca_produto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Usuario Busca Produto', new_usuario_busca_produto_path %>

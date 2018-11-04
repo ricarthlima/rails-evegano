@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @marca.nome %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @marca.descricao %>
+</p>
+
+<p>
+  <strong>Class vegan:</strong>
+  <%= @marca.class_vegan %>
+</p>
+
+<p>
+  <strong>Justificativa:</strong>
+  <%= @marca.justificativa %>
+</p>
+
+<%= link_to 'Edit', edit_marca_path(@marca) %> |
+<%= link_to 'Back', marcas_path %>

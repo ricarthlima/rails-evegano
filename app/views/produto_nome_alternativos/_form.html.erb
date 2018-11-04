@@ -1,0 +1,27 @@
+<%= form_with(model: produto_nome_alternativo, local: true) do |form| %>
+  <% if produto_nome_alternativo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(produto_nome_alternativo.errors.count, "error") %> prohibited this produto_nome_alternativo from being saved:</h2>
+
+      <ul>
+      <% produto_nome_alternativo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :produto_id %>
+    <%= form.text_field :produto_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nome_alternativo %>
+    <%= form.text_field :nome_alternativo %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

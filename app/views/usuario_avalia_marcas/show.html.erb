@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @usuario_avalia_marca.usuario %>
+</p>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @usuario_avalia_marca.marca %>
+</p>
+
+<p>
+  <strong>Estrelas:</strong>
+  <%= @usuario_avalia_marca.estrelas %>
+</p>
+
+<p>
+  <strong>Comentario:</strong>
+  <%= @usuario_avalia_marca.comentario %>
+</p>
+
+<p>
+  <strong>Dt avaliacao:</strong>
+  <%= @usuario_avalia_marca.dt_avaliacao %>
+</p>
+
+<%= link_to 'Edit', edit_usuario_avalia_marca_path(@usuario_avalia_marca) %> |
+<%= link_to 'Back', usuario_avalia_marcas_path %>

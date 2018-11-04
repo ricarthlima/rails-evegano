@@ -1,0 +1,42 @@
+<%= form_with(model: usuario_avalia_marca, local: true) do |form| %>
+  <% if usuario_avalia_marca.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(usuario_avalia_marca.errors.count, "error") %> prohibited this usuario_avalia_marca from being saved:</h2>
+
+      <ul>
+      <% usuario_avalia_marca.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :usuario_id %>
+    <%= form.text_field :usuario_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :marca_id %>
+    <%= form.text_field :marca_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :estrelas %>
+    <%= form.number_field :estrelas %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comentario %>
+    <%= form.text_area :comentario %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dt_avaliacao %>
+    <%= form.text_field :dt_avaliacao %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

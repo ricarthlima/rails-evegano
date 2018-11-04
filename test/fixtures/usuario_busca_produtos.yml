@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  usuario: one
+  produto: one
+  dt_busca: MyString
+
+two:
+  usuario: two
+  produto: two
+  dt_busca: MyString

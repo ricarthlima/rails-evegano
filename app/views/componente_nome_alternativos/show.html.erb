@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Componente:</strong>
+  <%= @componente_nome_alternativo.componente %>
+</p>
+
+<p>
+  <strong>Nome alternativo:</strong>
+  <%= @componente_nome_alternativo.nome_alternativo %>
+</p>
+
+<%= link_to 'Edit', edit_componente_nome_alternativo_path(@componente_nome_alternativo) %> |
+<%= link_to 'Back', componente_nome_alternativos_path %>

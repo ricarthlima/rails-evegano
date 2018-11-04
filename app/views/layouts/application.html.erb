@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+  <% # encoding: utf-8 %>
+  <meta charset="UTF-8"> 
   <head>
     <title>É vegano?</title>
     <%= csrf_meta_tags %>
@@ -10,6 +12,11 @@
   </head>
 
   <body>
+    <!-- NAVBAR -->
+    <%= nav_bar brand: "É vegano?", brand_link: root_url do %>
+    <% end %>
+    <!-- NAVBAR -->
+    
     <%= yield %>
   </body>
 </html>

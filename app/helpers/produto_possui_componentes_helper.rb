@@ -1,0 +1,2 @@
+module ProdutoPossuiComponentesHelper
+end

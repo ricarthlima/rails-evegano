@@ -1,0 +1,1 @@
+json.partial! "produto_nome_alternativos/produto_nome_alternativo", produto_nome_alternativo: @produto_nome_alternativo

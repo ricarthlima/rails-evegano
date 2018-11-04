@@ -48,6 +48,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'devise'
 
+gem 'twitter-bootstrap-rails'
+
+gem 'therubyracer'
 
 # GEMs de Desenvolvimento e Teste
 group :development, :test do

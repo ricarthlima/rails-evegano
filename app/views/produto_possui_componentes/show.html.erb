@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Produto:</strong>
+  <%= @produto_possui_componente.produto %>
+</p>
+
+<p>
+  <strong>Componente:</strong>
+  <%= @produto_possui_componente.componente %>
+</p>
+
+<%= link_to 'Edit', edit_produto_possui_componente_path(@produto_possui_componente) %> |
+<%= link_to 'Back', produto_possui_componentes_path %>

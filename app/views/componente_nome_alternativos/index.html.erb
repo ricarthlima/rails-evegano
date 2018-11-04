@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Componente Nome Alternativos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Componente</th>
+      <th>Nome alternativo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @componente_nome_alternativos.each do |componente_nome_alternativo| %>
+      <tr>
+        <td><%= componente_nome_alternativo.componente %></td>
+        <td><%= componente_nome_alternativo.nome_alternativo %></td>
+        <td><%= link_to 'Show', componente_nome_alternativo %></td>
+        <td><%= link_to 'Edit', edit_componente_nome_alternativo_path(componente_nome_alternativo) %></td>
+        <td><%= link_to 'Destroy', componente_nome_alternativo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Componente Nome Alternativo', new_componente_nome_alternativo_path %>

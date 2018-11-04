@@ -1,0 +1,1 @@
+json.partial! "usuario_busca_componentes/usuario_busca_componente", usuario_busca_componente: @usuario_busca_componente
