@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Produto:</strong>
+  <%= @produto_nome_alternativo.produto %>
+</p>
+
+<p>
+  <strong>Nome alternativo:</strong>
+  <%= @produto_nome_alternativo.nome_alternativo %>
+</p>
+
+<%= link_to 'Edit', edit_produto_nome_alternativo_path(@produto_nome_alternativo) %> |
+<%= link_to 'Back', produto_nome_alternativos_path %>

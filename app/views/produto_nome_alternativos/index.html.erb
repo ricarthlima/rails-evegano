@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Produto Nome Alternativos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Produto</th>
+      <th>Nome alternativo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @produto_nome_alternativos.each do |produto_nome_alternativo| %>
+      <tr>
+        <td><%= produto_nome_alternativo.produto %></td>
+        <td><%= produto_nome_alternativo.nome_alternativo %></td>
+        <td><%= link_to 'Show', produto_nome_alternativo %></td>
+        <td><%= link_to 'Edit', edit_produto_nome_alternativo_path(produto_nome_alternativo) %></td>
+        <td><%= link_to 'Destroy', produto_nome_alternativo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Produto Nome Alternativo', new_produto_nome_alternativo_path %>

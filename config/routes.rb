@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :produto_nome_alternativos
   resources :marca_pertence_marcas
   resources :componentes
   resources :produtos
