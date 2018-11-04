@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :componentes
   resources :produtos
   resources :marcas
   devise_for :usuarios

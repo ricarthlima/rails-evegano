@@ -1,0 +1,47 @@
+<%= form_with(model: componente, local: true) do |form| %>
+  <% if componente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(componente.errors.count, "error") %> prohibited this componente from being saved:</h2>
+
+      <ul>
+      <% componente.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :cod_europeu %>
+    <%= form.text_field :cod_europeu %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cod_INS %>
+    <%= form.text_field :cod_INS %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descricao %>
+    <%= form.text_area :descricao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :class_vegan %>
+    <%= form.number_field :class_vegan %>
+  </div>
+
+  <div class="field">
+    <%= form.label :justificativa %>
+    <%= form.text_area :justificativa %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

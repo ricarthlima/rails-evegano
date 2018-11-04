@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Componentes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cod europeu</th>
+      <th>Cod ins</th>
+      <th>Nome</th>
+      <th>Descricao</th>
+      <th>Class vegan</th>
+      <th>Justificativa</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @componentes.each do |componente| %>
+      <tr>
+        <td><%= componente.cod_europeu %></td>
+        <td><%= componente.cod_INS %></td>
+        <td><%= componente.nome %></td>
+        <td><%= componente.descricao %></td>
+        <td><%= componente.class_vegan %></td>
+        <td><%= componente.justificativa %></td>
+        <td><%= link_to 'Show', componente %></td>
+        <td><%= link_to 'Edit', edit_componente_path(componente) %></td>
+        <td><%= link_to 'Destroy', componente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Componente', new_componente_path %>
