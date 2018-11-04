@@ -1,0 +1,2 @@
+module ComponenteNomeAlternativosHelper
+end

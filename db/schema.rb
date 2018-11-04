@@ -10,10 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_04_193256) do
+ActiveRecord::Schema.define(version: 2018_11_04_193939) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "componente_nome_alternativos", force: :cascade do |t|
+    t.bigint "componente_id"
+    t.string "nome_alternativo"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["componente_id"], name: "index_componente_nome_alternativos_on_componente_id"
+  end
 
   create_table "componentes", force: :cascade do |t|
     t.string "cod_europeu"
@@ -67,6 +75,7 @@ ActiveRecord::Schema.define(version: 2018_11_04_193256) do
     t.index ["reset_password_token"], name: "index_usuarios_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "componente_nome_alternativos", "componentes"
   add_foreign_key "produto_nome_alternativos", "produtos"
   add_foreign_key "produtos", "marcas"
 end
