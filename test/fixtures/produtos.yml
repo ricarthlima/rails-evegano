@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cod_barras: MyString
+  nome: MyString
+  marca: one
+  descricao: MyText
+  class_vegan: 1
+  justificativa: MyText
+
+two:
+  cod_barras: MyString
+  nome: MyString
+  marca: two
+  descricao: MyText
+  class_vegan: 1
+  justificativa: MyText
