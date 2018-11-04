@@ -20,7 +20,7 @@ Algo já não funcionou no passado! Como a gente fez para resolver mesmo?!
 
 #### Se necessário, editar arquivo de configuração
 - Acessar o arquivo config > database.yml
-- Alterar o encode para `SQL_ASCII`
+- Alterar o encode para `UTF-8`
 
 #### Criar os Bancos de Dados (eles vêem do que você configurou no database.yml)
 - `rake db:create`
