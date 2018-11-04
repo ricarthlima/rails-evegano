@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Marcas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Descricao</th>
+      <th>Class vegan</th>
+      <th>Justificativa</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @marcas.each do |marca| %>
+      <tr>
+        <td><%= marca.nome %></td>
+        <td><%= marca.descricao %></td>
+        <td><%= marca.class_vegan %></td>
+        <td><%= marca.justificativa %></td>
+        <td><%= link_to 'Show', marca %></td>
+        <td><%= link_to 'Edit', edit_marca_path(marca) %></td>
+        <td><%= link_to 'Destroy', marca, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Marca', new_marca_path %>
