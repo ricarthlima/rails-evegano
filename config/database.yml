@@ -4,7 +4,7 @@
 #-- CONFIGURAÇÕES "PADRÃO"
 default: &default
   adapter: postgresql
-  encoding: SQL_ASCII
+  encoding: UTF-8
   # Define a quantidade de conexões simultâneas no banco, para ler mais:
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -14,7 +14,7 @@ development:
   <<: *default
   database: dev_db_evegano  # Nome do banco
   adapter: postgresql       # SQL Adapter usado
-  encoding: SQL_ASCII       # Codificação usada
+  encoding: UTF-8       # Codificação usada
   pool: 5                   # Número de conexões simultâneas
     
   #username: ubuntu
@@ -57,7 +57,7 @@ test: &test
 
   database: test_db_evegano
   adapter: postgresql
-  encoding: SQL_ASCII
+  encoding: UTF-8
   pool: 5
   #username: ubuntu
   #password: equipeone11
