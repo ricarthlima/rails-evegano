@@ -10,10 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_04_192439) do
+ActiveRecord::Schema.define(version: 2018_11_04_193256) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "componentes", force: :cascade do |t|
+    t.string "cod_europeu"
+    t.string "cod_INS"
+    t.string "nome"
+    t.text "descricao"
+    t.integer "class_vegan"
+    t.text "justificativa"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "marcas", force: :cascade do |t|
     t.string "nome"
@@ -22,6 +33,14 @@ ActiveRecord::Schema.define(version: 2018_11_04_192439) do
     t.text "justificativa"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "produto_nome_alternativos", force: :cascade do |t|
+    t.bigint "produto_id"
+    t.string "nome_alternativo"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["produto_id"], name: "index_produto_nome_alternativos_on_produto_id"
   end
 
   create_table "produtos", force: :cascade do |t|
@@ -48,5 +67,6 @@ ActiveRecord::Schema.define(version: 2018_11_04_192439) do
     t.index ["reset_password_token"], name: "index_usuarios_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "produto_nome_alternativos", "produtos"
   add_foreign_key "produtos", "marcas"
 end
