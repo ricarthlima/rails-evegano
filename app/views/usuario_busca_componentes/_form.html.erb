@@ -1,0 +1,32 @@
+<%= form_with(model: usuario_busca_componente, local: true) do |form| %>
+  <% if usuario_busca_componente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(usuario_busca_componente.errors.count, "error") %> prohibited this usuario_busca_componente from being saved:</h2>
+
+      <ul>
+      <% usuario_busca_componente.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :usuario_id %>
+    <%= form.text_field :usuario_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :componente_id %>
+    <%= form.text_field :componente_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dt_busca %>
+    <%= form.text_field :dt_busca %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
