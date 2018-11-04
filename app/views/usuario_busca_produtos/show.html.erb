@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @usuario_busca_produto.usuario %>
+</p>
+
+<p>
+  <strong>Produto:</strong>
+  <%= @usuario_busca_produto.produto %>
+</p>
+
+<p>
+  <strong>Dt busca:</strong>
+  <%= @usuario_busca_produto.dt_busca %>
+</p>
+
+<%= link_to 'Edit', edit_usuario_busca_produto_path(@usuario_busca_produto) %> |
+<%= link_to 'Back', usuario_busca_produtos_path %>
