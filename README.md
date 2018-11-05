@@ -15,7 +15,7 @@ A aplicação será um serviço de software que entrega ao **público vegano** u
 ## 2. Motivação
 No Brasil, 14% da população tem uma alimentação vegetariana, [segundo a Sociedade Vegetariana Brasileira](https://g1.globo.com/bemestar/noticia/brasil-tem-14-de-vegetarianos-e-81-de-adeptos-a-dieta-com-carne-diz-pesquisa-ibope.ghtml). O mercado consumidor de alimentação plant-based (low or no meat) [cresce no mundo todo](http://revistapegn.globo.com/Revista/Common/0,,EMI130934-17153,00-CRESCE+O+MERCADO+VEGANO.html).  
 
-A rigidez pela busca de produtos ou marcas livres de exploração e crueldade com os animais é uma realidade. Assim, o "É vegano?" entra num mercado crescente com **o objetivo de facilitar a vida de quem precisa sempre verificar informações confiáveis sobre a composição do produto e condutas das marcas**. Além disso, temos como ambição ajudar o mundo a trilhar o caminho para um futuro mais ético, onde nenhum animal precise sofrer para nos alimentar, divertir, vestir ou quaisquer outros motivos.
+A rigidez pela busca de produtos ou marcas livres de exploração e crueldade com os animais é uma realidade. Assim, o app "É vegano?" entra num mercado crescente com **o objetivo de facilitar a vida de quem precisa sempre verificar informações confiáveis sobre a composição do produto e condutas das marcas**. Além disso, temos como ambição ajudar o mundo a trilhar o caminho para um futuro mais ético, onde nenhum animal precise sofrer para nos alimentar, divertir, vestir ou quaisquer outros motivos.
 
 ## 3. Equipe One!
 *Para ler mais sobre a "Equipe One!" nesse projeto, visite: [Time](/docs/paginas/time.md)*
