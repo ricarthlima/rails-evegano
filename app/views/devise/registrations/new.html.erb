@@ -20,6 +20,36 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
+  
+  <div class="field">
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome, autocomplete: "nome" %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :sobrenome %><br />
+    <%= f.text_field :sobrenome, autocomplete: "sobrenome" %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :cep %><br />
+    <%= f.text_field :cep, autocomplete: "cep" %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :pais %><br />
+    <%= f.text_field :pais, autocomplete: "pais" %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :telefone %><br />
+    <%= f.text_field :telefone, autocomplete: "telefone" %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :tipo_usuario %><br />
+    <%= f.text_field :tipo_usuario, autocomplete: "tipo de usuario" %>
+  </div>
 
   <div class="actions">
     <%= f.submit "Sign up" %>
