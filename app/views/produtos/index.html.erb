@@ -5,14 +5,14 @@
 
 <h1>Produtos</h1>
 
-<table>
+<table class = "table table-striped">
   <thead>
     <tr>
       <th>Cod barras</th>
       <th>Nome</th>
       <th>Marca</th>
-      <th>Descricao</th>
-      <th>Class vegan</th>
+      <th>Descrição</th>
+      <th>É vegano?</th>
       <th>Justificativa</th>
       <th colspan="3"></th>
     </tr>
@@ -27,9 +27,9 @@
         <td><%= produto.descricao %></td>
         <td><%= produto.class_vegan %></td>
         <td><%= produto.justificativa %></td>
-        <td><%= link_to 'Show', produto %></td>
-        <td><%= link_to 'Edit', edit_produto_path(produto) %></td>
-        <td><%= link_to 'Destroy', produto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', produto %></td>
+        <td><%= link_to 'Editar', edit_produto_path(produto) %></td>
+        <td><%= link_to 'Deletar', produto, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -37,4 +37,4 @@
 
 <br>
 
-<%= link_to 'New Produto', new_produto_path %>
+<%= link_to 'Novo Produto', new_produto_path %>

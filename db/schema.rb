@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_04_211808) do
+ActiveRecord::Schema.define(version: 2018_11_05_023509) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,14 @@ ActiveRecord::Schema.define(version: 2018_11_04_211808) do
     t.text "justificativa"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "marca_nome_alternativos", force: :cascade do |t|
+    t.bigint "marca_id"
+    t.string "nome"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["marca_id"], name: "index_marca_nome_alternativos_on_marca_id"
   end
 
   create_table "marcas", force: :cascade do |t|
@@ -145,6 +153,7 @@ ActiveRecord::Schema.define(version: 2018_11_04_211808) do
   end
 
   add_foreign_key "componente_nome_alternativos", "componentes"
+  add_foreign_key "marca_nome_alternativos", "marcas"
   add_foreign_key "produto_nome_alternativos", "produtos"
   add_foreign_key "produto_possui_componentes", "componentes"
   add_foreign_key "produto_possui_componentes", "produtos"

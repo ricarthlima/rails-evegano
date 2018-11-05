@@ -48,9 +48,14 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'devise'
 
+gem "therubyracer"
+# gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem 'twitter-bootstrap-rails'
+# gem 'bootstrap', '~> 4.1.3'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
-gem 'therubyracer'
+
+# gem 'mini_racer'
 
 # GEMs de Desenvolvimento e Teste
 group :development, :test do

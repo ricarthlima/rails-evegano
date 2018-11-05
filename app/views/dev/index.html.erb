@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Console do Desenvolvedor</h1>
+
+<div class ="alert alert-warning" role = "alert">
+    As alterações feitas aqui são feitas no Banco de Dados, tenha cuidado.
+</div>
+
+<div class="list-group">
+  <li class="list-group-item"><%= link_to "Produtos", produtos_path%></li>
+  <li class="list-group-item"><%= link_to "Marcas", marcas_path%></li>
+  <li class="list-group-item"><%= link_to "Componentes", componentes_path%></li>
+  <li class="list-group-item"><%= link_to "Nomes alternativos dos Produtos", produto_nome_alternativos_path%></li>
+  <li class="list-group-item"><%= link_to "Nomes alternativos das Marcas", marca_nome_alternativos_path%></li>
+  <li class="list-group-item"><%= link_to "Nomes alternativos dos Componentes", componente_nome_alternativos_path%></li>
+  <li class="list-group-item"><%= link_to "Produto possui Componentes", produto_possui_componentes_path%></li>
+</div>

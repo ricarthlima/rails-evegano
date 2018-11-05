@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html>
   <% # encoding: utf-8 %>
-  <meta charset="UTF-8"> 
   <head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>É vegano?</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
   </head>
 
   <body>
     <!-- NAVBAR -->
-    <%= nav_bar brand: "É vegano?", brand_link: root_url do %>
+    <%= nav_bar fixed: :top, brand: "É vegano?" ,  brand_link: inicio_path, responsive: true do %>
+      <%= menu_group do %>
+        <%= menu_item "Histórico de Compras" %>
+      <% end %>
+      
+      
+      
+      <%= menu_group pull: :right do %>
+        <%= menu_item "Dev Console", dev_path %>
+        <%= menu_item "Sair" %>
+      <% end %>
     <% end %>
     <!-- NAVBAR -->
     
-    <%= yield %>
+    
+    
+    <div class = "container">
+      <%= yield %>
+    </div>
+    
   </body>
 </html>

@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+h1 {
+    font-family: 'Mali', cursive;
+    color: #68C14D;
+}
