@@ -15,23 +15,7 @@
   </head>
 
   <body>
-    <!-- NAVBAR -->
-    <%= nav_bar fixed: :top, brand: "É vegano?" ,  brand_link: inicio_path, responsive: true do %>
-      <%= menu_group do %>
-        <%= menu_item "Histórico de Compras" %>
-      <% end %>
-      
-      
-      
-      <%= menu_group pull: :right do %>
-        <%= menu_item "Dev Console", dev_path %>
-        <%= menu_item "Sair" %>
-      <% end %>
-    <% end %>
-    <!-- NAVBAR -->
-    
-    
-    
+  
     <div class = "container">
       <%= yield %>
     </div>
