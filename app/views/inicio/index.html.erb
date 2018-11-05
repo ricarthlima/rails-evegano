@@ -24,6 +24,12 @@
       <%= button_to "Enviar rótulo", class: "btn btn-danger"%>
       <%= button_to "Enviar código de barras", class: "btn btn-danger"%>
       <button type="submit" class="btn btn-primary">Buscar</button>
+      <%= current_usuario.email %>
+      <% if current_usuario.dev then%>
+        Desenvolvedor
+      <% else %>
+        Não desenvolvedor
+      <% end %>
     </form>
     
 </div>
