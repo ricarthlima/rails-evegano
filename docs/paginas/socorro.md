@@ -86,3 +86,5 @@ rake db:migrate
 - ```rake db:create```
 - ```rake db:migrate```
 
+## 9. Adicionando mais campos ao devise
+- Usar os seguintes links para o mesmo: [link1](https://pt.stackoverflow.com/questions/56810/como-adicionar-mais-campos-%C3%A0-tabela-de-usu%C3%A1rios-com-a-gem-devise), [link2](https://groups.google.com/forum/#!topic/rails-br/wvWqPIe4T6A) e [link3](https://felipelinsmachado.com/ruby-on-rails-para-iniciantes-criando-novo-atributo-devise/)
