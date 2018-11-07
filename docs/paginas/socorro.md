@@ -92,12 +92,12 @@ rake db:migrate
 
 ## 9. Devise
 ### Autenticação com Devise
-    - Links úteis
-        - [link 1](https://www.maujor.com/railsgirlsguide/devise.php)
-        - [link 2](https://github.com/plataformatec/devise)
-        - [link 3](https://www.devmedia.com.br/ruby-on-rails-implementando-autenticacao-de-usuario/32124) 
-        - [link 4](https://onebitcode.com/permissoes-de-acesso-rails-usando-devise-e-cancancan/) *É mais para autenticação com permissões de usuários, e menos de login
- 
+- Links úteis
+    - [link 1](https://www.maujor.com/railsgirlsguide/devise.php)
+    - [link 2](https://github.com/plataformatec/devise)
+    - [link 3](https://www.devmedia.com.br/ruby-on-rails-implementando-autenticacao-de-usuario/32124) 
+    - [link 4](https://onebitcode.com/permissoes-de-acesso-rails-usando-devise-e-cancancan/) *É mais para autenticação com permissões de usuários, e menos de login
+
 ### Adicionando mais campos ao devise
 - Usar os seguintes links para o mesmo: [link1](https://pt.stackoverflow.com/questions/56810/como-adicionar-mais-campos-%C3%A0-tabela-de-usu%C3%A1rios-com-a-gem-devise), [link2](https://groups.google.com/forum/#!topic/rails-br/wvWqPIe4T6A) e [link3](https://felipelinsmachado.com/ruby-on-rails-para-iniciantes-criando-novo-atributo-devise/)
 
@@ -131,21 +131,21 @@ Para informações sobre design para formulários na aplicação, acesse o [link
 
 ## 13. Testes
 ### BDD
-    - Links úteis
-        - [link 1](http://shipit.resultadosdigitais.com.br/blog/estruturando-seu-projeto-com-bdd-e-cucumber/) 
-        - [link 2](https://stories.devacademy.la/bdd-con-ruby-on-rails-usando-rspec-y-capybara-2e87ffe8957d) 
-        - [link 3](https://gist.github.com/stepheneyer/01be60c1ec6c004e0253) 
-        - [link 4](https://www.linkedin.com/pulse/do-zero-ao-b%C3%A1sico-aprenda-criar-um-teste-de-aceita%C3%A7%C3%A3o-renato-nunes)
-    
-    - Links recomendados pelo monitor
-        - [link 1](https://medium.com/jaguaribetech/testes-automatizados-com-cabybara-579e9688e3ab)
-        - [link 2](https://helabs.com/artigos/2013/07/03/testes-de-aceitacao-com-capybara-e-cucumber/)  
+- Links úteis
+    - [link 1](http://shipit.resultadosdigitais.com.br/blog/estruturando-seu-projeto-com-bdd-e-cucumber/) 
+    - [link 2](https://stories.devacademy.la/bdd-con-ruby-on-rails-usando-rspec-y-capybara-2e87ffe8957d) 
+    - [link 3](https://gist.github.com/stepheneyer/01be60c1ec6c004e0253) 
+    - [link 4](https://www.linkedin.com/pulse/do-zero-ao-b%C3%A1sico-aprenda-criar-um-teste-de-aceita%C3%A7%C3%A3o-renato-nunes)
+
+- Links recomendados pelo monitor
+    - [link 1](https://medium.com/jaguaribetech/testes-automatizados-com-cabybara-579e9688e3ab)
+    - [link 2](https://helabs.com/artigos/2013/07/03/testes-de-aceitacao-com-capybara-e-cucumber/)  
  
 ### TDD
-    - Links úteis:
-        - [link 1](https://share.atelie.software/come%C3%A7ando-com-tdd-rspec-79423f7a95ed)
-        - [link 2](https://learn.co/lessons/intro-to-tdd-rspec-and-learn)
-        - [link 3](https://medium.com/@WesleyDavis/rspec-and-test-driven-development-618b44c8177f) 
+- Links úteis:
+    - [link 1](https://share.atelie.software/come%C3%A7ando-com-tdd-rspec-79423f7a95ed)
+    - [link 2](https://learn.co/lessons/intro-to-tdd-rspec-and-learn)
+    - [link 3](https://medium.com/@WesleyDavis/rspec-and-test-driven-development-618b44c8177f) 
     
 ## Informações gerais importantes
 ### OCR
