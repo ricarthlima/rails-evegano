@@ -75,6 +75,7 @@ end
 
 # GEMs apenas de Teste
 group :test do
+  gem 'rspec'
   gem 'cucumber'
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
