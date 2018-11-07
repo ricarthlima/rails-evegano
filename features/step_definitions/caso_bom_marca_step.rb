@@ -1,5 +1,5 @@
-Dado("que eu acessei a área \/tela_principal\/index") do
-  pending # Write code here that turns the phrase above into concrete actions
+Dado("que eu acessei a index") do
+  visit root_path
 end
 
 Dado("que digitei o nome da marca no campo text_field") do

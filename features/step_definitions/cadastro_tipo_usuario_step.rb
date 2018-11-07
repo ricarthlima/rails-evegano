@@ -3,13 +3,26 @@ Given("que eu estou na tela de cadastro de tipo de usuário") do
 end
 
 When("eu selecionar o tipo {string}") do |string|
-  page.tipo_usuario(string)
+  case string
+  when "outros"
+    page.tipo_usuario(4)
+  when "vegano"
+    page.tipo_usuario(0)
+  when "vegetariano"
+    page.tipo_usuario(1)
+  when "ovolactovegetariano"
+    page.tipo_usuario(2)
+  when "lactovegetariano"
+    page.tipo_usuario(3)
+  else
+    page.tipo_usuario(-1)
+  end
 end
 
 When("eu clicar em cadastrar") do
-  
+  page.submit
 end
 
 Then("eu deveria ter um tipo de usuário {string}.") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
+  pending
 end
