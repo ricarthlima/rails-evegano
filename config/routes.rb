@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get "dev" => "dev#index"
   get "inicio" => "inicio#index"
+  get "busca" => "busca#buscar"
 end

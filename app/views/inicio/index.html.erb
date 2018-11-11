@@ -17,19 +17,22 @@
 <div class = "center-block">
     <img alt="Logo" src="/assets/logo.png" />
     <h2>É vegano?</h2>
-    <form>
+    
+    <%= form_tag busca_path, method: :get do%>
       <div class="form-group">
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite um produto, marca ou componente.">
+        <%= text_field_tag :texto, @nome_busca, class: "form-control", placeholder: "Digite um produto, marca ou componente." %>
+        <%= button_to "Buscar", nil, class: "btn btn-primary" %>
       </div>
-      <%= button_to "Enviar rótulo", class: "btn btn-danger"%>
-      <%= button_to "Enviar código de barras", class: "btn btn-danger"%>
-      <button type="submit" class="btn btn-primary">Buscar</button>
-      <%= current_usuario.email %>
+    <% end %>
+    
+    <%= button_to "Enviar rótulo", class: "btn btn-danger"%>
+    <%= button_to "Enviar código de barras", class: "btn btn-danger"%>
+    
+    <%= current_usuario.email %>
       <% if current_usuario.dev then%>
         Desenvolvedor
       <% else %>
         Não desenvolvedor
       <% end %>
-    </form>
     
 </div>
