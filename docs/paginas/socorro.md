@@ -83,6 +83,9 @@ rake db:migrate
 - Acesse-o em: http://<nome_da_maquina>-<username_dono_maquina>.c9users.io/
 - Exemplo: http://curso-alura-ricarthlima.c9users.io/
 
+#### Ou, usando o seguinte atalho:
+Share > Application > Open
+
 ## 8. "Resolver" o problema do banco no Heroku
 - Dar deploy
 - More > Run Console
