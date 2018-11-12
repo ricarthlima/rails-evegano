@@ -28,7 +28,7 @@ class BuscaController < ApplicationController
             redirect_to(componentes_url+"/"+@candidatos_componentes[0].id.to_s)
             
         elsif @candidatos_componentes.size == 0 and @candidatos_produtos.size == 0 and @candidatos_marcas.size == 0
-            redirect_to(inicio_path)
+            redirect_to(cadastro_pmc_path)
         else
             render :index
         end
