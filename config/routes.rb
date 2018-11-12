@@ -17,4 +17,5 @@ Rails.application.routes.draw do
   get "dev" => "dev#index"
   get "inicio" => "inicio#index"
   get "busca" => "busca#buscar"
+  get "cadastro_pmc/:busca", to: "cadastro_pmc#index", as: "cadastro_pmc"
 end
