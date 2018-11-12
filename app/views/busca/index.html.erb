@@ -27,9 +27,9 @@
             </tr> 
         </thead>
         <tbody>
-            <% @candidatos_marcas.each do |produto| %>
+            <% @candidatos_marcas.each do |marca| %>
                 <tr>
-                    <td><%= link_to produto.nome.to_s, produto_path(produto)%></td>
+                    <td><%= link_to marca.nome.to_s, marca_path(marca)%></td>
                 </tr>
             <% end %>
         </tbody>
@@ -45,9 +45,9 @@
         </tr> 
     </thead>
     <tbody>
-        <% @candidatos_componentes.each do |produto| %>
+        <% @candidatos_componentes.each do |componente| %>
             <tr>
-                <td><%= link_to produto.nome.to_s, produto_path(produto)%></td>
+                <td><%= link_to componente.nome.to_s, componente_path(componente)%></td>
             </tr>
         <% end %>
     </tbody>

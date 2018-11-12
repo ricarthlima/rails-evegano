@@ -9,7 +9,6 @@ class BuscaController < ApplicationController
         @nome_busca = params[:texto]
         
         if busca_vazia
-            flash[:notice] = "Busca vazia."
             redirect_to inicio_path
             return
         end

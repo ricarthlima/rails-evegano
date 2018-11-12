@@ -1,24 +1,26 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Nome:</strong>
+<h3>
+  <strong>
   <%= @marca.nome %>
+  </strong>
+</h3>
+<p>
+  <%= class_pmc_vegano(@marca.class_vegan)%></br>
 </p>
 
 <p>
-  <strong>Descricao:</strong>
+  <strong>Descrição:</strong> </br>
   <%= @marca.descricao %>
 </p>
 
 <p>
-  <strong>Class vegan:</strong>
-  <%= @marca.class_vegan %>
-</p>
-
-<p>
-  <strong>Justificativa:</strong>
+  <strong>Justificativa da Classificação:</strong></br>
   <%= @marca.justificativa %>
 </p>
 
-<%= link_to 'Edit', edit_marca_path(@marca) %> |
-<%= link_to 'Back', marcas_path %>
+<% if current_usuario.dev then%>
+  <%= link_to 'Editar', edit_marca_path(@marca) %> |
+<% end %>
+
+<%= link_to 'Voltar', :back %>

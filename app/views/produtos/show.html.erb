@@ -6,7 +6,9 @@
   </strong>
 </h3>
 
-<%= class_pmc_vegano(@produto.class_vegan)%>
+<p>
+<%= class_pmc_vegano(@produto.class_vegan)%></br>
+</p>
 
 <p>
   <strong>Marca:</strong>
@@ -25,7 +27,7 @@
 </p>
 
 <p>
-  <strong>Justificativa:</strong>
+  <strong>Justificativa da Classificação:</strong> </br>
   <%= @produto.justificativa %>
 </p>
 
@@ -33,4 +35,4 @@
   <%= link_to 'Editar', edit_produto_path(@produto) %>
 <% end %>
 
-<%= link_to 'Voltar', produtos_path %>
+<%= link_to 'Voltar', :back %>
