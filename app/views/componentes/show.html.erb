@@ -1,34 +1,34 @@
 <p id="notice"><%= notice %></p>
 
+<h3>
+  <strong>
+    <%= @componente.nome %>
+  </strong>
+</h3>
+
 <p>
-  <strong>Cod europeu:</strong>
-  <%= @componente.cod_europeu %>
+<%= class_pmc_vegano(@componente.class_vegan)%></br>
 </p>
 
 <p>
-  <strong>Cod ins:</strong>
+  <strong>Código Europeu:</strong>
+  <%= @componente.cod_europeu %>
+  <strong>Código INS:</strong>
   <%= @componente.cod_INS %>
 </p>
 
 <p>
-  <strong>Nome:</strong>
-  <%= @componente.nome %>
-</p>
-
-<p>
-  <strong>Descricao:</strong>
+  <strong>Descrição:</strong></br>
   <%= @componente.descricao %>
 </p>
 
 <p>
-  <strong>Class vegan:</strong>
-  <%= @componente.class_vegan %>
-</p>
-
-<p>
-  <strong>Justificativa:</strong>
+  <strong>Justificativa:</strong></br>
   <%= @componente.justificativa %>
 </p>
 
-<%= link_to 'Edit', edit_componente_path(@componente) %> |
-<%= link_to 'Back', componentes_path %>
+<% if current_usuario.dev then%>
+  <%= link_to 'Editar', edit_componente_path(@componente) %> |
+<% end %>
+
+<%= link_to 'Voltar', :back %>

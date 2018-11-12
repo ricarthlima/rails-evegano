@@ -5,6 +5,7 @@
 <table class = "table table-striped">
   <thead>
     <tr>
+      <th>ID</th>
       <th>Cod europeu</th>
       <th>Cod ins</th>
       <th>Nome</th>
@@ -18,6 +19,7 @@
   <tbody>
     <% @componentes.each do |componente| %>
       <tr>
+        <td><%= componente.id %></td>
         <td><%= componente.cod_europeu %></td>
         <td><%= componente.cod_INS %></td>
         <td><%= componente.nome %></td>
@@ -34,4 +36,4 @@
 
 <br>
 
-<%= link_to 'New Componente', new_componente_path %>
+<%= link_to 'Novo Componente', new_componente_path %>

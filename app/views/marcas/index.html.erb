@@ -5,6 +5,7 @@
 <table class = "table table-striped">
   <thead>
     <tr>
+      <th>ID</th>
       <th>Nome</th>
       <th>Descricao</th>
       <th>Class vegan</th>
@@ -16,6 +17,7 @@
   <tbody>
     <% @marcas.each do |marca| %>
       <tr>
+        <td><%= marca.id%></td>
         <td><%= marca.nome %></td>
         <td><%= marca.descricao %></td>
         <td><%= marca.class_vegan %></td>
@@ -30,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Marca', new_marca_path %>
+<%= link_to 'Adicionar Marca', new_marca_path %>
