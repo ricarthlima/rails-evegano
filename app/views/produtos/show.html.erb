@@ -1,28 +1,27 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Cod barras:</strong>
-  <%= @produto.cod_barras %>
-</p>
-
-<p>
-  <strong>Nome:</strong>
+<h3>
+  <strong>
   <%= @produto.nome %>
-</p>
+  </strong>
+</h3>
+
+<%= class_pmc_vegano(@produto.class_vegan)%>
 
 <p>
   <strong>Marca:</strong>
-  <%= @produto.marca %>
+  <%= link_to @produto.marca.nome, marcas_path(@produto.marca) %>
 </p>
 
+
+
 <p>
-  <strong>Descricao:</strong>
+  <strong>Descrição:</strong> </br>
   <%= @produto.descricao %>
 </p>
 
 <p>
-  <strong>Class vegan:</strong>
-  <%= @produto.class_vegan %>
+  <strong>Componentes:</strong>
 </p>
 
 <p>
@@ -30,5 +29,8 @@
   <%= @produto.justificativa %>
 </p>
 
-<%= link_to 'Edit', edit_produto_path(@produto) %> |
-<%= link_to 'Back', produtos_path %>
+<% if current_usuario.dev then%>
+  <%= link_to 'Editar', edit_produto_path(@produto) %>
+<% end %>
+
+<%= link_to 'Voltar', produtos_path %>
