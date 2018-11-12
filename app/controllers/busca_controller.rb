@@ -8,6 +8,12 @@ class BuscaController < ApplicationController
     def buscar
         @nome_busca = params[:texto]
         
+        if busca_vazia
+            flash[:notice] = "Busca vazia."
+            redirect_to inicio_path
+            return
+        end
+        
         @candidatos_produtos = Produto.where "lower(nome) like lower(?)", "%#{@nome_busca}%"
         @candidatos_marcas = Marca.where "lower(nome) like lower(?)", "%#{@nome_busca}%"
         @candidatos_componentes = Componente.where "lower(nome) like lower(?)", "%#{@nome_busca}%"
@@ -29,4 +35,12 @@ class BuscaController < ApplicationController
     end
     
     private 
+    
+    def busca_vazia
+        if @nome_busca == ""
+            return true
+        else
+            return false
+        end
+    end
 end

@@ -2,7 +2,7 @@
 
 <% if @candidatos_produtos.size >= 1 %>
     <h3>Produtos</h3>
-    <table class = "table table-striped">
+    <table class = "table table-striped table-hover table-responsive">
         <thead class = "thead-dark">
            <tr>
             <th scope="col">Nome</th>
@@ -20,7 +20,7 @@
 
 <% if @candidatos_marcas.size >= 1 %>
     <h3>Marcas</h3>
-    <table class = "table table-striped">
+    <table class = "table table-striped table-hover table-responsive">
         <thead class = "thead-dark">
            <tr>
             <th scope="col">Nome</th>
@@ -36,9 +36,9 @@
     </table>
 <% end %>
 
-<% if @candidatos_marcas.size >= 2 %>
+<% if @candidatos_componentes.size >= 1 %>
 <h3>Componentes</h3>
-<table class = "table table-striped">
+<table class = "table table-striped table-hover table-responsive">
     <thead class = "thead-dark">
        <tr>
         <th scope="col">Nome</th>
