@@ -1,0 +1,55 @@
+<h1>Você quis dizer?</h1>
+
+<% if @candidatos_produtos.size >= 1 %>
+    <h3>Produtos</h3>
+    <table class = "table table-striped">
+        <thead class = "thead-dark">
+           <tr>
+            <th scope="col">Nome</th>
+            </tr> 
+        </thead>
+        <tbody>
+            <% @candidatos_produtos.each do |produto| %>
+                <tr>
+                    <td><%= link_to produto.nome.to_s, produto_path(produto)%></td>
+                </tr>
+            <% end %>
+        </tbody>
+    </table>
+<% end %>
+
+<% if @candidatos_marcas.size >= 1 %>
+    <h3>Marcas</h3>
+    <table class = "table table-striped">
+        <thead class = "thead-dark">
+           <tr>
+            <th scope="col">Nome</th>
+            </tr> 
+        </thead>
+        <tbody>
+            <% @candidatos_marcas.each do |produto| %>
+                <tr>
+                    <td><%= link_to produto.nome.to_s, produto_path(produto)%></td>
+                </tr>
+            <% end %>
+        </tbody>
+    </table>
+<% end %>
+
+<% if @candidatos_marcas.size >= 2 %>
+<h3>Componentes</h3>
+<table class = "table table-striped">
+    <thead class = "thead-dark">
+       <tr>
+        <th scope="col">Nome</th>
+        </tr> 
+    </thead>
+    <tbody>
+        <% @candidatos_componentes.each do |produto| %>
+            <tr>
+                <td><%= link_to produto.nome.to_s, produto_path(produto)%></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+<% end %>
