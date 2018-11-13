@@ -11,11 +11,14 @@ Rails.application.routes.draw do
   resources :componentes
   resources :produtos
   resources :marcas
-  devise_for :usuarios
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  
+  #devise_for :usuarios
+  devise_for :usuarios, controllers: { omniauth_callbacks: 'usuarios/omniauth' }
+  
+  
   root 'welcome#index'
   get "dev" => "dev#index"
   get "inicio" => "inicio#index"
   get "busca" => "busca#buscar"
-  get '/auth/:provider/callback', to: 'sessions#create'
+  
 end
