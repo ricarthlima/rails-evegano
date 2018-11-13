@@ -48,6 +48,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'devise'
 
+# Use Omniauth Twitter plugin
+gem 'omniauth-twitter'
+
 gem "therubyracer"
 # gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem 'twitter-bootstrap-rails'
@@ -71,6 +74,7 @@ group :development do
   # Mantém a máquina rodando no backgroung. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'dotenv', '~> 2.2.1'
 end
 
 # GEMs apenas de Teste

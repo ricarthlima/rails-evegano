@@ -17,4 +17,5 @@ Rails.application.routes.draw do
   get "dev" => "dev#index"
   get "inicio" => "inicio#index"
   get "busca" => "busca#buscar"
+  get '/auth/:provider/callback', to: 'sessions#create'
 end
