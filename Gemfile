@@ -8,6 +8,9 @@ ruby '2.5.1'
 
 gem 'rails', '~> 5.2.1'
 
+#Gem paperclip para upload de imagens
+gem "paperclip", "~> 6.0.0"
+
 # Usar o PostgreSQL para o Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 
