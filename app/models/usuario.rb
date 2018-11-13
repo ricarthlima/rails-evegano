@@ -16,7 +16,9 @@ class Usuario < ApplicationRecord
     where(provider: provider_data.provider, uid: provider_data.uid).first_or_create do | usuario |
       usuario.email = provider_data.info.email
       usuario.password = Devise.friendly_token[0, 20]
-      usuario.skip_confirmation!
+      usuario.nome = provider_data.info.first_name
+      usuario.sobrenome = provider_data.info.last_name
+      #usuario.skip_confirmation!
     end
   end
 end
