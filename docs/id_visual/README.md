@@ -1,7 +1,10 @@
+| [Home](https://github.com/ricarthlima/eo-project-es) | [Time](/docs/paginas/time.md) | [Entregas](/docs/entregas_iterations)  | [Banco de Dados](https://github.com/ricarthlima/eo-project-es#5-banco-de-dados) | [ID Visual](/docs/id_visual)| [Socorro](/docs/paginas/socorro.md) | [Referências e Links](/docs/paginas/referencias.md)
+|-|-|-|-|-|-|-|
+
 # Manual de Uso da Identidade Visual
 
 ## Fontes
-### Títulos 
+### Títulos
 Mali [(Google Fonts)](https://fonts.google.com/?selection.family=Mali)
 
 ### Textos em geral e destaques
@@ -28,7 +31,11 @@ O documento da paleta de cores está disponível [aqui.](https://github.com/rica
 
 
 ## Logo
-A logo do "É vegano?" pode ser encontrada [aqui.](https://raw.githubusercontent.com/ricarthlima/eo-project-es/master/docs/id_visual/logo.png)
+- [512px](/docs/id_visual/logos/logo-512.png)
+- [256px](/docs/id_visual/logos/logo-256.png)
+- [128px](/docs/id_visual/logos/logo-128.png)
+- [64px](/docs/id_visual/logos/logo-64.png)
+
 
 ## Label
 A label é escrita usando a fonte Mali Bold (disponível no Google Fonts) e sua cor original é #88c057. Está disponível [aqui.](https://github.com/ricarthlima/eo-project-es/blob/master/docs/id_visual/label.png)
