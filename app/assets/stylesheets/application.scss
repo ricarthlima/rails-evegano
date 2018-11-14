@@ -14,7 +14,14 @@
  *= require_self
  */
 
-h1 {
+/**@import "bootstrap-sprockets";
+@import "bootstrap";**/
+
+h1{
     font-family: 'Mali', cursive;
     color: #68C14D;
+}
+
+.nav{
+    margin-bottom: auto;
 }

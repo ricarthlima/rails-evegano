@@ -1,34 +1,20 @@
-<!-- NAVBAR -->
-    <%= nav_bar fixed: :top, brand: "É vegano?" ,  brand_link: inicio_path, responsive: true do %>
-      <%= menu_group do %>
-        <%= menu_item "Histórico de Compras" %>
-      <% end %>    
+<%= render "layouts/navbar" %>
 
-      <%= menu_group pull: :right do %>
-      <% if current_usuario.dev then%>
-        <%= menu_item "Dev Console", dev_path %>
-      <% end %>
-        <%= menu_item('Sair', destroy_usuario_session_path, method: :delete) %>
-      <% end %>
-
-    <% end %>
-<!-- NAVBAR -->
 
 <div class = "center-block">
-    <img alt="Logo" src="/assets/logo.png" />
-    <h2>É vegano?</h2>
+    <%= image_tag("/assets/logos/logo-128.png", size: "64", class: "img_center") %>
+    <h2 class = "titulo_centro">É vegano?</h2>
 
     <%= form_tag busca_path, method: :get do%>
-      <div class="form-group">
+      <div class="form-group botoes">
         <%= text_field_tag :texto, @nome_busca, class: "form-control", placeholder: "Digite um produto, marca ou componente." %>
         <%= button_to "Buscar", nil, class: "btn btn-primary" %>
       </div>
     <% end %>
-    
+
     <div>
       <%= button_to "Enviar rótulo", new_produto_imagem_url+"/rotulo/" ,class: "btn btn-success", method: :get%>
       <%= button_to "Enviar código de barras", new_produto_imagem_url+"/barras/" ,class: "btn btn-success", method: :get%>
     </div>
 
 </div>
-

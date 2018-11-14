@@ -90,6 +90,15 @@ ActiveRecord::Schema.define(version: 2018_11_14_212111) do
     t.index ["marca_id"], name: "index_produtos_on_marca_id"
   end
 
+  create_table "sessions", force: :cascade do |t|
+    t.string "session_id", null: false
+    t.text "data"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["session_id"], name: "index_sessions_on_session_id", unique: true
+    t.index ["updated_at"], name: "index_sessions_on_updated_at"
+  end
+
   create_table "usuario_avalia_marcas", force: :cascade do |t|
     t.bigint "usuario_id"
     t.bigint "marca_id"
@@ -163,6 +172,9 @@ ActiveRecord::Schema.define(version: 2018_11_14_212111) do
     t.string "avatar_content_type"
     t.integer "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.string "provider", limit: 50, default: "", null: false
+    t.string "uid", limit: 500, default: "", null: false
+    t.string "foto"
     t.index ["email"], name: "index_usuarios_on_email", unique: true
     t.index ["reset_password_token"], name: "index_usuarios_on_reset_password_token", unique: true
   end
