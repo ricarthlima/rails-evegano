@@ -27,4 +27,4 @@
 /config/master.key
 
 # Ignorar imagens que são feitas em upload
-/system/produto_imagems
+/system/produto_imagems/*
