@@ -1,0 +1,2 @@
+module Usuarios::OmniauthHelper
+end

@@ -46,7 +46,18 @@ gem 'jbuilder', '~> 2.5'
 # Reduz o tempo de boot usando cache; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+# GEMs de Autenticação
 gem 'devise'
+# OAuth gerenciará a autenticação com terceiros
+gem 'omniauth'
+# Use Omniauth Facebook plugin
+gem 'omniauth-facebook', '~> 4.0'
+# Use Omniauth Google plugin
+gem 'omniauth-google-oauth2', '~> 0.4.1'
+# Use Omniauth Twitter plugin
+gem 'omniauth-twitter', '~> 1.2', '>= 1.2.1'
+# Use ActiveRecord Sessions
+gem 'activerecord-session_store', '~> 1.0'
 
 gem "therubyracer"
 # gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
@@ -71,6 +82,8 @@ group :development do
   # Mantém a máquina rodando no backgroung. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  # Use Dotenv for environment variables
+  gem 'dotenv', '~> 2.2.1'
 end
 
 # GEMs apenas de Teste

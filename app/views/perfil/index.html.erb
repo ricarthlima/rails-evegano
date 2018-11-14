@@ -1,0 +1,48 @@
+<h1>Perfil</h1>
+
+<div class = "center-block">
+    <% if current_usuario.foto != nil %>
+        <%= image_tag current_usuario.foto %>
+    <% end %>
+    
+    <strong><%= class_usuario_vegano(current_usuario.tipo_usuario)%></strong>
+    
+    <% if current_usuario.dev %>
+        class_dev(current_usuario.dev)
+    <% end %>
+</div>
+
+
+<p>
+    <strong>Nome: </strong>
+    <%= current_usuario.nome %>
+</p>
+
+<p>
+    <strong>Sobrenome: </strong>
+    <%= current_usuario.sobrenome %>
+</p>
+
+<p>
+    <strong>Email: </strong>
+    <%= current_usuario.email %>
+</p>
+
+<p>
+    <strong>CEP: </strong>
+    <%= current_usuario.cep %>
+    Porquê guardamos isso?
+</p>
+
+<p>
+    <strong>País: </strong>
+    <%= current_usuario.pais %>
+</p>
+
+<p>
+    <strong>Telefone: </strong>
+    <%= current_usuario.telefone %>
+</p>
+
+
+<%= link_to "Editar", edit_usuario_registration_path %>
