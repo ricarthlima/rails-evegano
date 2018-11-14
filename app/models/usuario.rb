@@ -3,7 +3,7 @@ class Usuario < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,
-         :omniauthable, omniauth_providers: [:facebook, :google_oauth2, :twitter]
+         :omniauthable, omniauth_providers: [:facebook, :google_oauth2] #, :twitter]
          
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
@@ -18,6 +18,7 @@ class Usuario < ApplicationRecord
       usuario.password = Devise.friendly_token[0, 20]
       usuario.nome = provider_data.info.first_name
       usuario.sobrenome = provider_data.info.last_name
+      usuario.foto = provider_data.info.image
       #usuario.skip_confirmation!
     end
   end
@@ -27,6 +28,7 @@ class Usuario < ApplicationRecord
       usuario.email = provider_data.info.email
       usuario.password = Devise.friendly_token[0, 20]
       usuario.nome = provider_data.info.name
+      usuario.foto = provider_data.info.image
       #usuario.skip_confirmation!
     end
   end

@@ -20,8 +20,17 @@ module ApplicationHelper
             return "Lactovegetariano"
         when 3
             return "Ovolactovegetariano"
-        when 4
+        else
             return "Outros"
         end
-    end 
+    end
+    
+    def class_dev(i)
+        case i
+        when true
+            return "Desenvolvedor"
+        else
+            return "Não desenvolvedor"
+        end
+    end
 end

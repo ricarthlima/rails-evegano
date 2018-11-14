@@ -15,11 +15,11 @@ Rails.application.routes.draw do
   #devise_for :usuarios
   devise_for :usuarios, controllers: { omniauth_callbacks: 'usuarios/omniauth' }
   
-  
   root 'welcome#index'
   get "dev" => "dev#index"
   get "inicio" => "inicio#index"
   get "busca" => "busca#buscar"
+  get "perfil" => "perfil#index"
   
   
 end

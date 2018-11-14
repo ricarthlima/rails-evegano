@@ -24,6 +24,7 @@ class Usuarios::OmniauthController < ApplicationController
       end 
     end
     
+=begin
     # twitter callback
     def twitter
       @usuario = Usuario.create_from_provider_data(request.env['omniauth.auth'])
@@ -35,6 +36,7 @@ class Usuarios::OmniauthController < ApplicationController
         redirect_to new_usuario_registration_url
       end 
     end
+=end
     
     # callback de falha
     def failure
