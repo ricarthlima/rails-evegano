@@ -48,6 +48,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 # GEMs de Autenticação
 gem 'devise'
+# OAuth gerenciará a autenticação com terceiros
+gem 'omniauth'
 # Use Omniauth Facebook plugin
 gem 'omniauth-facebook', '~> 4.0'
 # Use Omniauth Google plugin

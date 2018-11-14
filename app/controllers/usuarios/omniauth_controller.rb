@@ -1,7 +1,7 @@
 class Usuarios::OmniauthController < ApplicationController
     # facebook callback
     def facebook
-      @usuario = Usuario.create_from_provider_data(request.env['omniauth.auth'])
+      @usuario = Usuario.create_from_facebook_data(request.env['omniauth.auth'])
       if @usuario.persisted?
         sign_in_and_redirect @usuario
         #set_flash_message(:notice, :success, kind: 'Facebook') if is_navigational_format?

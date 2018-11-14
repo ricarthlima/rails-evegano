@@ -21,4 +21,5 @@ Rails.application.routes.draw do
   get "inicio" => "inicio#index"
   get "busca" => "busca#buscar"
   
+  
 end
