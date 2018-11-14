@@ -1,0 +1,22 @@
+<%= form_for @produto_imagem, html: { multipart: true } do |form| %>
+  <% if produto_imagem.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(produto_imagem.errors.count, "error") %> prohibited this produto_imagem from being saved:</h2>
+
+      <ul>
+      <% produto_imagem.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="field">
+    <%= form.label :Imagem %>
+    <%= form.file_field :cover %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

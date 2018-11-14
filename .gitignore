@@ -26,5 +26,8 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
+# Ignorar imagens que são feitas em upload
+/system/produto_imagems/*
+
 # Ignorar informações sensíveis
 .env

@@ -12,6 +12,9 @@
       </div>
     <% end %>
 
-    <%= button_to "Enviar rótulo", class: "btn btn-danger"%>
-    <%= button_to "Enviar código de barras", class: "btn btn-danger"%>
+    <div>
+      <%= button_to "Enviar rótulo", new_produto_imagem_url+"/rotulo/" ,class: "btn btn-success", method: :get%>
+      <%= button_to "Enviar código de barras", new_produto_imagem_url+"/barras/" ,class: "btn btn-success", method: :get%>
+    </div>
+
 </div>
