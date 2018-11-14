@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :produto_imagems
   resources :marca_nome_alternativos
   resources :usuario_avalia_marcas
   resources :usuario_avalia_produtos

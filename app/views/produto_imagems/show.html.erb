@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <%= image_tag @produto_imagem.cover.url(:thumb) %>
+</p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @produto_imagem.titulo %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @produto_imagem.descricao %>
+</p>
+
+<%= link_to 'Edit', edit_produto_imagem_path(@produto_imagem) %> |
+<%= link_to 'Back', produto_imagems_path %>
