@@ -104,3 +104,6 @@ Share > Application > Open
 - ```gem uninstall <gem-name>``` ou
 - Removê-lo do Gemfile e executar ```bundle install```
 
+## 12. Instalação do programa image magick no Cloud 9
+### Para uso do paperclip
+Apenas seguir os passos ditos no [link](https://community.c9.io/t/install-imagemagick/3608/7)
