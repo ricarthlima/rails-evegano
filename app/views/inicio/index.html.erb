@@ -14,21 +14,21 @@
         
         <%= menu_item('Sair', destroy_usuario_session_path, method: :delete) %> 
       <% end %>
-      
+
     <% end %>
 <!-- NAVBAR -->
 
 <div class = "center-block">
     <img alt="Logo" src="/assets/logo.png" />
     <h2>É vegano?</h2>
-    
+
     <%= form_tag busca_path, method: :get do%>
       <div class="form-group">
         <%= text_field_tag :texto, @nome_busca, class: "form-control", placeholder: "Digite um produto, marca ou componente." %>
         <%= button_to "Buscar", nil, class: "btn btn-primary" %>
       </div>
     <% end %>
-    
+
     <%= button_to "Enviar rótulo", class: "btn btn-danger"%>
     <%= button_to "Enviar código de barras", class: "btn btn-danger"%>
 </div>
