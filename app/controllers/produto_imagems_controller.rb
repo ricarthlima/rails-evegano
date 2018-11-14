@@ -15,6 +15,8 @@ class ProdutoImagemsController < ApplicationController
   # GET /produto_imagems/new
   def new
     @produto_imagem = ProdutoImagem.new
+    @@tipo = params[:id]
+    
   end
 
   # GET /produto_imagems/1/edit
@@ -25,7 +27,13 @@ class ProdutoImagemsController < ApplicationController
   # POST /produto_imagems.json
   def create
     @produto_imagem = ProdutoImagem.new(produto_imagem_params)
-
+    
+    if @@tipo == "rotulo"
+      @produto_imagem.tipo = 0
+    elsif @@tipo == "barras"
+      @produto_imagem.tipo = 1
+    end
+   
     respond_to do |format|
       if @produto_imagem.save
         format.html { redirect_to @produto_imagem, notice: 'Produto imagem was successfully created.' }

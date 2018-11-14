@@ -14,5 +14,10 @@
   <%= @produto_imagem.descricao %>
 </p>
 
+<p>
+  <strong>Tipo da Imagem:</strong>
+  <%= class_tipo_imagem(@produto_imagem.tipo) %>
+</p>
+
 <%= link_to 'Edit', edit_produto_imagem_path(@produto_imagem) %> |
 <%= link_to 'Back', produto_imagems_path %>
