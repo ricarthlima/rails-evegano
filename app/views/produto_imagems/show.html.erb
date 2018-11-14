@@ -5,19 +5,9 @@
 </p>
 
 <p>
-  <strong>Titulo:</strong>
-  <%= @produto_imagem.titulo %>
-</p>
-
-<p>
-  <strong>Descricao:</strong>
-  <%= @produto_imagem.descricao %>
-</p>
-
-<p>
   <strong>Tipo da Imagem:</strong>
   <%= class_tipo_imagem(@produto_imagem.tipo) %>
 </p>
 
 <%= link_to 'Edit', edit_produto_imagem_path(@produto_imagem) %> |
-<%= link_to 'Back', produto_imagems_path %>
+<%= link_to 'Back', inicio_path %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_14_180707) do
+ActiveRecord::Schema.define(version: 2018_11_14_212111) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -52,8 +52,6 @@ ActiveRecord::Schema.define(version: 2018_11_14_180707) do
   end
 
   create_table "produto_imagems", force: :cascade do |t|
-    t.string "titulo"
-    t.text "descricao"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "cover_file_name"

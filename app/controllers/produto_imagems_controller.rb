@@ -1,12 +1,6 @@
 class ProdutoImagemsController < ApplicationController
   before_action :set_produto_imagem, only: [:show, :edit, :update, :destroy]
 
-  # GET /produto_imagems
-  # GET /produto_imagems.json
-  def index
-    @produto_imagems = ProdutoImagem.all
-  end
-
   # GET /produto_imagems/1
   # GET /produto_imagems/1.json
   def show
