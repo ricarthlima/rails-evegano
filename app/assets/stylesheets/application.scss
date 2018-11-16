@@ -30,3 +30,12 @@ h2{
 .nav{
     margin-bottom: auto;
 }
+
+div.horizontal_line{
+    width: 75%; /* Line width */ 
+    background-color: #68C14D; /* Line color */ 
+    height: 2px; /* Override in-line if you want specific height. */ 
+    /*position: center;*/
+    /*float: center; /* Causes the line to float to left of content. You can instead use position:absolute or display:inline-block if this fits better with your design */
+    margin: auto;
+}
