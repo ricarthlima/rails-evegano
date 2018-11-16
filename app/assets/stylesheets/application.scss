@@ -39,3 +39,23 @@ div.horizontal_line{
     /*float: center; /* Causes the line to float to left of content. You can instead use position:absolute or display:inline-block if this fits better with your design */
     margin: auto;
 }
+
+div.container-box{
+    padding: 3%;
+    /*width: 75%;
+    height: auto;
+    background-color: #FFFFFF;
+    margin: auto;
+    border-radius: 1%;*/
+}
+
+.btn_color{
+    background-color: #ED8F20;
+    color: #FFFFFF;
+    font-weight: bold;
+    width: 75%;
+}
+
+.form-control{
+    width: 75%;
+}

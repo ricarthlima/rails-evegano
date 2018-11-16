@@ -1,60 +1,55 @@
-<div class = "container-box">
-  <h2>Cadastro</h2>
+<div class = "panel panel-default container-box">
+  <%= image_tag("/assets/logos/logo-128.png", size: "64", class: "img_center") %>
+  <center><h2>Crie uma conta gratuitamente</h2></center> <br />
   
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= devise_error_messages! %>
   
-    <div class="form-group">
-      <%= f.label :email %>
-      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control"%>
-    </div>
-  
-    <div class="form-group">
-      <%= f.label :password %>
-      <% if @minimum_password_length %>
-        <em>(<%= @minimum_password_length %> characters minimum)</em>
-      <% end %>
-      <%= f.password_field :password, autocomplete: "new-password", class: "form-control" %>
-    </div>
-  
-    <div class="form-group">
-      <%= f.label :password_confirmation %>
-      <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control" %>
-    </div>
+    <center>
+      <div class="form-group">
+        <%= f.text_field :nome, autofocus: true, autocomplete: "nome", class: "form-control", placeholder: :nome %>
+      </div>
+      
+      <div class="form-group">
+        <%= f.text_field :sobrenome, autocomplete: "sobrenome", class: "form-control", placeholder: :sobrenome %>
+      </div>
+      
+      <div class="form-group">
+        <%= f.text_field :cep, autocomplete: "cep", class: "form-control", placeholder: :cep%>
+      </div>
+      
+      <div class="form-group">
+        <%= f.text_field :pais, autocomplete: "pais", class: "form-control", placeholder: :pais %>
+      </div>
+      
+      <div class="form-group">
+        <%= f.text_field :telefone, autocomplete: "telefone", class: "form-control", placeholder: :telefone%>
+      </div>
+      
+      <strong>Dentre essas opções, como você se identifica?</strong>
+      <div class="form-group">
+        <%= f.select :tipo_usuario, ["Vegano","Vegetariano","Lactovegetariano","Ovolactovegetariano","Outros"]%>
+      </div>
+      
+      <div class="form-group">
+        <%= f.email_field :email, autocomplete: "email", class: "form-control", placeholder: :email%>
+      </div>
     
-    <div class="form-group">
-      <%= f.label :nome %>
-      <%= f.text_field :nome, autocomplete: "nome", class: "form-control" %>
-    </div>
+      <div class="form-group">
+        <%= f.password_field :password, autocomplete: "new-password", class: "form-control", placeholder: :password%>
+        <% if @minimum_password_length %>
+          <em>(no mínimo <%= @minimum_password_length %> caracteres)</em>
+        <% end %>
+      </div>
     
-    <div class="form-groupd">
-      <%= f.label :sobrenome %>
-      <%= f.text_field :sobrenome, autocomplete: "sobrenome", class: "form-control" %>
-    </div>
+      <div class="form-group">
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control", placeholder: :password_confirmation %>
+      </div>
     
-    <div class="form-group">
-      <%= f.label :cep %>
-      <%= f.text_field :cep, autocomplete: "cep", class: "form-control" %>
-    </div>
-    
-    <div class="form-group">
-      <%= f.label :pais %>
-      <%= f.text_field :pais, autocomplete: "pais", class: "form-control" %>
-    </div>
-    
-    <div class="form-group">
-      <%= f.label :telefone %>
-      <%= f.text_field :telefone, autocomplete: "telefone", class: "form-control" %>
-    </div>
-    
-    <div class="form-group">
-      <%= f.label :tipo_usuario %>
-      <%= f.text_field :tipo_usuario, autocomplete: "tipo de usuario" %>
-    </div>
-  
-    <div class="actions">
-      <%= f.submit "Sign up", class: "btn btn-primary" %>
-    </div>
+      <div class="actions">
+        <%= f.submit "CRIAR CONTA", class: "btn btn_color" %>
+      </div>
+    </center>
   <% end %>
   
   <%= render "devise/shared/links" %>
