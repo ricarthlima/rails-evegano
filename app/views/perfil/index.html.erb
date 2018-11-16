@@ -8,7 +8,7 @@
     <strong><%= class_usuario_vegano(current_usuario.tipo_usuario)%></strong>
     
     <% if current_usuario.dev %>
-        class_dev(current_usuario.dev)
+        <% class_dev(current_usuario.dev) %>
     <% end %>
 </div>
 
