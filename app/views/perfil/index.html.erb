@@ -6,7 +6,7 @@
 
 <div class = "center-block">
     <% if current_usuario.foto != nil %>
-        <%= image_tag current_usuario.foto, size: "100px" %>
+        <%= image_tag current_usuario.foto, size: "100" %>
     <% end %>
     
     <strong><%= class_usuario_vegano(current_usuario.tipo_usuario)%></strong>
