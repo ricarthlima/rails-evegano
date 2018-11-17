@@ -27,6 +27,10 @@ h2{
     color: #68C14D;
 }
 
+span{
+    font-family: 'Mali', cursive;
+}
+
 .nav{
     margin-bottom: auto;
 }
@@ -49,13 +53,17 @@ div.container-box{
     border-radius: 1%;*/
 }
 
-.btn_color{
+.btn-primary-color{
     background-color: #ED8F20;
     color: #FFFFFF;
     font-weight: bold;
+}
+
+.btn-75{
     width: 75%;
 }
 
 .form-control{
     width: 75%;
+    margin: auto;
 }

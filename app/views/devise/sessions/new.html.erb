@@ -9,7 +9,7 @@
         <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: :email %><br />
         <%= f.password_field :password, autocomplete: "current-password", class: "form-control", placeholder: :password %><br />
         <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
-          <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
+          <%= link_to "Esqueceu sua senha?", new_password_path(resource_name) %><br />
         <% end -%>
         
         <br />
@@ -21,7 +21,7 @@
     
       <br />
       <div class="actions">
-        <%= f.submit "ENTRAR", class: "btn btn_color" %>
+        <%= f.submit "ENTRAR", class: "btn btn-primary-color btn-75" %>
       </div>
     <% end %>
   </center>
