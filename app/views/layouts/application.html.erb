@@ -13,10 +13,11 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag asset_path('favicon.ico'), :rel => 'icon', :type =>  "image/x-icon" %>
     
+    
   </head>
 
   <body>
-  
+    <%= yield :nav %><br />
     <div class = "container">
       <%= yield %>
     </div>

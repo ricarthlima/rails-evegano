@@ -1,5 +1,6 @@
-<%= render "layouts/navbar" %>
-
+<%= content_for :nav do%>
+  <%= render "layouts/navbar" %>
+<% end %>
 
 <div class = "center-block"> <center>
     <%= image_tag("/assets/logos/logo-128.png", size: "64", class: "img_center") %>
@@ -18,8 +19,6 @@
 
     <table class = "table">
       <%= button_to "Ler Rótulo do Produto", new_produto_imagem_url+"/rotulo/" , class: "btn btn-success", method: :get%>
-      _
       <%= button_to "Ler Código de Barras", new_produto_imagem_url+"/barras/" ,class: "btn btn-success", method: :get%>
     </table>
-
 </center> </div>

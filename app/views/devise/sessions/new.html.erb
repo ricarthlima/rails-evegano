@@ -1,13 +1,11 @@
 <div class = "panel panel-default container-box">
-  <%= image_tag("/assets/logos/logo-128.png", size: "64", class: "img_center") %>
-  
-  
   <center>
+    <%= image_tag("/assets/logos/logo-128.png", size: "64") %>
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-      <div class="form-group ">
+      <div class="form-group">
         <br />
         <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: :email %><br />
-        <%= f.password_field :password, autocomplete: "current-password", class: "form-control", placeholder: :password %><br />
+        <%= f.password_field :password, autocomplete: "current-password", class: "form-control", placeholder: :password %>
         <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
           <%= link_to "Esqueceu sua senha?", new_password_path(resource_name) %><br />
         <% end -%>
@@ -18,8 +16,7 @@
           <%= f.label :remember_me %>
         <% end -%>
       </div>
-    
-      <br />
+
       <div class="actions">
         <%= f.submit "ENTRAR", class: "btn btn-primary-color btn-75" %>
       </div>

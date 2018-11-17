@@ -10,12 +10,13 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
  */
 
-/**@import "bootstrap-sprockets";
-@import "bootstrap";**/
+@import "bootstrap";
+
+body{
+    background-color: #BDF2CC;
+}
 
 h1{
     font-family: 'Mali', cursive;
@@ -31,8 +32,14 @@ span{
     font-family: 'Mali', cursive;
 }
 
-.nav{
-    margin-bottom: auto;
+
+.bg-green{
+    background-color: #88c057;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.text-nav{
+    color: #000000;
 }
 
 div.horizontal_line{
@@ -45,12 +52,11 @@ div.horizontal_line{
 }
 
 div.container-box{
-    padding: 3%;
-    /*width: 75%;
-    height: auto;
     background-color: #FFFFFF;
+    padding: 3%;
+    margin-top: 5%;
     margin: auto;
-    border-radius: 1%;*/
+    border-radius: 1%;
 }
 
 .btn-primary-color{
