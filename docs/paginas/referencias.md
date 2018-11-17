@@ -13,7 +13,8 @@ Para informações sobre design para formulários na aplicação, acesse o [link
     2 - Instalação das gems (boostrap e jquery e etc)
     3 - E fazer o import no stylesheets, dando o import no arquivo bootstrap.scss
 - Link úteis
-    - [Artigo do Medium](https://medium.com/jaguaribetech/framework-bootstrap-para-aplica%C3%A7%C3%B5es-rails-cbaf94e802eb) 
+    - [Tutorial de instalação](https://medium.freecodecamp.org/add-bootstrap-to-your-ruby-on-rails-project-8d76d70d0e3b)
+    - [Informações no Artigo do Medium](https://medium.com/jaguaribetech/framework-bootstrap-para-aplica%C3%A7%C3%B5es-rails-cbaf94e802eb) 
     - [Vídeo tutorial](https://www.youtube.com/watch?v=ZPh19YUbC3A) 
     - [Site do boostrap](https://getbootstrap.com.br/) 
 - Links úteis sobre sidebar
