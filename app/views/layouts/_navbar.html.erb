@@ -18,7 +18,7 @@
         </li>
       </ul>
       
-      <%= link_to((current_usuario.nome + " " + current_usuario.sobrenome), perfil_path, class: "nav-link text-nav") %>
+      <%= link_to((current_usuario.nome), perfil_path, class: "nav-link text-nav") %>
 
       <% if current_usuario.dev then%>
           <%= link_to("Dev Console", dev_path, class: "btn btn-danger mr-sm-2")%>
