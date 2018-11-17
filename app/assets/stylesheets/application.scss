@@ -10,18 +10,76 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
  */
 
-/**@import "bootstrap-sprockets";
-@import "bootstrap";**/
+@import "bootstrap";
+
+body{
+    background-color: #BDF2CC;
+}
 
 h1{
     font-family: 'Mali', cursive;
     color: #68C14D;
 }
 
-.nav{
-    margin-bottom: auto;
+h2{
+    font-family: 'Mali', cursive;
+    color: #68C14D;
+}
+
+span{
+    font-family: 'Mali', cursive;
+}
+
+
+.bg-green{
+    background-color: #88c057;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.text-nav{
+    color: #000000;
+}
+
+div.horizontal_line{
+    width: 75%; /* Line width */ 
+    background-color: #68C14D; /* Line color */ 
+    height: 2px; /* Override in-line if you want specific height. */ 
+    /*position: center;*/
+    /*float: center; /* Causes the line to float to left of content. You can instead use position:absolute or display:inline-block if this fits better with your design */
+    margin: auto;
+}
+
+div.container-box{
+    background-color: #FFFFFF;
+    padding: 3%;
+    margin-top: 5%;
+    margin: auto;
+    border-radius: 1%;
+}
+
+.btn-primary-color{
+    background-color: #ED8F20;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.btn-75{
+    width: 75%;
+}
+
+.form-control{
+    width: 75%;
+    margin: auto;
+}
+
+.centro {
+    width: 200px;
+    height: 200px;
+    margin-left: -100px; /* metade da largura */
+    margin-top: -100px; /* metade da altura */
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }

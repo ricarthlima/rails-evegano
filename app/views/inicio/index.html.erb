@@ -1,20 +1,24 @@
-<%= render "layouts/navbar" %>
+<%= content_for :nav do%>
+  <%= render "layouts/navbar" %>
+<% end %>
 
-
-<div class = "center-block">
+<div class = "center-block"> <center>
     <%= image_tag("/assets/logos/logo-128.png", size: "64", class: "img_center") %>
     <h2 class = "titulo_centro">É vegano?</h2>
 
     <%= form_tag busca_path, method: :get do%>
       <div class="form-group botoes">
-        <%= text_field_tag :texto, @nome_busca, class: "form-control", placeholder: "Digite um produto, marca ou componente." %>
-        <%= button_to "Buscar", nil, class: "btn btn-primary" %>
+        <%= text_field_tag :texto, @nome_busca, class: "form-control", placeholder: "Digite um produto, marca ou componente." %><br />
+        <%= button_to "Buscar", nil, class: "btn btn-primary-color" %>
       </div>
     <% end %>
+    
+    <div class = "horizontal_line"></div><br />
+    
+    <span>Que tal buscar usando a câmera do seu celular?</span><br /><br />
 
-    <div>
-      <%= button_to "Enviar rótulo", new_produto_imagem_url+"/rotulo/" ,class: "btn btn-success", method: :get%>
-      <%= button_to "Enviar código de barras", new_produto_imagem_url+"/barras/" ,class: "btn btn-success", method: :get%>
-    </div>
-
-</div>
+    <table class = "table">
+      <%= button_to "Ler Rótulo do Produto", new_produto_imagem_url+"/rotulo/" , class: "btn btn-success", method: :get%>
+      <%= button_to "Ler Código de Barras", new_produto_imagem_url+"/barras/" ,class: "btn btn-success", method: :get%>
+    </table>
+</center> </div>

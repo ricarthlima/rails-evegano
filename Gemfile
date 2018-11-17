@@ -18,7 +18,8 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+# gem 'sass-rails', '~> 5.0' #Ruby Sass is deprecated and will be unmaintained as of 26 March 2019.
+gem 'sassc-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -51,6 +52,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 # GEMs de Autenticação
 gem 'devise'
+gem 'devise-i18n'
 # OAuth gerenciará a autenticação com terceiros
 gem 'omniauth'
 # Use Omniauth Facebook plugin
@@ -62,19 +64,23 @@ gem 'omniauth-twitter', '~> 1.2', '>= 1.2.1'
 # Use ActiveRecord Sessions
 gem 'activerecord-session_store', '~> 1.0'
 
-gem "therubyracer"
-gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 
-gem 'twitter-bootstrap-rails'
+gem 'bootstrap'
+gem 'jquery-rails'
+
+# gem "therubyracer"
+gem 'mini_racer'
+# gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+
+# gem 'twitter-bootstrap-rails'
 
 # gem 'bootstrap', '~> 4.1.3'
 # gem 'bootstrap-sass', '~> 3.2.0'
 # gem 'autoprefixer-rails'
 
-gem 'jquery-rails'
 
+gem 'rails-i18n', '~> 5.1'
 
-# gem 'mini_racer'
 
 # GEMs de Desenvolvimento e Teste
 group :development, :test do
