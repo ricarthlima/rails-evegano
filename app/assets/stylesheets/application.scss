@@ -73,3 +73,13 @@ div.container-box{
     width: 75%;
     margin: auto;
 }
+
+.centro {
+    width: 200px;
+    height: 200px;
+    margin-left: -100px; /* metade da largura */
+    margin-top: -100px; /* metade da altura */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
