@@ -168,12 +168,12 @@ ActiveRecord::Schema.define(version: 2018_11_14_212111) do
     t.string "telefone"
     t.integer "tipo_usuario"
     t.boolean "dev"
+    t.string "provider", limit: 50, default: "", null: false
+    t.string "uid", limit: 500, default: "", null: false
     t.string "avatar_file_name"
     t.string "avatar_content_type"
     t.integer "avatar_file_size"
     t.datetime "avatar_updated_at"
-    t.string "provider", limit: 50, default: "", null: false
-    t.string "uid", limit: 500, default: "", null: false
     t.string "foto"
     t.index ["email"], name: "index_usuarios_on_email", unique: true
     t.index ["reset_password_token"], name: "index_usuarios_on_reset_password_token", unique: true
