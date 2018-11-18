@@ -78,8 +78,11 @@ gem 'mini_racer'
 # gem 'bootstrap-sass', '~> 3.2.0'
 # gem 'autoprefixer-rails'
 
-
+# Internalionalização da linguagem
 gem 'rails-i18n', '~> 5.1'
+
+# Distância de Levenshtein - Comparação entre 2 strings
+gem 'levenshtein', '~> 0.2.2'
 
 
 # GEMs de Desenvolvimento e Teste

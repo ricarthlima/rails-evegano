@@ -142,7 +142,8 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     jwt (1.5.6)
-    libv8 (6.7.288.46.1-x86_64-linux)
+    levenshtein (0.2.2)
+    libv8 (6.7.288.46.1)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -335,6 +336,7 @@ DEPENDENCIES
   dotenv (~> 2.2.1)
   jbuilder (~> 2.5)
   jquery-rails
+  levenshtein (~> 0.2.2)
   listen (>= 3.0.5, < 3.2)
   loofah (>= 2.2.3)
   mini_racer
