@@ -14,6 +14,7 @@ class ProdutosController < ApplicationController
 
   # GET /produtos/new
   def new
+    @ipp = params[:id]
     @produto = Produto.new
   end
 

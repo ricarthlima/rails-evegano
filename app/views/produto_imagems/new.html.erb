@@ -1,0 +1,9 @@
+<%= content_for :nav do%>
+  <%= render "layouts/navbar" %>
+<% end %>
+
+<h1>New Produto Imagem</h1>
+
+<%= render 'form', produto_imagem: @produto_imagem %>
+
+<%= link_to 'Back', :back %>

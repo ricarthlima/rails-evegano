@@ -3,4 +3,5 @@ class InicioController < ApplicationController
     end
     
     before_action :authenticate_usuario!
+     
 end

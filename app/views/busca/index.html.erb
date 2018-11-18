@@ -1,3 +1,7 @@
+<%= content_for :nav do%>
+  <%= render "layouts/navbar" %>
+<% end %>
+
 <h1>Você quis dizer?</h1>
 
 <% if @candidatos_produtos.size >= 1 %>

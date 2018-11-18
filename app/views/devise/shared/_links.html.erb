@@ -1,25 +1,41 @@
-<%- if controller_name != 'sessions' %>
-  <%= link_to "Log in", new_session_path(resource_name) %><br />
-<% end -%>
+<div class = "center-block"> <center>
+      <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+        <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
+      <% end -%>
+      
+      <%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
+        <%= link_to "Didn't receive unlock instructions?", new_unlock_path(resource_name) %><br />
+      <% end -%>
+</center> </div>
 
-<%- if devise_mapping.registerable? && controller_name != 'registrations' %>
-  <%= link_to "Sign up", new_registration_path(resource_name) %><br />
-<% end -%>
 
-<%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
-  <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
-<% end -%>
+<br /><div class = "horizontal_line"></div><br />
 
-<%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
-  <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
-<% end -%>
-
-<%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
-  <%= link_to "Didn't receive unlock instructions?", new_unlock_path(resource_name) %><br />
-<% end -%>
-
-<%- if devise_mapping.omniauthable? %>
-  <%- resource_class.omniauth_providers.each do |provider| %>
-    <%= link_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider) %><br />
+<center>
+  <%- if controller_name != 'sessions' %>
+    <h6><strong>Já é cadastrado?</strong></h6>
+    <%= link_to "Entrar", new_session_path(resource_name) %><br />
   <% end -%>
-<% end -%>
+</center>
+
+<br />
+<div class = "center-block">
+  <center>
+    <%- if devise_mapping.omniauthable? %>
+      <%- resource_class.omniauth_providers.each do |provider| %>
+        <%= link_to image_tag("/assets/providers/#{OmniAuth::Utils.camelize(provider)}.png"), omniauth_authorize_path(resource_name, provider) %>
+      <% end -%>
+    <% end -%>
+  </center>
+</div>
+
+<br />
+<div class = "center-block">
+  <center>
+      <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+        <h6><strong>Ainda não é cadastrado?</strong></h6>
+        <%= link_to "Cadastre-se", new_registration_path(resource_name) %>
+      <% end -%>
+  </center>
+</div>
+

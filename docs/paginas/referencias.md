@@ -13,7 +13,8 @@ Para informações sobre design para formulários na aplicação, acesse o [link
     2 - Instalação das gems (boostrap e jquery e etc)
     3 - E fazer o import no stylesheets, dando o import no arquivo bootstrap.scss
 - Link úteis
-    - [Artigo do Medium](https://medium.com/jaguaribetech/framework-bootstrap-para-aplica%C3%A7%C3%B5es-rails-cbaf94e802eb) 
+    - [Tutorial de instalação](https://medium.freecodecamp.org/add-bootstrap-to-your-ruby-on-rails-project-8d76d70d0e3b)
+    - [Informações no Artigo do Medium](https://medium.com/jaguaribetech/framework-bootstrap-para-aplica%C3%A7%C3%B5es-rails-cbaf94e802eb) 
     - [Vídeo tutorial](https://www.youtube.com/watch?v=ZPh19YUbC3A) 
     - [Site do boostrap](https://getbootstrap.com.br/) 
 - Links úteis sobre sidebar
@@ -42,11 +43,13 @@ Para informações sobre design para formulários na aplicação, acesse o [link
 ## Informações gerais importantes
 ### OCR
 - Links úteis
-    - [link 1](https://github.com/suyesh/ocr_space)
-    - [link 2](https://github.com/meh/ruby-tesseract-ocr) 
-    - [link 3](https://github.com/dannnylo/rtesseract) 
-    - [link 4](http://www.cloudmersive.com/ocr-api) 
-    - [link 5](https://medium.com/innocode-stories/how-to-do-ocr-in-ruby-on-osx-6e16fd072b63)
+    - [link 1](https://github.com/suyesh/ocr_space) *P2*
+    - [link 2](https://github.com/meh/ruby-tesseract-ocr) *P2* 
+    - [link 3](https://github.com/dannnylo/rtesseract)  *P1*
+      -[Tutorial do dannylo](https://dannnylo.wordpress.com/2010/08/27/rtesseract-ocr-para-ruby/) *P1*
+    - [Tutorial em vídeo](https://www.youtube.com/watch?v=6_aqncTWgkk) *P1*  
+    - [link 4](https://medium.com/innocode-stories/how-to-do-ocr-in-ruby-on-osx-6e16fd072b63) *P3*
+    - [link 5](http://www.cloudmersive.com/ocr-api) *P3*
 
 ### Código de Barras
 - Links úteis

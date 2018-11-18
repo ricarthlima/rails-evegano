@@ -1,33 +1,24 @@
-<!-- NAVBAR -->
-    <%= nav_bar fixed: :top, brand: "É vegano?" ,  brand_link: inicio_path, responsive: true do %>
-      <%= menu_group do %>
-        <%= menu_item "Histórico de Compras" %>
-      <% end %>
-      
-      
-      
-      <%= menu_group pull: :right do %>
-      <% if current_usuario.dev then%>
-        <%= menu_item "Dev Console", dev_path %>
-      <% end %>
-        <%= menu_item('Sair', destroy_usuario_session_path, method: :delete) %> 
-      <% end %>
-      
-    <% end %>
-<!-- NAVBAR -->
+<%= content_for :nav do%>
+  <%= render "layouts/navbar" %>
+<% end %>
 
-<div class = "center-block">
-    <img alt="Logo" src="/assets/logo.png" />
-    <h2>É vegano?</h2>
-    
+<div class = "center-block"> <center>
+    <%= image_tag("/assets/logos/logo-128.png", size: "64", class: "img_center") %>
+    <h2 class = "titulo_centro">É vegano?</h2>
+
     <%= form_tag busca_path, method: :get do%>
-      <div class="form-group">
-        <%= text_field_tag :texto, @nome_busca, class: "form-control", placeholder: "Digite um produto, marca ou componente." %>
-        <%= button_to "Buscar", nil, class: "btn btn-primary" %>
+      <div class="form-group botoes">
+        <%= text_field_tag :texto, @nome_busca, class: "form-control", placeholder: "Digite um produto, marca ou componente." %><br />
+        <%= button_to "Buscar", nil, class: "btn btn-primary-color" %>
       </div>
     <% end %>
     
-    <%= button_to "Enviar rótulo", class: "btn btn-danger"%>
-    <%= button_to "Enviar código de barras", class: "btn btn-danger"%>
+    <div class = "horizontal_line"></div><br />
     
-</div>
+    <span>Que tal buscar usando a câmera do seu celular?</span><br /><br />
+
+    <table class = "table">
+      <%= button_to "Ler Rótulo do Produto", new_produto_imagem_url+"/rotulo/" , class: "btn btn-success", method: :get%>
+      <%= button_to "Ler Código de Barras", new_produto_imagem_url+"/barras/" ,class: "btn btn-success", method: :get%>
+    </table>
+</center> </div>

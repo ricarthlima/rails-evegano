@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-green">
+  <div class = "container">
+    <!-- Brand e logo -->
+    <a class="navbar-brand" href=<%= inicio_path%>>
+      <%= image_tag asset_path("logos/logo-64.png"), size: "30", class: "d-inline-block align-top"%>
+    </a>
+    
+    <!-- Botão Sanduíche -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Tudo dentro dessa div vai sumir -->
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Histórico de Buscas</a>
+        </li>
+      </ul>
+      
+      <%= link_to((current_usuario.nome), perfil_path, class: "nav-link text-nav") %>
+
+      <% if current_usuario.dev then%>
+          <%= link_to("Dev Console", dev_path, class: "btn btn-danger mr-sm-2")%>
+      <% end %>
+      <%= button_to('Sair', destroy_usuario_session_path, method: :delete, class: "btn btn-danger my-2 my-sm-0") %> 
+    </div>
+    
+  </div>
+</nav>

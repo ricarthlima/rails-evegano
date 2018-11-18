@@ -8,6 +8,9 @@ ruby '2.5.1'
 
 gem 'rails', '~> 5.2.1'
 
+#Gem paperclip para upload de imagens
+gem "paperclip", "~> 6.0.0"
+
 # Usar o PostgreSQL para o Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 
@@ -15,7 +18,8 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+# gem 'sass-rails', '~> 5.0' #Ruby Sass is deprecated and will be unmaintained as of 26 March 2019.
+gem 'sassc-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -46,16 +50,37 @@ gem 'jbuilder', '~> 2.5'
 # Reduz o tempo de boot usando cache; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+# GEMs de Autenticação
 gem 'devise'
+gem 'devise-i18n'
+# OAuth gerenciará a autenticação com terceiros
+gem 'omniauth'
+# Use Omniauth Facebook plugin
+gem 'omniauth-facebook', '~> 4.0'
+# Use Omniauth Google plugin
+gem 'omniauth-google-oauth2', '~> 0.4.1'
+# Use Omniauth Twitter plugin
+gem 'omniauth-twitter', '~> 1.2', '>= 1.2.1'
+# Use ActiveRecord Sessions
+gem 'activerecord-session_store', '~> 1.0'
 
-gem "therubyracer"
+
+gem 'bootstrap'
+gem 'jquery-rails'
+
+# gem "therubyracer"
+gem 'mini_racer'
 # gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-gem 'twitter-bootstrap-rails'
+
+# gem 'twitter-bootstrap-rails'
+
 # gem 'bootstrap', '~> 4.1.3'
-gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+# gem 'bootstrap-sass', '~> 3.2.0'
+# gem 'autoprefixer-rails'
 
 
-# gem 'mini_racer'
+gem 'rails-i18n', '~> 5.1'
+
 
 # GEMs de Desenvolvimento e Teste
 group :development, :test do
@@ -71,6 +96,8 @@ group :development do
   # Mantém a máquina rodando no backgroung. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  # Use Dotenv for environment variables
+  gem 'dotenv', '~> 2.2.1'
 end
 
 # GEMs apenas de Teste
@@ -89,4 +116,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Corrigir vulnerabilidade apontada pelo GitHub
 gem "loofah", ">= 2.2.3"
+gem "rack", ">= 2.0.6"
+
+
 
