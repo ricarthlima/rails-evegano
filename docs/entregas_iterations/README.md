@@ -10,7 +10,7 @@ Elas estão dividas em:
 - [Primeira Iteração](https://github.com/ricarthlima/eo-project-es/tree/master/docs/entregas_iterations/I01) (24/09/2018 -> 08/10/2018)
 - [Segunda Iteração](https://github.com/ricarthlima/eo-project-es/tree/master/docs/entregas_iterations/I02) (09/10/2018 -> 22/10/2018)
 - [Terceira Iteração](https://github.com/ricarthlima/eo-project-es/tree/master/docs/entregas_iterations/I03) (23/10/2018 -> 07/11/2018)
-- [Quarta Iteração](https://github.com/ricarthlima/eo-project-es/tree/master/docs/entregas_iterations/I04)
+- [Quarta Iteração](https://github.com/ricarthlima/eo-project-es/tree/master/docs/entregas_iterations/I04) (08/11/2018 -> 26/11/2018)
 
 Dentro de cada pasta existem os documentos das entregas, incluindo também as atas de reunião de cada período.
 
