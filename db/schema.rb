@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_14_212111) do
+ActiveRecord::Schema.define(version: 2018_11_22_212728) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,10 +26,10 @@ ActiveRecord::Schema.define(version: 2018_11_14_212111) do
   create_table "componentes", force: :cascade do |t|
     t.string "cod_europeu"
     t.string "cod_INS"
-    t.string "nome"
-    t.text "descricao"
-    t.integer "class_vegan"
-    t.text "justificativa"
+    t.string "nome", null: false
+    t.text "descricao", null: false
+    t.integer "class_vegan", null: false
+    t.text "justificativa", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -166,7 +166,7 @@ ActiveRecord::Schema.define(version: 2018_11_14_212111) do
     t.string "cep"
     t.string "pais"
     t.string "telefone"
-    t.integer "tipo_usuario"
+    t.integer "tipo_usuario", default: 4, null: false
     t.boolean "dev"
     t.string "provider", limit: 50, default: "", null: false
     t.string "uid", limit: 500, default: "", null: false

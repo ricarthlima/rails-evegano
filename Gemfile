@@ -114,6 +114,9 @@ gem 'mini_racer'
 # GEMs para Desenvolvimento e Testes
 
 group :development, :test do
+  # Usar o RSPEC-Rails para TDD
+  gem 'rspec-rails', '~> 3.7'
+  
   # Chame 'byebug' para debuggar
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -134,7 +137,7 @@ end
 #-------------------------------------------------------------------------------
 # GEMs apenas para Testes
 group :test do
-  gem 'rspec'
+  # gem 'rspec'
   gem 'cucumber'
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
