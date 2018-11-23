@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe Usuario, :type => :model do
- 
+
     it "é instanciavel" do
         expect(Usuario.new).to be_present
     end
@@ -37,6 +37,7 @@ RSpec.describe Usuario, :type => :model do
         usuario.tipo_usuario = nil
         expect(usuario.valid?).to be_falsey
     end
- 
+
  end
+  
   
