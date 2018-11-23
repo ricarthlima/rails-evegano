@@ -30,25 +30,25 @@ RSpec.describe Componente, :type => :model do
     
     it "não é válido, falta nome" do
         @componente.nome = nil
-        @componente.valid?
+        @componente.valid
         expect(@componente.errors[:nome]).to include("não pode ficar em branco")
     end
     
     it "não é válido, falta descricao" do
         @componente.descricao = nil
-        @componente.valid?
+        @componente.valid
         expect(@componente.errors[:descricao]).to include("não pode ficar em branco")
     end
     
     it "não é válido, falta classificação vegana" do
         @componente.class_vegan = nil
-        @componente.valid?
+        @componente.valid
         expect(@componente.errors[:class_vegan]).to include("não pode ficar em branco")
     end
     
     it "não é válido, falta justificativa" do
         @componente.justificativa = nil
-        @componente.valid?
+        @componente.valid
         expect(@componente.errors[:justificativa]).to include("não pode ficar em branco")
     end
     
