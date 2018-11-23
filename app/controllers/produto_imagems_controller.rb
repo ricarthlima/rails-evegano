@@ -8,9 +8,9 @@ class ProdutoImagemsController < ApplicationController
   # GET /produto_imagems/1
   # GET /produto_imagems/1.json
   def show
-    img = RTesseract.new("./texto.jpg")
+    img = RTesseract.new(@produto_imagem.cover.path)
     #Imprime o texto convertido
-    puts img.to_s
+    @sorry =  img.to_s
   end
 
   # GET /produto_imagems/new
