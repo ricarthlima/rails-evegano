@@ -1,8 +1,7 @@
-
-
+require "rubygems"
+require "rtesseract"
+  
 class ProdutoImagemsController < ApplicationController
-  require "rubygems"
-  require "rtesseract"
   
   before_action :set_produto_imagem, only: [:show, :edit, :update, :destroy]
 
