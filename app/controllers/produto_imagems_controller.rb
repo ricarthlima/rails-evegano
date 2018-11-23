@@ -1,9 +1,17 @@
+
+
 class ProdutoImagemsController < ApplicationController
+  require "rubygems"
+  require "rtesseract"
+  
   before_action :set_produto_imagem, only: [:show, :edit, :update, :destroy]
 
   # GET /produto_imagems/1
   # GET /produto_imagems/1.json
   def show
+    img = RTesseract.new("./texto.jpg")
+    #Imprime o texto convertido
+    puts img.to_s
   end
 
   # GET /produto_imagems/new
