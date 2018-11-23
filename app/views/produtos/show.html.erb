@@ -1,4 +1,7 @@
-<%= render "layouts/navbar" %>
+<%= content_for :nav do%>
+  <%= render "layouts/navbar" %>
+<% end %>
+
 <p id="notice"><%= notice %></p>
 
 <h3>

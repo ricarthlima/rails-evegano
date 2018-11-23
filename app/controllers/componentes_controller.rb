@@ -1,6 +1,9 @@
 class ComponentesController < ApplicationController
   before_action :set_componente, only: [:show, :edit, :update, :destroy]
 
+  def valido?
+    errors.add(:nome, "não pode ficar em branco") if componente.nome == "" or componente.nome == nil
+  end
   # GET /componentes
   # GET /componentes.json
   def index

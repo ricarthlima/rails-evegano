@@ -1,0 +1,18 @@
+env:
+  global:
+    - CC_TEST_REPORTER_ID=5040619d03652f43506a4fa5b61c6a024e93691c73a0ce9a306a462f136899d2
+
+language: ruby
+rvm:
+ - 2.5.1
+
+before_script:
+    - "ps auxw | grep postgres"
+    - "sudo service postgresql restart"
+  - "curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter"
+  - "chmod +x ./cc-test-reporter"
+  - ""./cc-test-reporter before-build"
+script:
+  - "bundle exec rspec"
+after_script:
+  - "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"

@@ -1,39 +1,88 @@
 # Arquivos que organiza as GEMs a serem usadas na aplicação.
-# Semrpe use o 'bundle install' após atualizar algo aqui.
+# Sempre use o 'bundle install' após atualizar algo aqui.
 
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+#-------------------------------------------------------------------------------
+# 1 - Principais
+
+# Usar Rails na versão correta
 gem 'rails', '~> 5.2.1'
 
-#Gem paperclip para upload de imagens
-gem "paperclip", "~> 6.0.0"
+# Usar i18n para internacionalizar mensagens no Rails
+gem 'rails-i18n', '~> 5.1'
 
 # Usar o PostgreSQL para o Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 
-# Use Puma as the app server
+# Usar Puma como servidor do App
 gem 'puma', '~> 3.11'
 
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+#-------------------------------------------------------------------------------
+# 2 - Bootstrap, CSS, JavaScript
 
-# Use Uglifier as compressor for JavaScript assets
+# Usar o Bootstrap como framework HTML+CSS+JavaScript
+gem 'bootstrap'
+
+# Usar o JQuery
+gem 'jquery-rails'
+
+# Usar SASSC para stylesheets
+# gem 'sass-rails', '~> 5.0' #Ruby Sass is deprecated and will be unmaintained as of 26 March 2019.
+gem 'sassc-rails'
+
+# Usar Uglifier como compressor de materiais JavaScript
 gem 'uglifier', '>= 1.3.0'
 
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'mini_racer', platforms: :ruby
-
-# Use CoffeeScript for .coffee assets and views
+# Usar CoffeeScript para materiais .coffee e views
 gem 'coffee-rails', '~> 4.2'
+
+#-------------------------------------------------------------------------------
+# 3 - Autenticação
+
+# Usar o Devise como Gerênciador de Autenticação
+gem 'devise'
+
+# Traduzir mensagens do Devise
+gem 'devise-i18n'
+
+# Usar o OAuth para gerênciar a autenticação com terceiros
+gem 'omniauth'
+
+# Usar Omniauth Facebook plugin
+gem 'omniauth-facebook', '~> 4.0'
+
+# Usar Omniauth Google plugin
+gem 'omniauth-google-oauth2', '~> 0.4.1'
+
+# Usar Omniauth Twitter plugin
+gem 'omniauth-twitter', '~> 1.2', '>= 1.2.1'
+
+# Usar ActiveRecord Sessions para gerênciar Sessões Ativas
+gem 'activerecord-session_store', '~> 1.0'
+
+#-------------------------------------------------------------------------------
+# 4 - Outros
+
+# Usar para upload de imagens
+gem "paperclip", "~> 6.0.0"
 
 # TurboLinks faz a navegação ficar mais ágil. Leia-mais em https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
+
+# Reduz o tempo de boot usando cache; required in config/boot.rb
+gem 'bootsnap', '>= 1.1.0', require: false
+
+gem 'mini_racer'
+
+#-------------------------------------------------------------------------------
+# 5 - Desativadas
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
@@ -46,43 +95,34 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# Reduz o tempo de boot usando cache; required in config/boot.rb
-gem 'bootsnap', '>= 1.1.0', require: false
+# See https://github.com/rails/execjs#readme for more supported runtimes
+# gem 'mini_racer', platforms: :ruby
 
-# GEMs de Autenticação
-gem 'devise'
-# OAuth gerenciará a autenticação com terceiros
-gem 'omniauth'
-# Use Omniauth Facebook plugin
-gem 'omniauth-facebook', '~> 4.0'
-# Use Omniauth Google plugin
-gem 'omniauth-google-oauth2', '~> 0.4.1'
-# Use Omniauth Twitter plugin
-gem 'omniauth-twitter', '~> 1.2', '>= 1.2.1'
-# Use ActiveRecord Sessions
-gem 'activerecord-session_store', '~> 1.0'
+# gem "therubyracer"
 
-gem "therubyracer"
-gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+# gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 
-gem 'twitter-bootstrap-rails'
+# gem 'twitter-bootstrap-rails'
 
 # gem 'bootstrap', '~> 4.1.3'
 # gem 'bootstrap-sass', '~> 3.2.0'
 # gem 'autoprefixer-rails'
 
-gem 'jquery-rails'
 
 
-# gem 'mini_racer'
+#-------------------------------------------------------------------------------
+# GEMs para Desenvolvimento e Testes
 
-# GEMs de Desenvolvimento e Teste
 group :development, :test do
+  # Usar o RSPEC-Rails para TDD
+  gem 'rspec-rails', '~> 3.7'
+  
   # Chame 'byebug' para debuggar
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
-# GEMs apenas de Desenvolvimento
+#-------------------------------------------------------------------------------
+# GEMs apenas para Desenvolvimento
 group :development do
   # Acessar um console interativo digitando 'console'
   gem 'web-console', '>= 3.3.0'
@@ -94,9 +134,10 @@ group :development do
   gem 'dotenv', '~> 2.2.1'
 end
 
-# GEMs apenas de Teste
+#-------------------------------------------------------------------------------
+# GEMs apenas para Testes
 group :test do
-  gem 'rspec'
+  # gem 'rspec'
   gem 'cucumber'
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
@@ -105,6 +146,7 @@ group :test do
   gem 'chromedriver-helper'
 end
 
+#-------------------------------------------------------------------------------
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
