@@ -13,9 +13,10 @@ before_script:
  - "chmod +x ./cc-test-reporter"
  - "./cc-test-reporter before-build"
  - "bundle install"
- - "rake db:create"
- - "rake db:migrate"
+
 script:
+ - "bundle exec rake db:create"
+ - "bundle exec rake db:migrate"
  - "bundle exec rspec"
 after_script:
  - "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
