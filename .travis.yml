@@ -6,5 +6,3 @@ rvm:
 before_install:
     - "ps auxw | grep postgres"
     - "sudo service postgresql restart"
-    - "rake db:create"
-    - "rake db:migrate"
