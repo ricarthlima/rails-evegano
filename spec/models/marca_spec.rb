@@ -26,25 +26,25 @@ RSpec.describe Marca, :type => :model do
     
     it "não é válido, falta nome" do
         @marca.nome = nil
-        @marca.valid?
+        @marca.valid
         expect(@marca.errors[:nome]).to include("não pode ficar em branco")
     end
     
     it "não é válido, falta descricao" do
         @marca.descricao = nil
-        @marca.valid?
+        @marca.valid
         expect(@marca.errors[:descricao]).to include("não pode ficar em branco")
     end
     
     it "não é válido, falta classificação vegana" do
         @marca.class_vegan = nil
-        @marca.valid?
+        @marca.valid
         expect(@marca.errors[:class_vegan]).to include("não pode ficar em branco")
     end
     
     it "não é válido, falta justificativa" do
         @marca.justificativa = nil
-        @marca.valid?
+        @marca.valid
         expect(@marca.errors[:justificativa]).to include("não pode ficar em branco")
     end
     
