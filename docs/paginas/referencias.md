@@ -67,7 +67,14 @@ Para informações sobre design para formulários na aplicação, acesse o [link
     - [link 3](https://wesrails.wordpress.com/2010/06/12/gravando-foto-no-banco-de-dados-com-ruby-on-rails/) 
     - [link 4](https://www.youtube.com/watch?v=kekw19CWPHY) 
     - [link 5](https://www.youtube.com/watch?v=a2rPTqhYdWk)
-    
+ 
+## Entregas IF977
+- Para consulta das datas e informações adicionais do projeto, visitar: [Repositório](https://github.com/IF977/if977/blob/master/pages/projeto.md)
+
+## Instalação do programa image magick no Cloud 9
+### Para uso do paperclip
+Apenas seguir os passos ditos no [link](https://community.c9.io/t/install-imagemagick/3608/7)
+   
 ## 3. Devise
 ### Autenticação com Devise
 - Links úteis

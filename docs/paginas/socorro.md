@@ -94,8 +94,13 @@ Share > Application > Open
 - ```rake db:create```
 - ```rake db:migrate```
 
-## 10. Entregas IF977
-- Para consulta das datas e informações adicionais do projeto, visitar: [Repositório](https://github.com/IF977/if977/blob/master/pages/projeto.md)
+## 9. Instalação correta do RSPEC-Rails
+
+- Adicione a seguinte linha no grupo Dev+Test do seu Gemfile
+```gem 'rspec-rails', '~> 3.7'```
+- Rode o ```bundle install```
+- Inicialize o RSPEC com ```rails generate rspec:install```
+- Rode os testes com ```rake spec``` ou ```bundle exec rspec```
 
 ## 11. Uso de gems
 ### Adicionar
@@ -104,6 +109,4 @@ Share > Application > Open
 - ```gem uninstall <gem-name>``` ou
 - Removê-lo do Gemfile e executar ```bundle install```
 
-## 12. Instalação do programa image magick no Cloud 9
-### Para uso do paperclip
-Apenas seguir os passos ditos no [link](https://community.c9.io/t/install-imagemagick/3608/7)
+
