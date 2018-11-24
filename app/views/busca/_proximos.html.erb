@@ -1,0 +1,30 @@
+<div class = "container-box">
+    <h3> Não encontrou ainda? Será que você não quis dizer? </h3>
+    <br/>
+
+    <div class = "scrolled">
+        <div class="table-responsive-sm">
+            <table class = "table table-striped table-bordered table-sm">
+                
+                <thead class = "thead-light">
+                    <th scope = "col">Tipo</th>
+                    <th scope = "col">Nome</th>
+                </thead>
+                <tbody>
+                    <% @proximos.each do |pro|%>
+                    <tr scope = "row">
+                        <td><%= pro.class %></td>
+                        <% if pro.class() == Produto %>
+                            <td><%= link_to pro.nome, produto_path(pro.id) %></td>
+                        <% elsif pro.class() == Marca %>
+                            <td><%= link_to pro.nome, marca_path(pro.id) %></td>
+                        <% else %>
+                            <td><%= link_to pro.nome, componente_path(pro.id) %></td>
+                        <% end %>
+                    </tr>
+                    <% end %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

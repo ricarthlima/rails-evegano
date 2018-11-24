@@ -1,0 +1,20 @@
+<div class = "container-box">
+    <h3> Legal! Achamos tudo isso com "<%= @nome_busca %>"!</h3>
+    <br/>
+    
+    <% if @candidatos_produtos.size >= 1 %>
+        <h4>Produtos</h4>
+        <%= render "cm_produtos" %>
+    <% end %>
+    
+    <% if @candidatos_marcas.size >= 1 %>
+        <h4>Marcas</h4>
+        <%= render "cm_marcas" %>
+    <% end %>
+    
+     <% if @candidatos_componentes.size >= 1 %>
+        <h4>Componentes</h4>
+        <%= render "cm_componentes"%>
+    <% end %>
+    
+</div>
