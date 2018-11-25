@@ -1,0 +1,18 @@
+<div class = "scrolled">
+    <div class="table-responsive-sm">
+        <table class = "table table-striped">
+                <thead class = "thead-light">
+                   <tr>
+                    <th scope="col">Nome</th>
+                    </tr> 
+                </thead>
+                <tbody>
+                    <% @candidatos_componentes.each do |comp| %>
+                        <tr>
+                            <td><%= link_to comp.nome.to_s, componentes_path(comp)%></td>
+                        </tr>
+                    <% end %>
+                </tbody>
+        </table>
+    </div>
+</div>

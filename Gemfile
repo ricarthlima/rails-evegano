@@ -70,6 +70,9 @@ gem 'activerecord-session_store', '~> 1.0'
 # Usar para upload de imagens
 gem "paperclip", "~> 6.0.0"
 
+# Usar Distância de Levenshtein - Comparação entre 2 strings
+gem 'levenshtein', '~> 0.2.2'
+
 # TurboLinks faz a navegação ficar mais ágil. Leia-mais em https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 
@@ -107,7 +110,6 @@ gem 'mini_racer'
 # gem 'bootstrap', '~> 4.1.3'
 # gem 'bootstrap-sass', '~> 3.2.0'
 # gem 'autoprefixer-rails'
-
 
 
 #-------------------------------------------------------------------------------

@@ -1,0 +1,18 @@
+<div class = "scrolled">
+    <div class="table-responsive-sm">
+        <table class = "table table-striped">
+                <thead class = "thead-light">
+                   <tr>
+                    <th scope="col">Nome</th>
+                    </tr> 
+                </thead>
+                <tbody>
+                    <% @candidatos_marcas.each do |marca| %>
+                        <tr>
+                            <td><%= link_to marca.nome.to_s, marca_path(marca)%></td>
+                        </tr>
+                    <% end %>
+                </tbody>
+        </table>
+    </div>
+</div>

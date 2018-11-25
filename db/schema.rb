@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_22_212728) do
+ActiveRecord::Schema.define(version: 2018_11_25_012901) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "cadastro_externos", force: :cascade do |t|
+    t.string "cod_barras"
+    t.string "nome"
+    t.string "marca"
+    t.text "descricao"
+    t.text "componentes"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "componente_nome_alternativos", force: :cascade do |t|
     t.bigint "componente_id"
