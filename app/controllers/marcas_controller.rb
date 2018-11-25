@@ -11,6 +11,7 @@ class MarcasController < ApplicationController
   # GET /marcas/1
   # GET /marcas/1.json
   def show
+    UsuarioBuscaMarca.create(usuario_id: current_usuario.id, marca_id: @marca.id, dt_busca: Time.now.to_s)
   end
 
   # GET /marcas/new

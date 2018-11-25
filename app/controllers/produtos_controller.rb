@@ -12,6 +12,7 @@ class ProdutosController < ApplicationController
   # GET /produtos/1
   # GET /produtos/1.json
   def show
+    UsuarioBuscaProduto.create(usuario_id: current_usuario.id, produto_id: @produto.id, dt_busca: Time.now.to_s)
   end
 
   # GET /produtos/new

@@ -14,6 +14,7 @@ class ComponentesController < ApplicationController
   # GET /componentes/1
   # GET /componentes/1.json
   def show
+    UsuarioBuscaComponente.create(usuario_id: current_usuario.id, componente_id: @componente.id, dt_busca: Time.now.to_s)
   end
 
   # GET /componentes/new
