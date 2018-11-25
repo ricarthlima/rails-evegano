@@ -61,9 +61,9 @@ class BuscaController < ApplicationController
     # Essa função faz o valor "distância" da função anterior ser comparado por cada
     # palavra dentro dos termo buscado, e não o termo buscado completo.
     def leven_quebrar(busca, termo)
+        menor = Levenshtein.distance(termo.downcase,busca.to_s.downcase)
         termo = termo.split(" ")
         
-        menor = Levenshtein.distance(termo[0].downcase,busca.to_s.downcase)
         termo.each do |palavra|
             if Levenshtein.distance(palavra.downcase,busca.to_s.downcase) < menor
                 menor = Levenshtein.distance(palavra.downcase,busca.to_s.downcase)

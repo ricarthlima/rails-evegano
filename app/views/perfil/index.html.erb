@@ -2,14 +2,15 @@
   <%= render "layouts/navbar" %>
 <% end %>
 
+<div class = "container-box">
 <h1>Perfil</h1>
 
 <div class = "center-block">
     <% if current_usuario.foto != nil %>
-        <%= image_tag current_usuario.foto, size: "100" %>
+        <center><%= image_tag current_usuario.foto, size: "100" %></center>
     <% end %>
     
-    <strong><%= class_usuario_vegano(current_usuario.tipo_usuario)%></strong>
+    <center><strong><%= class_usuario_vegano(current_usuario.tipo_usuario)%></strong></center>
     
     <% if current_usuario.dev %>
         <% class_dev(current_usuario.dev) %>
@@ -34,8 +35,8 @@
 
 <p>
     <strong>CEP: </strong>
-    <%= current_usuario.cep %>
-    Porquê guardamos isso?
+    <%= current_usuario.cep %><br/>
+    <small>Porquê guardamos isso?</small>
 </p>
 
 <p>
@@ -50,3 +51,4 @@
 
 
 <%= link_to "Editar", edit_usuario_registration_path %>
+</div>
