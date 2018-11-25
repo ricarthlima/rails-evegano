@@ -11,29 +11,31 @@
     </div>
   <% end %>
 
-  <div class="form_group">
+  <div class="form-group">
     <%= form.text_field :cod_barras, class: "form-control", placeholder: "Código de Barras"%>
   </div>
 
-  <div class="form_group">
+  <div class="form-group">
     <%= form.text_field :nome, class: "form-control", placeholder: "Nome" %>
   </div>
 
-  <div class="form_group">
+  <div class="form-group">
     <%= form.text_field :marca_id, class: "form-control", placeholder: "Marca" %>
   </div>
 
-  <div class="form_group">
+  <div class="form-group">
     <%= form.text_area :descricao, class: "form-control", placeholder: "Descrição" %>
   </div>
 
-  <div class="form_group">
+
+  <div class="form-group">
     <%= form.number_field :class_vegan, class: "form-control", placeholder: "É vegano?" %>
   </div>
 
-  <div class="form_group">
+  <div class="form-group">
     <%= form.text_area :justificativa, class: "form-control", placeholder: "Por quê?" %>
   </div>
+
 
   <div class="actions">
     <center><%= form.submit class: "btn btn-primary-color"  %></center>

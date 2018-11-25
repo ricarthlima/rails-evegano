@@ -2,8 +2,10 @@
   <%= render "layouts/navbar" %>
 <% end %>
 
-<h1>New Produto</h1>
-
-<%= render 'form', produto: @produto %>
-
-<%= link_to 'Back', produtos_path %>
+<div class = "container-box">
+    <h2><center>Novo produto</center></h2>
+    
+    <%= render 'form', produto: @produto%>
+    
+    <%= link_to 'Voltar', produtos_path %>
+</div>

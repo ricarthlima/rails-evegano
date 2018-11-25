@@ -1,5 +1,11 @@
-<h1>New Componente</h1>
+<%= content_for :nav do%>
+  <%= render "layouts/navbar" %>
+<% end %>
 
-<%= render 'form', componente: @componente %>
-
-<%= link_to 'Back', componentes_path %>
+<div class = "container-box">
+    <h2><center>New Componente</center></h2>
+    
+    <%= render 'form', componente: @componente %>
+    
+    <%= link_to 'Voltar', componentes_path %>
+</div>

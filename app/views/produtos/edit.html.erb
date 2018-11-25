@@ -1,6 +1,14 @@
-<h1>Editing Produto</h1>
+<%= content_for :nav do%>
+  <%= render "layouts/navbar" %>
+<% end %>
 
-<%= render 'form', produto: @produto %>
+<div class = "container-box">
+    <h2><center>Editar Produto</center></h2>
 
-<%= link_to 'Show', @produto %> |
-<%= link_to 'Back', produtos_path %>
+    <%= render 'form', produto: @produto %>
+    
+    <%= link_to 'Mostrar', @produto %> |
+    <%= link_to 'Voltar', produtos_path %>
+
+</div>
+
