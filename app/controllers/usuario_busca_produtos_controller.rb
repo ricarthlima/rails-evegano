@@ -5,26 +5,31 @@ class UsuarioBuscaProdutosController < ApplicationController
   # GET /usuario_busca_produtos
   # GET /usuario_busca_produtos.json
   def index
+    authorize! :menage, :all
     @usuario_busca_produtos = UsuarioBuscaProduto.all
   end
 
   # GET /usuario_busca_produtos/1
   # GET /usuario_busca_produtos/1.json
   def show
+    authorize! :menage, :all
   end
 
   # GET /usuario_busca_produtos/new
   def new
+    authorize! :menage, :all
     @usuario_busca_produto = UsuarioBuscaProduto.new
   end
 
   # GET /usuario_busca_produtos/1/edit
   def edit
+    authorize! :menage, :all
   end
 
   # POST /usuario_busca_produtos
   # POST /usuario_busca_produtos.json
   def create
+    authorize! :menage, :all
     @usuario_busca_produto = UsuarioBuscaProduto.new(usuario_busca_produto_params)
 
     respond_to do |format|
@@ -41,6 +46,7 @@ class UsuarioBuscaProdutosController < ApplicationController
   # PATCH/PUT /usuario_busca_produtos/1
   # PATCH/PUT /usuario_busca_produtos/1.json
   def update
+    authorize! :menage, :all
     respond_to do |format|
       if @usuario_busca_produto.update(usuario_busca_produto_params)
         format.html { redirect_to @usuario_busca_produto, notice: 'Usuario busca produto was successfully updated.' }
@@ -55,6 +61,7 @@ class UsuarioBuscaProdutosController < ApplicationController
   # DELETE /usuario_busca_produtos/1
   # DELETE /usuario_busca_produtos/1.json
   def destroy
+    authorize! :menage, :all
     @usuario_busca_produto.destroy
     respond_to do |format|
       format.html { redirect_to usuario_busca_produtos_url, notice: 'Usuario busca produto was successfully destroyed.' }

@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
     rescue_from CanCan::AccessDenied do |exception|
         respond_to do |format|
           format.json { head :forbidden, content_type: 'text/html' }
-          format.html { redirect_to main_app.inicio_url, notice: exception.message }
+          format.html { redirect_to main_app.inicio_url, notice: "Você não tem autorização para executar essa ação." }
           format.js   { head :forbidden, content_type: 'text/html' }
         end
     end
@@ -14,6 +14,7 @@ class ApplicationController < ActionController::Base
   def current_ability
     @current_ability ||= Ability.new(current_usuario)
   end
+
   protected
 
     def configure_permitted_parameters

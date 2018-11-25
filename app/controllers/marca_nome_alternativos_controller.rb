@@ -5,26 +5,31 @@ class MarcaNomeAlternativosController < ApplicationController
   # GET /marca_nome_alternativos
   # GET /marca_nome_alternativos.json
   def index
+    authorize! :menage, :all
     @marca_nome_alternativos = MarcaNomeAlternativo.all
   end
 
   # GET /marca_nome_alternativos/1
   # GET /marca_nome_alternativos/1.json
   def show
+    authorize! :menage, :all
   end
 
   # GET /marca_nome_alternativos/new
   def new
+    authorize! :menage, :all
     @marca_nome_alternativo = MarcaNomeAlternativo.new
   end
 
   # GET /marca_nome_alternativos/1/edit
   def edit
+    authorize! :menage, :all
   end
 
   # POST /marca_nome_alternativos
   # POST /marca_nome_alternativos.json
   def create
+    authorize! :menage, :all
     @marca_nome_alternativo = MarcaNomeAlternativo.new(marca_nome_alternativo_params)
 
     respond_to do |format|
@@ -41,6 +46,7 @@ class MarcaNomeAlternativosController < ApplicationController
   # PATCH/PUT /marca_nome_alternativos/1
   # PATCH/PUT /marca_nome_alternativos/1.json
   def update
+    authorize! :menage, :all
     respond_to do |format|
       if @marca_nome_alternativo.update(marca_nome_alternativo_params)
         format.html { redirect_to @marca_nome_alternativo, notice: 'Marca nome alternativo was successfully updated.' }
@@ -55,6 +61,7 @@ class MarcaNomeAlternativosController < ApplicationController
   # DELETE /marca_nome_alternativos/1
   # DELETE /marca_nome_alternativos/1.json
   def destroy
+    authorize! :menage, :all
     @marca_nome_alternativo.destroy
     respond_to do |format|
       format.html { redirect_to marca_nome_alternativos_url, notice: 'Marca nome alternativo was successfully destroyed.' }
