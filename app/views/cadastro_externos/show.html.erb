@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cod barras:</strong>
+  <%= @cadastro_externo.cod_barras %>
+</p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @cadastro_externo.nome %>
+</p>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @cadastro_externo.marca %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @cadastro_externo.descricao %>
+</p>
+
+<p>
+  <strong>Componentes:</strong>
+  <%= @cadastro_externo.componentes %>
+</p>
+
+<%= link_to 'Edit', edit_cadastro_externo_path(@cadastro_externo) %> |
+<%= link_to 'Back', cadastro_externos_path %>
