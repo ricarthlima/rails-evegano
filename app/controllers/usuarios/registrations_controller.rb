@@ -15,15 +15,29 @@ class Usuarios::RegistrationsController < Devise::RegistrationsController
   # end
 
   # GET /resource/edit
-  # def edit
-  #   super
-  # end
+=begin
+  def edit
+    params(:usuario).permit(:nome, :sobrenome, :cep)
+  end
 
   # PUT /resource
-  # def update
-  #   super
-  # end
-
+  def update
+    if usuario_params[:password].blank?
+     @usuario.update_without_password(usuario_params_without_password)
+    else
+     @usuario.update(usuario_params)
+    end
+  
+   if @usuario.valid?
+    if @usuario == current_usuario
+      sing_in(@usuario, baypass: true)
+    end
+    redirect_to admin_usuarios_url
+   else
+    render action: 'edit'
+   end
+  end
+=end
   # DELETE /resource
   # def destroy
   #   super
@@ -38,7 +52,7 @@ class Usuarios::RegistrationsController < Devise::RegistrationsController
   #   super
   # end
 
-  # protected
+ # protected
 
   # If you have extra params to permit, append them to the sanitizer.
   # def configure_sign_up_params
@@ -49,6 +63,16 @@ class Usuarios::RegistrationsController < Devise::RegistrationsController
   # def configure_account_update_params
   #   devise_parameter_sanitizer.permit(:account_update, keys: [:attribute])
   # end
+  
+  #def update_resource(resource, params)
+  #  resource.update_without_password(params)
+  #end
+  
+ # def usuario_params_without_password
+   # usuario_params.delete(:password)
+   # usuario_params.delete(:password_confirmation)
+    #usuario_params
+  #end
 
   # The path used after sign up.
   # def after_sign_up_path_for(resource)

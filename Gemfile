@@ -76,6 +76,9 @@ gem "paperclip", "~> 6.0.0"
 # Usar Distância de Levenshtein - Comparação entre 2 strings
 gem 'levenshtein', '~> 0.2.2'
 
+# Usar ImageMagick para armazenar imagens
+gem 'mini_magick', '~> 4.8'
+
 # TurboLinks faz a navegação ficar mais ágil. Leia-mais em https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 
@@ -87,6 +90,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'mini_racer'
 
+# gem 'rmagick' 
+
 #-------------------------------------------------------------------------------
 # 5 - Desativadas
 
@@ -95,8 +100,7 @@ gem 'mini_racer'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# Use ActiveStorage variant
-# gem 'mini_magick', '~> 4.8'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

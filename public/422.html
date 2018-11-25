@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The change you wanted was rejected (422)</title>
+  <meta charset="UTF-8"> 
+  <title>404 - Ação rejeitada</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
   <style>
+  .error{
+    font-family: 'Mali', cursive;
+    font-size: 350%;
+    font-style: bold;
+    color: #88c057;
+  }
   .rails-default-error-page {
-    background-color: #EFEFEF;
+    background-color: #BDF2CC;
     color: #2E2F30;
     text-align: center;
     font-family: arial, sans-serif;
@@ -22,8 +30,10 @@
     border: 1px solid #CCC;
     border-right-color: #999;
     border-left-color: #999;
-    border-bottom-color: #BBB;
-    border-top: #B00100 solid 4px;
+    border-bottom: #88c057 solid 4px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border-top: #88c057 solid 4px;
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
     background-color: white;
@@ -32,8 +42,8 @@
   }
 
   .rails-default-error-page h1 {
-    font-size: 100%;
-    color: #730E15;
+    font-size: 115%;
+    color: #88c057;
     line-height: 1.5em;
   }
 
@@ -55,13 +65,22 @@
 </head>
 
 <body class="rails-default-error-page">
-  <!-- This file lives in public/422.html -->
+  <!-- This file lives in public/404.html -->
+  
   <div class="dialog">
+    <a href = "/">
+      <img src="logo-128.png" size = "48"><br/><br/>
+    </a>
     <div>
-      <h1>The change you wanted was rejected.</h1>
-      <p>Maybe you tried to change something you didn't have access to.</p>
+      <div class = "error">422</div>
+      <h1>Sua ação foi rejeitada</h1>
+      <p>
+        <small>Talvez você não tenha autorizaçao para fazer isso.
+        Você pode voltar para página inicial do <a href = "/">É vegano?</a>
+        </small>
+      </p>
+      <br/>
     </div>
-    <p>If you are the application owner check the logs for more information.</p>
   </div>
 </body>
 </html>

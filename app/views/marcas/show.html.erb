@@ -2,29 +2,30 @@
   <%= render "layouts/navbar" %>
 <% end %>
 
-<p id="notice"><%= notice %></p>
-
-<h3>
-  <strong>
-  <%= @marca.nome %>
-  </strong>
-</h3>
-<p>
-  <%= class_pmc_vegano(@marca.class_vegan)%></br>
-</p>
-
-<p>
-  <strong>Descrição:</strong> </br>
-  <%= @marca.descricao %>
-</p>
-
-<p>
-  <strong>Justificativa da Classificação:</strong></br>
-  <%= @marca.justificativa %>
-</p>
-
-<% if current_usuario.dev then%>
-  <%= link_to 'Editar', edit_marca_path(@marca) %> |
-<% end %>
-
-<%= link_to 'Voltar', :back %>
+<%= render "shared/notice" %>
+  
+<div class = "container-box">
+  <h3>
+    <strong><%= @marca.nome %></strong>
+  </h3>
+  
+  <p>
+    <%= class_pmc_vegano(@marca.class_vegan)%></br>
+  </p>
+  
+  <p>
+    <strong>Descrição:</strong></br>
+    <%= @marca.descricao %>
+  </p>
+  
+  <p>
+    <strong>Justificativa da Classificação:</strong></br>
+    <%= @marca.justificativa %>
+  </p>
+  
+  <% if current_usuario.dev then%>
+    <%= link_to 'Editar', edit_marca_path(@marca) %> |
+  <% end %>
+  
+  <%= link_to 'Voltar', :back %>
+</div>

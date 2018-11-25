@@ -33,7 +33,7 @@ class MarcasController < ApplicationController
 
     respond_to do |format|
       if @marca.save
-        format.html { redirect_to @marca, notice: 'Marca was successfully created.' }
+        format.html { redirect_to @marca, notice: 'Marca criada com sucesso.' }
         format.json { render :show, status: :created, location: @marca }
       else
         format.html { render :new }
@@ -48,7 +48,7 @@ class MarcasController < ApplicationController
     authorize! :menage, :all
     respond_to do |format|
       if @marca.update(marca_params)
-        format.html { redirect_to @marca, notice: 'Marca was successfully updated.' }
+        format.html { redirect_to @marca, notice: 'Marca atualizada com suceso.' }
         format.json { render :show, status: :ok, location: @marca }
       else
         format.html { render :edit }

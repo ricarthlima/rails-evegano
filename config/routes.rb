@@ -19,6 +19,9 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
   get "dev" => "dev#index"
+  get "dev/remover/:id", to: "dev#remover", as: "remover_dev"
+  get "dev/adicionar/", to: "dev#adicionar", as: "adicionar_dev"
+  
   get "inicio" => "inicio#index"
   get "busca" => "busca#buscar"
   get "cadastro_pmc/:busca", to: "cadastro_pmc#index", as: "cadastro_pmc"

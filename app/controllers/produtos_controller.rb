@@ -13,6 +13,13 @@ class ProdutosController < ApplicationController
   # GET /produtos/1.json
   def show
     UsuarioBuscaProduto.create(usuario_id: current_usuario.id, produto_id: @produto.id, dt_busca: Time.now.to_s)
+    comps_produto = ProdutoPossuiComponente.where("produto_id = " + @produto.id.to_s)
+    @comps_produto = Array.new
+    
+    comps_produto.each do |comp|
+      @comps_produto << Componente.where("id = " + comp.componente_id.to_s)[0]
+    end
+    
   end
 
   # GET /produtos/new

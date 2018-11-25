@@ -69,6 +69,15 @@ div.container-box{
     margin: auto;
 }
 
+.form100{
+    width: 100%;
+}
+
+.form-text{
+    width: 75%;
+    margin: auto;
+}
+
 .centro {
     width: 200px;
     height: 200px;
@@ -84,6 +93,13 @@ div.scrolled{
     overflow-y: scroll;
 }
 
+div.dangerzone{
+    border: 2px solid #C82333;
+    padding: 1%;
+    margin-top: 5%;
+    margin: auto;
+    border-radius: 2%;
+}
 
 
 
