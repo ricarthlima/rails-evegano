@@ -4,16 +4,15 @@
 
 <% if @candidatos_produtos.size >= 1  or @candidatos_marcas.size >= 1 or @candidatos_componentes.size >= 1%>
     <%= render "caso_multiplo" %>
+    <br />
 <% end %>
 
-<br />
+
 
 <% if @proximos.size > 0 %>
     <%= render "proximos" %>
+    <br />
 <% end %>
 
-<br />
-
 <%= render "caso_ruim" %>
-
 <br />

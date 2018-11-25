@@ -26,7 +26,6 @@ class BuscaController < ApplicationController
             
         elsif @candidatos_componentes.size == 1 and (@candidatos_marcas.size == 0) and (@candidatos_produtos.size == 0)
             redirect_to(componentes_url+"/"+@candidatos_componentes[0].id.to_s)
-
         else
             render :index
         end
@@ -46,21 +45,21 @@ class BuscaController < ApplicationController
         proximos = Array.new
         
         Produto.all.each do |produto|
-            distancia = Levenshtein.distance(produto.nome,busca)
+            distancia = Levenshtein.distance(produto.nome.downcase,busca.to_s.downcase)
             if distancia > 0 and distancia < 3
                 proximos << produto
             end
         end
         
         Marca.all.each do |marca|
-            distancia = Levenshtein.distance(marca.nome, busca)
+            distancia = Levenshtein.distance(marca.nome.downcase, busca.to_s.downcase)
             if distancia > 0 and distancia < 3
                 proximos << marca
             end
         end
         
         Componente.all.each do |comp|
-            distancia = Levenshtein.distance(comp.nome, busca)
+            distancia = Levenshtein.distance(comp.nome.downcase, busca.to_s.downcase)
             if distancia > 0 and distancia < 3
                 proximos << comp
             end
