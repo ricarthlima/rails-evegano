@@ -2,11 +2,8 @@
   <%= render "layouts/navbar" %>
 <% end %>
 
-<p id="notice"><%= notice %></p>
-
 <div class = "container-box">
   <h1>Console do Desenvolvedor</h1>
-  
   <div class ="alert alert-warning alert-dismissible fade show" role = "alert">
       As alterações feitas aqui são feitas no Banco de Dados, tenha cuidado.
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -14,7 +11,6 @@
       </button>
   </div>
   
-  <br />
   
   <div class="list-group">
      <li class="list-group-item list-group-item-info"><strong><%= link_to "Cadastros dos usuários à serem validados", cadastro_externos_path%></strong></li>
@@ -25,6 +21,50 @@
     <li class="list-group-item"><%= link_to "Nomes alternativos das Marcas", marca_nome_alternativos_path%></li>
     <li class="list-group-item"><%= link_to "Nomes alternativos dos Componentes", componente_nome_alternativos_path%></li>
     <li class="list-group-item"><%= link_to "Produto possui Componentes", produto_possui_componentes_path%></li>
+  </div>
+  
+  <br />
+
+  <div class = "dangerzone">
+    
+    <h4>Zona de perigo!</h4><br/>
+    <ul class="list-group">
+      
+       <li class="list-group-item">
+         <p><strong>Gerenciar usuarios desenvolvedores</strong><br/>
+         <table class = "table">
+           <thead>
+             <th>Usuário</th>
+             <th>E-mail</th>
+             <th>Remover</th>
+           </thead>
+           <tbody>
+             <% @usuarios_dev.each do |usu| %>
+               <tr>
+                 <td><%= usu.nome %></td>
+                 <td><%= usu.email %></td>
+                 <td><%= button_to "Remover", remover_dev_path(usu), method: :get, class: "btn btn-danger" %></td>
+               </tr>
+             <% end %>
+           </tbody>
+         </table></p>
+      </li>
+      
+      <li class="list-group-item">
+         <p>
+          <strong>Adicionar usuário desenvolvedor</strong><br/>
+          Pense bem antes de fazer isso, um usuário desenvolvedor poderá acessar todo banco de dados.
+          
+          <%= form_tag adicionar_dev_path, method: :get do%>
+            <div class="form-group">
+              <%= text_field_tag :email, @email, class: "form-control form100", placeholder: "Digite o e-mail do usuário cadastrado." %><br />
+              <%= button_to "Adicionar", nil, class: "btn btn-primary-color" %>
+            </div>
+          <% end %>
+        </p>
+      </li>
+    </ul>
+    
   </div>
 
 </div>
