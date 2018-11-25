@@ -32,9 +32,9 @@ Essas histórias serão atacadas na **Iteration 05**.
 
 |HU12|
 |---|
-|**Como um** usuário experiente|
-|**para que eu** possa buscar um produto pelo código de barras|
-|**eu quero** poder fazer isso na tela inicial.|
+|**Como um** usuário assíduo|
+|**para que eu** possa recuperar o acesso caso eu perca minha senha|
+|**eu quero** poder fazer isso usando um token no e-mail.|
 
 |HU13|
 |---|
