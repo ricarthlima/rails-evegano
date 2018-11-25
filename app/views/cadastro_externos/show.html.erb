@@ -1,29 +1,36 @@
-<p id="notice"><%= notice %></p>
+<%= content_for :nav do%>
+  <%= render "layouts/navbar" %>
+<% end %>
 
-<p>
-  <strong>Cod barras:</strong>
-  <%= @cadastro_externo.cod_barras %>
-</p>
+<%= render "shared/notice" %>
 
-<p>
-  <strong>Nome:</strong>
-  <%= @cadastro_externo.nome %>
-</p>
+<div class = "container-box">
+  <p>
+    <strong>Código de Barras:</strong>
+    <%= @cadastro_externo.cod_barras %>
+  </p>
+  
+  <p>
+    <strong>Nome:</strong>
+    <%= @cadastro_externo.nome %>
+  </p>
+  
+  <p>
+    <strong>Marca:</strong>
+    <%= @cadastro_externo.marca %>
+  </p>
+  
+  <p>
+    <strong>Descrição:</strong>
+    <%= @cadastro_externo.descricao %>
+  </p>
+  
+  <p>
+    <strong>Componentes:</strong>
+    <%= @cadastro_externo.componentes %>
+  </p>
+  
+  <%= link_to 'Voltar', inicio_path %>
+</div>
 
-<p>
-  <strong>Marca:</strong>
-  <%= @cadastro_externo.marca %>
-</p>
 
-<p>
-  <strong>Descricao:</strong>
-  <%= @cadastro_externo.descricao %>
-</p>
-
-<p>
-  <strong>Componentes:</strong>
-  <%= @cadastro_externo.componentes %>
-</p>
-
-<%= link_to 'Edit', edit_cadastro_externo_path(@cadastro_externo) %> |
-<%= link_to 'Back', cadastro_externos_path %>

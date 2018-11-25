@@ -28,7 +28,7 @@ class CadastroExternosController < ApplicationController
 
     respond_to do |format|
       if @cadastro_externo.save
-        format.html { redirect_to @cadastro_externo, notice: 'Cadastro externo was successfully created.' }
+        format.html { redirect_to @cadastro_externo, notice: 'Obrigado, você fez o É vegano? melhor!' }
         format.json { render :show, status: :created, location: @cadastro_externo }
       else
         format.html { render :new }
