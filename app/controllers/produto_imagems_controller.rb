@@ -5,12 +5,10 @@ class ProdutoImagemsController < ApplicationController
   # GET /produto_imagems/1
   # GET /produto_imagems/1.json
   def show
-    authorize! :menage, :all
   end
 
   # GET /produto_imagems/new
   def new
-    authorize! :menage, :all
     @produto_imagem = ProdutoImagem.new
     @@tipo = params[:id]
     
@@ -18,12 +16,12 @@ class ProdutoImagemsController < ApplicationController
 
   # GET /produto_imagems/1/edit
   def edit
+    authorize! :menage, :all
   end
 
   # POST /produto_imagems
   # POST /produto_imagems.json
   def create
-    authorize! :menage, :all
     @produto_imagem = ProdutoImagem.new(produto_imagem_params)
     
     if @@tipo == "rotulo"
