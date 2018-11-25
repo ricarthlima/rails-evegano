@@ -1,5 +1,13 @@
-<h1>New Marca</h1>
+<%= content_for :nav do%>
+  <%= render "layouts/navbar" %>
+<% end %>
 
-<%= render 'form', marca: @marca %>
+<div class = "container-box">
+    <h2><center>Nova Marca</center></h2>
 
-<%= link_to 'Back', marcas_path %>
+    <%= render 'form', marca: @marca %>
+    
+    <%= link_to 'Voltar', marcas_path %>
+
+</div>
+

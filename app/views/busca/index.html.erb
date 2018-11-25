@@ -2,58 +2,16 @@
   <%= render "layouts/navbar" %>
 <% end %>
 
-<h1>Você quis dizer?</h1>
-
-<% if @candidatos_produtos.size >= 1 %>
-    <h3>Produtos</h3>
-    <table class = "table table-striped table-hover table-responsive">
-        <thead class = "thead-dark">
-           <tr>
-            <th scope="col">Nome</th>
-            </tr> 
-        </thead>
-        <tbody>
-            <% @candidatos_produtos.each do |produto| %>
-                <tr>
-                    <td><%= link_to produto.nome.to_s, produto_path(produto)%></td>
-                </tr>
-            <% end %>
-        </tbody>
-    </table>
+<% if @candidatos_produtos.size >= 1  or @candidatos_marcas.size >= 1 or @candidatos_componentes.size >= 1%>
+    <%= render "caso_multiplo" %>
+    <br />
 <% end %>
 
-<% if @candidatos_marcas.size >= 1 %>
-    <h3>Marcas</h3>
-    <table class = "table table-striped table-hover table-responsive">
-        <thead class = "thead-dark">
-           <tr>
-            <th scope="col">Nome</th>
-            </tr> 
-        </thead>
-        <tbody>
-            <% @candidatos_marcas.each do |marca| %>
-                <tr>
-                    <td><%= link_to marca.nome.to_s, marca_path(marca)%></td>
-                </tr>
-            <% end %>
-        </tbody>
-    </table>
+
+<% if @proximos.size > 0 %>
+    <%= render "proximos" %>
+    <br />
 <% end %>
 
-<% if @candidatos_componentes.size >= 1 %>
-<h3>Componentes</h3>
-<table class = "table table-striped table-hover table-responsive">
-    <thead class = "thead-dark">
-       <tr>
-        <th scope="col">Nome</th>
-        </tr> 
-    </thead>
-    <tbody>
-        <% @candidatos_componentes.each do |componente| %>
-            <tr>
-                <td><%= link_to componente.nome.to_s, componente_path(componente)%></td>
-            </tr>
-        <% end %>
-    </tbody>
-</table>
-<% end %>
+<%= render "caso_ruim" %>
+<br />

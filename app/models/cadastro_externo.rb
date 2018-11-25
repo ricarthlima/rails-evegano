@@ -1,0 +1,2 @@
+class CadastroExterno < ApplicationRecord
+end

@@ -1,0 +1,6 @@
+<div class = "container-box">
+    <h3> Ainda nada? Que tal ajudar o <strong>É vegano?</strong> cadastrando "<%=@nome_busca%>"? </h3>
+    <br/>
+    
+    <%= render "/cadastro_externos/form", cadastro_externo: CadastroExterno.new, nome_busca: @nome_busca%>
+</div>

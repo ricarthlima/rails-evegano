@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :cadastro_externos
   resources :produto_imagems
   resources :marca_nome_alternativos
   resources :usuario_avalia_marcas
@@ -20,6 +21,7 @@ Rails.application.routes.draw do
   get "dev" => "dev#index"
   get "inicio" => "inicio#index"
   get "busca" => "busca#buscar"
+  get "cadastro_pmc/:busca", to: "cadastro_pmc#index", as: "cadastro_pmc"
   get "produto_imagems/new/:id" => "produto_imagems#new" 
   get "perfil" => "perfil#index"
 

@@ -9,6 +9,7 @@ class BuscaController < ApplicationController
 
     def buscar
         @nome_busca = params[:texto]
+        @proximos = leven(@nome_busca)
         
         if busca_vazia
             redirect_to inicio_path
@@ -27,9 +28,6 @@ class BuscaController < ApplicationController
             
         elsif @candidatos_componentes.size == 1 and (@candidatos_marcas.size == 0) and (@candidatos_produtos.size == 0)
             redirect_to(componentes_url+"/"+@candidatos_componentes[0].id.to_s)
-            
-        elsif @candidatos_componentes.size == 0 and @candidatos_produtos.size == 0 and @candidatos_marcas.size == 0
-            redirect_to(cadastro_pmc_path)
         else
             render :index
         end
@@ -43,5 +41,37 @@ class BuscaController < ApplicationController
         else
             return false
         end
+    end
+    
+    # Essa função pega todos elementos do banco e compara com o termo buscado numa
+    # distância de Levenshtein maior que 0 (mesmo termo), e menor que 3.
+    def leven(busca)
+        proximos = Array.new
+        objetos = Array.new
+        
+        objetos = objetos + Produto.all + Marca.all + Componente.all
+        objetos.each do |obj|
+            distancia = leven_quebrar(busca,obj.nome)
+            if distancia > 0 and distancia < 3
+                proximos << obj
+            end
+        end
+        
+        return proximos
+    end
+    
+    # Essa função faz o valor "distância" da função anterior ser comparado por cada
+    # palavra dentro dos termo buscado, e não o termo buscado completo.
+    def leven_quebrar(busca, termo)
+        menor = Levenshtein.distance(termo.downcase,busca.to_s.downcase)
+        termo = termo.split(" ")
+        
+        termo.each do |palavra|
+            if Levenshtein.distance(palavra.downcase,busca.to_s.downcase) < menor
+                menor = Levenshtein.distance(palavra.downcase,busca.to_s.downcase)
+            end
+        end
+        
+        return menor
     end
 end

@@ -1,0 +1,9 @@
+<%= content_for :nav do%>
+  <%= render "layouts/navbar" %>
+<% end %>
+
+<h1>New Cadastro Externo</h1>
+
+<%= render 'form', cadastro_externo: @cadastro_externo %>
+
+<%= link_to 'Back', cadastro_externos_path %>

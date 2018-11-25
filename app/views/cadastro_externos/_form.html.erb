@@ -1,0 +1,41 @@
+<%= form_with(model: cadastro_externo, local: true) do |form| %>
+  <% if cadastro_externo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cadastro_externo.errors.count, "error") %> prohibited this cadastro_externo from being saved:</h2>
+
+      <ul>
+      <% cadastro_externo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.text_field :cod_barras, class: "form-control", placeholder: "Tem código de barras? Digita aí!" %>
+  </div>
+  
+  <div class="form-group">
+    <% if nome_busca != nil %>
+      <%= form.text_field :nome, class: "form-control", placeholder: "Nome", value: nome_busca %>
+    <% else %>
+      <%= form.text_field :nome, class: "form-control", placeholder: "Nome" %>
+    <% end %>
+  </div>
+
+  <div class="form-group">
+    <%= form.text_field :marca, class: "form-control", placeholder: "Nome da Marca" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.text_area :descricao, class: "form-control", placeholder: "Pode descrever pra gente?" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.text_area :componentes, class: "form-control", placeholder: "Liste os componentes separando-os com ','" %>
+  </div>
+
+  <div class="actions">
+    <center><%= form.submit class: "btn btn-primary-color", value: "Enviar"%></center>
+  </div>
+<% end %>
