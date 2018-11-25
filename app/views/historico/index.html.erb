@@ -1,0 +1,59 @@
+<%= content_for :nav do%>
+  <%= render "layouts/navbar" %>
+<% end %>
+
+<div class = "container-box">
+    
+    <h2>Histórico de Buscas</h2><br/>
+    
+    
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Produtos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#perfil" role="tab" aria-controls="profile" aria-selected="false">Marcas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contato" role="tab" aria-controls="contact" aria-selected="false">Componentes</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="list-group">
+            <% @produtos_buscados.each do |prod| %>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <%= link_to prod[0].nome, produto_path(prod[0])%>
+                    <span class="badge badge-primary badge-pill"><%= prod[1] %></span>
+                </li>
+                
+            <% end %>
+          </div>
+      </div>
+      
+      <div class="tab-pane fade" id="perfil" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="list-group">
+            <% @marcas_buscadas.each do |marca| %>
+                <li class="list-group-item  d-flex justify-content-between align-items-center">
+                    <%= link_to marca[0].nome, marca_path(marca[0])%>
+                    <span class="badge badge-primary badge-pill"><%= marca[1] %></span>
+                </li>
+            <% end %>
+          </div>
+      </div>
+      
+      <div class="tab-pane fade" id="contato" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="list-group">
+            <% @componentes_buscados.each do |comp| %>
+                <li class="list-group-item  d-flex justify-content-between align-items-center">
+                    <%= link_to comp[0].nome, componente_path(comp[0])%>
+                    <span class="badge badge-primary badge-pill"><%= comp[1] %></span>
+                </li>
+            <% end %>
+          </div>
+      </div>
+    </div>
+</div>
+
+
+

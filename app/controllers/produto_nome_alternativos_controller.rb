@@ -1,29 +1,35 @@
 class ProdutoNomeAlternativosController < ApplicationController
+  before_action :authenticate_usuario!
   before_action :set_produto_nome_alternativo, only: [:show, :edit, :update, :destroy]
 
   # GET /produto_nome_alternativos
   # GET /produto_nome_alternativos.json
   def index
+    authorize! :menage, :all
     @produto_nome_alternativos = ProdutoNomeAlternativo.all
   end
 
   # GET /produto_nome_alternativos/1
   # GET /produto_nome_alternativos/1.json
   def show
+    authorize! :menage, :all
   end
 
   # GET /produto_nome_alternativos/new
   def new
+    authorize! :menage, :all
     @produto_nome_alternativo = ProdutoNomeAlternativo.new
   end
 
   # GET /produto_nome_alternativos/1/edit
   def edit
+    authorize! :menage, :all
   end
 
   # POST /produto_nome_alternativos
   # POST /produto_nome_alternativos.json
   def create
+    authorize! :menage, :all
     @produto_nome_alternativo = ProdutoNomeAlternativo.new(produto_nome_alternativo_params)
 
     respond_to do |format|
@@ -40,6 +46,7 @@ class ProdutoNomeAlternativosController < ApplicationController
   # PATCH/PUT /produto_nome_alternativos/1
   # PATCH/PUT /produto_nome_alternativos/1.json
   def update
+    authorize! :menage, :all
     respond_to do |format|
       if @produto_nome_alternativo.update(produto_nome_alternativo_params)
         format.html { redirect_to @produto_nome_alternativo, notice: 'Produto nome alternativo was successfully updated.' }
@@ -54,6 +61,7 @@ class ProdutoNomeAlternativosController < ApplicationController
   # DELETE /produto_nome_alternativos/1
   # DELETE /produto_nome_alternativos/1.json
   def destroy
+    authorize! :menage, :all
     @produto_nome_alternativo.destroy
     respond_to do |format|
       format.html { redirect_to produto_nome_alternativos_url, notice: 'Produto nome alternativo was successfully destroyed.' }

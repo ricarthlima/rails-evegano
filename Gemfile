@@ -64,6 +64,9 @@ gem 'omniauth-twitter', '~> 1.2', '>= 1.2.1'
 # Usar ActiveRecord Sessions para gerênciar Sessões Ativas
 gem 'activerecord-session_store', '~> 1.0'
 
+# Usar o CanCanCan pra gerenciar níveis de usuários
+gem 'cancancan', '~> 2.0'
+
 #-------------------------------------------------------------------------------
 # 4 - Outros
 

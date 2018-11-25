@@ -4,6 +4,7 @@ class CadastroExternosController < ApplicationController
   # GET /cadastro_externos
   # GET /cadastro_externos.json
   def index
+    authorize! :menage, :all
     @cadastro_externos = CadastroExterno.all
   end
 
@@ -19,6 +20,7 @@ class CadastroExternosController < ApplicationController
 
   # GET /cadastro_externos/1/edit
   def edit
+    authorize! :menage, :all
   end
 
   # POST /cadastro_externos
@@ -41,6 +43,7 @@ class CadastroExternosController < ApplicationController
   # PATCH/PUT /cadastro_externos/1.json
   def update
     respond_to do |format|
+      authorize! :menage, :all
       if @cadastro_externo.update(cadastro_externo_params)
         format.html { redirect_to @cadastro_externo, notice: 'Cadastro externo was successfully updated.' }
         format.json { render :show, status: :ok, location: @cadastro_externo }
@@ -54,6 +57,7 @@ class CadastroExternosController < ApplicationController
   # DELETE /cadastro_externos/1
   # DELETE /cadastro_externos/1.json
   def destroy
+    authorize! :menage, :all
     @cadastro_externo.destroy
     respond_to do |format|
       format.html { redirect_to cadastro_externos_url, notice: 'Cadastro externo was successfully destroyed.' }

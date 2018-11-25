@@ -1,13 +1,16 @@
 class ProdutoImagemsController < ApplicationController
+  before_action :authenticate_usuario!
   before_action :set_produto_imagem, only: [:show, :edit, :update, :destroy]
 
   # GET /produto_imagems/1
   # GET /produto_imagems/1.json
   def show
+    authorize! :menage, :all
   end
 
   # GET /produto_imagems/new
   def new
+    authorize! :menage, :all
     @produto_imagem = ProdutoImagem.new
     @@tipo = params[:id]
     
@@ -20,6 +23,7 @@ class ProdutoImagemsController < ApplicationController
   # POST /produto_imagems
   # POST /produto_imagems.json
   def create
+    authorize! :menage, :all
     @produto_imagem = ProdutoImagem.new(produto_imagem_params)
     
     if @@tipo == "rotulo"
@@ -42,6 +46,7 @@ class ProdutoImagemsController < ApplicationController
   # PATCH/PUT /produto_imagems/1
   # PATCH/PUT /produto_imagems/1.json
   def update
+    authorize! :menage, :all
     respond_to do |format|
       if @produto_imagem.update(produto_imagem_params)
         format.html { redirect_to @produto_imagem, notice: 'Produto imagem was successfully updated.' }
@@ -56,6 +61,7 @@ class ProdutoImagemsController < ApplicationController
   # DELETE /produto_imagems/1
   # DELETE /produto_imagems/1.json
   def destroy
+    authorize! :menage, :all
     @produto_imagem.destroy
     respond_to do |format|
       format.html { redirect_to produto_imagems_url, notice: 'Produto imagem was successfully destroyed.' }

@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+   before_action :authenticate_usuario!
    def create
       #render :create
       #render text: request.env['omniauth.auth'].to_yaml

@@ -1,29 +1,35 @@
 class UsuarioAvaliaProdutosController < ApplicationController
+  before_action :authenticate_usuario!
   before_action :set_usuario_avalia_produto, only: [:show, :edit, :update, :destroy]
 
   # GET /usuario_avalia_produtos
   # GET /usuario_avalia_produtos.json
   def index
+    authorize! :menage, :all
     @usuario_avalia_produtos = UsuarioAvaliaProduto.all
   end
 
   # GET /usuario_avalia_produtos/1
   # GET /usuario_avalia_produtos/1.json
   def show
+    authorize! :menage, :all
   end
 
   # GET /usuario_avalia_produtos/new
   def new
+    authorize! :menage, :all
     @usuario_avalia_produto = UsuarioAvaliaProduto.new
   end
 
   # GET /usuario_avalia_produtos/1/edit
   def edit
+    authorize! :menage, :all
   end
 
   # POST /usuario_avalia_produtos
   # POST /usuario_avalia_produtos.json
   def create
+    authorize! :menage, :all
     @usuario_avalia_produto = UsuarioAvaliaProduto.new(usuario_avalia_produto_params)
 
     respond_to do |format|
@@ -40,6 +46,7 @@ class UsuarioAvaliaProdutosController < ApplicationController
   # PATCH/PUT /usuario_avalia_produtos/1
   # PATCH/PUT /usuario_avalia_produtos/1.json
   def update
+    authorize! :menage, :all
     respond_to do |format|
       if @usuario_avalia_produto.update(usuario_avalia_produto_params)
         format.html { redirect_to @usuario_avalia_produto, notice: 'Usuario avalia produto was successfully updated.' }
@@ -54,6 +61,7 @@ class UsuarioAvaliaProdutosController < ApplicationController
   # DELETE /usuario_avalia_produtos/1
   # DELETE /usuario_avalia_produtos/1.json
   def destroy
+    authorize! :menage, :all
     @usuario_avalia_produto.destroy
     respond_to do |format|
       format.html { redirect_to usuario_avalia_produtos_url, notice: 'Usuario avalia produto was successfully destroyed.' }
