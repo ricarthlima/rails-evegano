@@ -1,4 +1,5 @@
 class UsuarioBuscaMarcasController < ApplicationController
+  before_action :authenticate_usuario!
   before_action :set_usuario_busca_marca, only: [:show, :edit, :update, :destroy]
 
   # GET /usuario_busca_marcas

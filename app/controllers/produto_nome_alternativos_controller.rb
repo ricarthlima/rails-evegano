@@ -1,4 +1,5 @@
 class ProdutoNomeAlternativosController < ApplicationController
+  before_action :authenticate_usuario!
   before_action :set_produto_nome_alternativo, only: [:show, :edit, :update, :destroy]
 
   # GET /produto_nome_alternativos

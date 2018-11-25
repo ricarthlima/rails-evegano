@@ -1,4 +1,5 @@
 class ComponentesController < ApplicationController
+  before_action :authenticate_usuario!
   before_action :set_componente, only: [:show, :edit, :update, :destroy]
 
   def valido?

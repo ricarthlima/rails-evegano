@@ -1,4 +1,5 @@
 class UsuarioAvaliaMarcasController < ApplicationController
+  before_action :authenticate_usuario!
   before_action :set_usuario_avalia_marca, only: [:show, :edit, :update, :destroy]
 
   # GET /usuario_avalia_marcas

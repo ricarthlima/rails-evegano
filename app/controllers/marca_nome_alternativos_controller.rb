@@ -1,4 +1,5 @@
 class MarcaNomeAlternativosController < ApplicationController
+  before_action :authenticate_usuario!
   before_action :set_marca_nome_alternativo, only: [:show, :edit, :update, :destroy]
 
   # GET /marca_nome_alternativos

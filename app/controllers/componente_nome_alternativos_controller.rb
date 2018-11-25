@@ -1,4 +1,5 @@
 class ComponenteNomeAlternativosController < ApplicationController
+  before_action :authenticate_usuario!
   before_action :set_componente_nome_alternativo, only: [:show, :edit, :update, :destroy]
 
   # GET /componente_nome_alternativos

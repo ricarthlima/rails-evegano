@@ -1,4 +1,5 @@
 class ProdutoPossuiComponentesController < ApplicationController
+  before_action :authenticate_usuario!
   before_action :set_produto_possui_componente, only: [:show, :edit, :update, :destroy]
 
   # GET /produto_possui_componentes

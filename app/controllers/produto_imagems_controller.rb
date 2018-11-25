@@ -1,4 +1,5 @@
 class ProdutoImagemsController < ApplicationController
+  before_action :authenticate_usuario!
   before_action :set_produto_imagem, only: [:show, :edit, :update, :destroy]
 
   # GET /produto_imagems/1
