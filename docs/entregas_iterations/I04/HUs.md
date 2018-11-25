@@ -41,3 +41,9 @@ Essas histórias serão atacadas na **Iteration 05**.
 |**Como um** analista de segurança do É vegano?|
 |**para que eu** evitar que o sistema sofra um ataque de cadastros|
 |**eu quero** adicionar uma ferramenta de segurança como o reCaptcha.|
+
+|HU13|
+|---|
+|**Como um** usuário experiente|
+|**para que eu** relatar erros ou discrepâncias nos objetos que eu busco|
+|**eu quero** fazer isso em até 2 cliques dado que já estou na tela do objeto.|
