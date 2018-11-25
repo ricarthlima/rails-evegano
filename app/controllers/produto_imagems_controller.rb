@@ -8,7 +8,7 @@ class ProdutoImagemsController < ApplicationController
   # GET /produto_imagems/1
   # GET /produto_imagems/1.json
   def show
-    img = RTesseract.new(@produto_imagem.cover.path)
+    img = RTesseract.new(@produto_imagem.cover.path, :lang => "por")
     #Imprime o texto convertido
     @sorry =  img.to_s
   end
