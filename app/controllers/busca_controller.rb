@@ -41,30 +41,35 @@ class BuscaController < ApplicationController
         end
     end
     
+    # Essa função pega todos elementos do banco e compara com o termo buscado numa
+    # distância de Levenshtein maior que 0 (mesmo termo), e menor que 3.
     def leven(busca)
         proximos = Array.new
+        objetos = Array.new
         
-        Produto.all.each do |produto|
-            distancia = Levenshtein.distance(produto.nome.downcase,busca.to_s.downcase)
+        objetos = objetos + Produto.all + Marca.all + Componente.all
+        objetos.each do |obj|
+            distancia = leven_quebrar(busca,obj.nome)
             if distancia > 0 and distancia < 3
-                proximos << produto
-            end
-        end
-        
-        Marca.all.each do |marca|
-            distancia = Levenshtein.distance(marca.nome.downcase, busca.to_s.downcase)
-            if distancia > 0 and distancia < 3
-                proximos << marca
-            end
-        end
-        
-        Componente.all.each do |comp|
-            distancia = Levenshtein.distance(comp.nome.downcase, busca.to_s.downcase)
-            if distancia > 0 and distancia < 3
-                proximos << comp
+                proximos << obj
             end
         end
         
         return proximos
+    end
+    
+    # Essa função faz o valor "distância" da função anterior ser comparado por cada
+    # palavra dentro dos termo buscado, e não o termo buscado completo.
+    def leven_quebrar(busca, termo)
+        termo = termo.split(" ")
+        
+        menor = Levenshtein.distance(termo[0].downcase,busca.to_s.downcase)
+        termo.each do |palavra|
+            if Levenshtein.distance(palavra.downcase,busca.to_s.downcase) < menor
+                menor = Levenshtein.distance(palavra.downcase,busca.to_s.downcase)
+            end
+        end
+        
+        return menor
     end
 end
