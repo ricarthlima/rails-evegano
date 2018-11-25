@@ -77,7 +77,7 @@ gem "paperclip", "~> 6.0.0"
 gem 'levenshtein', '~> 0.2.2'
 
 # Usar ImageMagick para armazenar imagens
-# gem 'mini_magick', '~> 4.8'
+gem 'mini_magick', '~> 4.8'
 
 # TurboLinks faz a navegação ficar mais ágil. Leia-mais em https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
