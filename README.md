@@ -49,7 +49,7 @@ Segue as etapas a serem seguidas:
 - ~~Definição do minimundo~~
 - ~~Modelagem lógica (Entidade-Relacionamento)~~
 - ~~Modelagem conceitual (Modelo Relacional)~~
-- ~~Modelagem física (PL/SQL)~~
+- ~~Modelagem física (SQL)~~
 - Povoamento
 
 (Todas etapas passarão por testes de lógica, redundância e eficiência quando for cabido, e poderão sofrer alterações)
