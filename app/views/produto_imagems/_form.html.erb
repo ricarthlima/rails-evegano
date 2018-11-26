@@ -11,12 +11,33 @@
     </div>
   <% end %>
   
-  <div class="field">
-    <%= form.label :Imagem %>
-    <%= form.file_field :cover %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class = "container center40">
+    <div class= "row justify-content-md-center no-gutters">
+      <div class = "col">
+        <%= image_tag "/assets/photo.png", size: "48" %>
+      </div>
+      <div class = "col">
+        <%= image_tag "/assets/flour.png", size: "48" %>
+      </div>
+    </div>
+    
+    <div class= "row justify-content-md-center my-3">
+      <p align = "center">
+        A busca por imagem está em desenvolvimento. Tente tirar uma foto do rótulo
+        sem curvar a embalagem e enquadrando apenas o texto principal.
+      </p>
+    </div>
+    <hr class="my-3">
+    <div class= "row justify-content-md-center">
+        <div class="form-group">
+          <center><%= form.label "Selecione uma imagem" %><br/></center>
+          <center><%= form.file_field :cover%></center>
+        </div>
+    </div>
+    <div class = "row justify-content-md-center">
+        <div class="actions">
+          <%= form.submit class: "btn btn-primary-color" %>
+        </div>
+      </div>
   </div>
 <% end %>

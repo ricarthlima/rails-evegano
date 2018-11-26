@@ -1,4 +1,6 @@
-<p id="notice"><%= notice %></p>
+<%= content_for :nav do %>
+  <%= render "layout/navbar" %>
+<% end %>
 
 <p>
   <%= image_tag @produto_imagem.cover.url(:thumb) %>
