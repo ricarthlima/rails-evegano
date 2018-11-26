@@ -5,7 +5,9 @@ class BuscaController < ApplicationController
     def show
     end
 
+
     def buscar
+        puts @sorry
         @nome_busca = params[:texto]
         
         if busca_vazia
