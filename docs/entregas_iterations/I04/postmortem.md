@@ -27,7 +27,7 @@
 ### Desenvolvimento
 |O que foi planejado?|Guilherme|Monalisa|Ricarth|Warley|Não foi feito|
 |--------------------|:-------:|:------:|:-----:|:----:|:-----------:|
-|Criar testes com RSPEC||||||
+|Criar testes com RSPEC|||X|||
 |Criar features com Cucumber||||||
 |Criar steps das Features||||||
 |Autenticação com o Facebook|||X|||
