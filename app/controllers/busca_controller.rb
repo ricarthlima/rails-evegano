@@ -7,6 +7,32 @@ class BuscaController < ApplicationController
     def show
     end
     
+    def buscar_ocr
+        @ocr = params[:ocr]
+        produtos = Produto.all
+        ocr = @ocr.split(" ")
+        
+        menor_palavra = [ocr[0], 10000]
+        ocr.each do |palavra|
+            produtos.each do |produto|
+                distancia = leven_quebrar(palavra, produto.nome)
+                if distancia < menor_palavra[1]
+                    menor_palavra = [palavra, distancia]
+                end
+            end
+        end
+        
+        if menor_palavra[1] < 2
+            redirect_to controller: "busca", action: 'buscar', texto: menor_palavra[0]
+            
+        else
+            flash[:notice] = "Não conseguimos encontrar com seu rótulo. :("
+            redirect_to inicio_path
+        end
+        
+        
+    end
+
     def buscar_cod
         cod = params[:cod]
         produtos = Produto.where("cod_barras = '"+cod+"'")

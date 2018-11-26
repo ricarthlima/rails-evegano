@@ -23,9 +23,10 @@ Rails.application.routes.draw do
   get "dev/adicionar/", to: "dev#adicionar", as: "adicionar_dev"
   
   get "inicio" => "inicio#index"
-  get "busca" => "busca#buscar"
-  get "busca_cod" => "busca#buscar_cod"
   
+  get "busca" => "busca#buscar"
+  get "busca_ocr" => "busca#buscar_ocr"
+  get "busca_cod" => "busca#buscar_cod"
   
   get "produto_imagems/new/:id" => "produto_imagems#new" 
   get "perfil" => "perfil#index"

@@ -2,8 +2,12 @@
   <%= render "layouts/navbar" %>
 <% end %>
 
-<h1>New Produto Imagem</h1>
-
-<%= render 'form', produto_imagem: @produto_imagem %>
-
-<%= link_to 'Back', :back %>
+<div class = "container-box">
+    <h2>Que tal pesquisar pelo rótulo do produto?</h2>
+    <br/>
+    
+    <%= render 'form', produto_imagem: @produto_imagem %>
+    
+    
+    <%= link_to 'Voltar', :back %>
+</div>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_25_012901) do
+ActiveRecord::Schema.define(version: 2018_11_26_184831) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -68,7 +68,6 @@ ActiveRecord::Schema.define(version: 2018_11_25_012901) do
     t.string "cover_content_type"
     t.integer "cover_file_size"
     t.datetime "cover_updated_at"
-    t.integer "tipo"
   end
 
   create_table "produto_nome_alternativos", force: :cascade do |t|

@@ -1,4 +1,6 @@
-<p id="notice"><%= notice %></p>
+<%= content_for :nav do %>
+  <%= render "layout/navbar" %>
+<% end %>
 
 <p>
   <%= image_tag @produto_imagem.cover.url(:thumb) %>
@@ -9,5 +11,8 @@
   <%= class_tipo_imagem(@produto_imagem.tipo) %>
 </p>
 
-<%= link_to 'Edit', edit_produto_imagem_path(@produto_imagem) %> |
-<%= link_to 'Back', inicio_path %>
+<%= link_to 'Editar', edit_produto_imagem_path(@produto_imagem) %> |
+<%= link_to 'Voltar', inicio_path %>
+
+
+<%= @sorry %>

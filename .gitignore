@@ -28,6 +28,7 @@
 
 # Ignorar imagens que são feitas em upload
 /system/produto_imagems/*
+/images/produto_imagem/*
 
 # Ignorar informações sensíveis
 .env
