@@ -2,41 +2,48 @@
   <%= render "layouts/navbar" %>
 <% end %>
 
-<p id="notice"><%= notice %></p>
+<%= render "shared/notice" %>
 
-<h3>
-  <strong>
-  <%= @produto.nome %>
-  </strong>
-</h3>
+<div class = "container-box">
+  <h3>
+    <strong>
+    <%= @produto.nome %>
+    </strong>
+  </h3>
+  
+  <p>
+  <%= class_pmc_vegano(@produto.class_vegan)%></br>
+  </p>
+  
+  <p>
+    <strong>Marca:</strong>
+    <%= link_to @produto.marca.nome, marcas_path(@produto.marca) %>
+  </p>
+  
+  
+  
+  <p>
+    <strong>Descrição:</strong> </br>
+    <%= @produto.descricao %>
+  </p>
+  
+  <p>
+    <strong>Componentes:</strong> </br>
+    <% @comps_produto.each do |comp| %>
+      <%= link_to comp.nome, componente_path(comp) %>; 
+    <% end %>
+  </p>
+  
+  <p>
+    <strong>Justificativa da Classificação:</strong> </br>
+    <%= @produto.justificativa %>
+  </p>
+  
+  
+  <% if current_usuario.dev then%>
+    <%= link_to 'Editar', edit_produto_path(@produto) %>
+  <% end %>
+  
+  <%= link_to 'Voltar', :back %>
 
-<p>
-<%= class_pmc_vegano(@produto.class_vegan)%></br>
-</p>
-
-<p>
-  <strong>Marca:</strong>
-  <%= link_to @produto.marca.nome, marcas_path(@produto.marca) %>
-</p>
-
-
-
-<p>
-  <strong>Descrição:</strong> </br>
-  <%= @produto.descricao %>
-</p>
-
-<p>
-  <strong>Componentes:</strong>
-</p>
-
-<p>
-  <strong>Justificativa da Classificação:</strong> </br>
-  <%= @produto.justificativa %>
-</p>
-
-<% if current_usuario.dev then%>
-  <%= link_to 'Editar', edit_produto_path(@produto) %>
-<% end %>
-
-<%= link_to 'Voltar', :back %>
+</div>

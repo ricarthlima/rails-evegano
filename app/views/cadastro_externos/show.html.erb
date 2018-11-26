@@ -1,0 +1,36 @@
+<%= content_for :nav do%>
+  <%= render "layouts/navbar" %>
+<% end %>
+
+<%= render "shared/notice" %>
+
+<div class = "container-box">
+  <p>
+    <strong>Código de Barras:</strong>
+    <%= @cadastro_externo.cod_barras %>
+  </p>
+  
+  <p>
+    <strong>Nome:</strong>
+    <%= @cadastro_externo.nome %>
+  </p>
+  
+  <p>
+    <strong>Marca:</strong>
+    <%= @cadastro_externo.marca %>
+  </p>
+  
+  <p>
+    <strong>Descrição:</strong>
+    <%= @cadastro_externo.descricao %>
+  </p>
+  
+  <p>
+    <strong>Componentes:</strong>
+    <%= @cadastro_externo.componentes %>
+  </p>
+  
+  <%= link_to 'Voltar', inicio_path %>
+</div>
+
+

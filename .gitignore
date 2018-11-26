@@ -31,3 +31,6 @@
 
 # Ignorar informações sensíveis
 .env
+
+# Ignorar arquivo de cobertura
+/coverage/*

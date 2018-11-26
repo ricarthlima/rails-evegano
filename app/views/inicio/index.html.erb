@@ -2,23 +2,63 @@
   <%= render "layouts/navbar" %>
 <% end %>
 
-<div class = "center-block"> <center>
+<div class = "container-box"> <center>
     <%= image_tag("/assets/logos/logo-128.png", size: "64", class: "img_center") %>
     <h2 class = "titulo_centro">É vegano?</h2>
 
     <%= form_tag busca_path, method: :get do%>
-      <div class="form-group botoes">
-        <%= text_field_tag :texto, @nome_busca, class: "form-control", placeholder: "Digite um produto, marca ou componente." %><br />
-        <%= button_to "Buscar", nil, class: "btn btn-primary-color" %>
+      <div class="container btn-75 nopadding">
+        <div class = "row justify-content-md-center no-gutters">
+          <div class = "col-lg">
+            <%= text_field_tag :texto, @nome_busca, class: "form-control form100", placeholder: "Digite um produto, marca ou componente." %>
+          </div>
+          <div class = "col-sm-auto">
+            <!-- Botão para acionar modal -->
+            <button type="button" class="btn nopadding" data-toggle="modal" data-target="#modalCodigoBarras">
+              <%= image_tag "/assets/barcode.png", size: "35" %>
+            </button>
+          </div>
+        </div>
+        
+        <%= button_to "Buscar", nil, class: "btn btn-primary-color my-3" %>
       </div>
     <% end %>
     
-    <div class = "horizontal_line"></div><br />
+    <div class = "horizontal_line my-4"></div>
     
     <span>Que tal buscar usando a câmera do seu celular?</span><br /><br />
 
     <table class = "table">
       <%= button_to "Ler Rótulo do Produto", new_produto_imagem_url+"/rotulo/" , class: "btn btn-success", method: :get%>
-      <%= button_to "Ler Código de Barras", new_produto_imagem_url+"/barras/" ,class: "btn btn-success", method: :get%>
     </table>
 </center> </div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalCodigoBarras" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Digite o código de barras</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <%= form_tag busca_cod_path, method: :get do %>
+        <div class="modal-body">
+          <%= text_field_tag :cod, @cod_barra, class: "form-control form100", placeholder: "Ex.: 7896004720333 " %>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <%= button_to "Buscar", nil, class: "btn btn-primary-color my-3" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<%= content_for :footer do%>
+  <%= render "shared/footer" %>
+<% end %>

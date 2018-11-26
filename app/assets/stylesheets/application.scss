@@ -28,11 +28,6 @@ h2{
     color: #68C14D;
 }
 
-span{
-    font-family: 'Mali', cursive;
-}
-
-
 .bg-green{
     background-color: #88c057;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
@@ -74,6 +69,15 @@ div.container-box{
     margin: auto;
 }
 
+.form100{
+    width: 100%;
+}
+
+.form-text{
+    width: 75%;
+    margin: auto;
+}
+
 .centro {
     width: 200px;
     height: 200px;
@@ -82,4 +86,29 @@ div.container-box{
     position: absolute;
     top: 50%;
     left: 50%;
+}
+
+div.scrolled{
+    height: 10%; 
+    overflow-y: scroll;
+}
+
+div.dangerzone{
+    border: 2px solid #C82333;
+    padding: 1%;
+    margin-top: 5%;
+    margin: auto;
+    border-radius: 2%;
+}
+
+.footer{
+    color: #78a985;
+    font-size: 75%;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 3%;
+}
+
+.nopadding{
+    padding: 0;
 }

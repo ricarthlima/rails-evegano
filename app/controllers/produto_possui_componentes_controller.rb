@@ -1,29 +1,35 @@
 class ProdutoPossuiComponentesController < ApplicationController
+  before_action :authenticate_usuario!
   before_action :set_produto_possui_componente, only: [:show, :edit, :update, :destroy]
 
   # GET /produto_possui_componentes
   # GET /produto_possui_componentes.json
   def index
+    authorize! :menage, :all
     @produto_possui_componentes = ProdutoPossuiComponente.all
   end
 
   # GET /produto_possui_componentes/1
   # GET /produto_possui_componentes/1.json
   def show
+    authorize! :menage, :all
   end
 
   # GET /produto_possui_componentes/new
   def new
+    authorize! :menage, :all
     @produto_possui_componente = ProdutoPossuiComponente.new
   end
 
   # GET /produto_possui_componentes/1/edit
   def edit
+    authorize! :menage, :all
   end
 
   # POST /produto_possui_componentes
   # POST /produto_possui_componentes.json
   def create
+    authorize! :menage, :all
     @produto_possui_componente = ProdutoPossuiComponente.new(produto_possui_componente_params)
 
     respond_to do |format|
@@ -40,6 +46,7 @@ class ProdutoPossuiComponentesController < ApplicationController
   # PATCH/PUT /produto_possui_componentes/1
   # PATCH/PUT /produto_possui_componentes/1.json
   def update
+    authorize! :menage, :all
     respond_to do |format|
       if @produto_possui_componente.update(produto_possui_componente_params)
         format.html { redirect_to @produto_possui_componente, notice: 'Produto possui componente was successfully updated.' }
@@ -54,6 +61,7 @@ class ProdutoPossuiComponentesController < ApplicationController
   # DELETE /produto_possui_componentes/1
   # DELETE /produto_possui_componentes/1.json
   def destroy
+    authorize! :menage, :all
     @produto_possui_componente.destroy
     respond_to do |format|
       format.html { redirect_to produto_possui_componentes_url, notice: 'Produto possui componente was successfully destroyed.' }

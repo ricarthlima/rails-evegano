@@ -64,11 +64,20 @@ gem 'omniauth-twitter', '~> 1.2', '>= 1.2.1'
 # Usar ActiveRecord Sessions para gerênciar Sessões Ativas
 gem 'activerecord-session_store', '~> 1.0'
 
+# Usar o CanCanCan pra gerenciar níveis de usuários
+gem 'cancancan', '~> 2.0'
+
 #-------------------------------------------------------------------------------
 # 4 - Outros
 
 # Usar para upload de imagens
 gem "paperclip", "~> 6.0.0"
+
+# Usar Distância de Levenshtein - Comparação entre 2 strings
+gem 'levenshtein', '~> 0.2.2'
+
+# Usar ImageMagick para armazenar imagens
+gem 'mini_magick', '~> 4.8'
 
 # TurboLinks faz a navegação ficar mais ágil. Leia-mais em https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
@@ -93,8 +102,7 @@ gem 'rtesseract'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# Use ActiveStorage variant
-# gem 'mini_magick', '~> 4.8'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -111,7 +119,6 @@ gem 'rtesseract'
 # gem 'bootstrap', '~> 4.1.3'
 # gem 'bootstrap-sass', '~> 3.2.0'
 # gem 'autoprefixer-rails'
-
 
 
 #-------------------------------------------------------------------------------
@@ -148,6 +155,7 @@ group :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   gem 'chromedriver-helper'
+  gem 'simplecov', require: false
 end
 
 #-------------------------------------------------------------------------------

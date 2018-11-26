@@ -20,6 +20,9 @@ Para informações sobre design para formulários na aplicação, acesse o [link
 - Links úteis sobre sidebar
     - [link 1](https://github.com/BlackrockDigital/startbootstrap-simple-sidebar) 
     - [link 2](https://startbootstrap.com/template-overviews/simple-sidebar/)
+- Documentação sobre "Modal" em Bootstrap
+    - [link 1](https://getbootstrap.com/docs/4.1/components/modal/#scrolling-long-content)
+    - [link 2](https://getbootstrap.com.br/docs/4.1/components/modal/#modal-components)
 
 
 ## 2. Testes

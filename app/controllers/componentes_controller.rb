@@ -1,4 +1,5 @@
 class ComponentesController < ApplicationController
+  before_action :authenticate_usuario!
   before_action :set_componente, only: [:show, :edit, :update, :destroy]
 
   def valido?
@@ -13,20 +14,24 @@ class ComponentesController < ApplicationController
   # GET /componentes/1
   # GET /componentes/1.json
   def show
+    UsuarioBuscaComponente.create(usuario_id: current_usuario.id, componente_id: @componente.id, dt_busca: Time.now.to_s)
   end
 
   # GET /componentes/new
   def new
+    authorize! :menage, :all
     @componente = Componente.new
   end
 
   # GET /componentes/1/edit
   def edit
+    authorize! :menage, :all
   end
 
   # POST /componentes
   # POST /componentes.json
   def create
+    authorize! :menage, :all
     @componente = Componente.new(componente_params)
 
     respond_to do |format|
@@ -43,6 +48,7 @@ class ComponentesController < ApplicationController
   # PATCH/PUT /componentes/1
   # PATCH/PUT /componentes/1.json
   def update
+    authorize! :menage, :all
     respond_to do |format|
       if @componente.update(componente_params)
         format.html { redirect_to @componente, notice: 'Componente was successfully updated.' }
@@ -57,6 +63,7 @@ class ComponentesController < ApplicationController
   # DELETE /componentes/1
   # DELETE /componentes/1.json
   def destroy
+    authorize! :menage, :all
     @componente.destroy
     respond_to do |format|
       format.html { redirect_to componentes_url, notice: 'Componente was successfully destroyed.' }

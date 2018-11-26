@@ -2,38 +2,40 @@
   <%= render "layouts/navbar" %>
 <% end %>
 
-<%= render "layouts/navbar" %>
-<p id="notice"><%= notice %></p>
+<%= render "shared/notice" %>
 
-<h3>
-  <strong>
-    <%= @componente.nome %>
-  </strong>
-</h3>
-
-<p>
-<%= class_pmc_vegano(@componente.class_vegan)%></br>
-</p>
-
-<p>
-  <strong>Código Europeu:</strong>
-  <%= @componente.cod_europeu %>
-  <strong>Código INS:</strong>
-  <%= @componente.cod_INS %>
-</p>
-
-<p>
-  <strong>Descrição:</strong></br>
-  <%= @componente.descricao %>
-</p>
-
-<p>
-  <strong>Justificativa:</strong></br>
-  <%= @componente.justificativa %>
-</p>
-
-<% if current_usuario.dev then%>
-  <%= link_to 'Editar', edit_componente_path(@componente) %> |
-<% end %>
-
-<%= link_to 'Voltar', :back %>
+<div class = "container-box">
+  <h3>
+    <strong>
+      <%= @componente.nome %>
+    </strong>
+  </h3>
+  
+  <p>
+    <%= class_pmc_vegano(@componente.class_vegan)%></br>
+  </p>
+  
+  <p>
+    <strong>Código Europeu:</strong>
+    <%= @componente.cod_europeu %>
+    
+    <strong>Código INS:</strong>
+    <%= @componente.cod_INS %>
+  </p>
+  
+  <p>
+    <strong>Descrição:</strong></br>
+    <%= @componente.descricao %>
+  </p>
+  
+  <p>
+    <strong>Justificativa:</strong></br>
+    <%= @componente.justificativa %>
+  </p>
+  
+  <% if current_usuario.dev then%>
+    <%= link_to 'Editar', edit_componente_path(@componente) %> |
+  <% end %>
+  
+  <%= link_to 'Voltar', :back %>
+</div>

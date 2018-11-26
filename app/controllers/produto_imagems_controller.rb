@@ -2,7 +2,7 @@ require "rubygems"
 require "rtesseract"
   
 class ProdutoImagemsController < ApplicationController
-  
+  before_action :authenticate_usuario!
   before_action :set_produto_imagem, only: [:show, :edit, :update, :destroy]
 
   # GET /produto_imagems/1
@@ -25,6 +25,7 @@ class ProdutoImagemsController < ApplicationController
 
   # GET /produto_imagems/1/edit
   def edit
+    authorize! :menage, :all
   end
 
   # POST /produto_imagems
@@ -52,6 +53,7 @@ class ProdutoImagemsController < ApplicationController
   # PATCH/PUT /produto_imagems/1
   # PATCH/PUT /produto_imagems/1.json
   def update
+    authorize! :menage, :all
     respond_to do |format|
       if @produto_imagem.update(produto_imagem_params)
         format.html { redirect_to @produto_imagem, notice: 'Produto imagem was successfully updated.' }
@@ -66,6 +68,7 @@ class ProdutoImagemsController < ApplicationController
   # DELETE /produto_imagems/1
   # DELETE /produto_imagems/1.json
   def destroy
+    authorize! :menage, :all
     @produto_imagem.destroy
     respond_to do |format|
       format.html { redirect_to produto_imagems_url, notice: 'Produto imagem was successfully destroyed.' }

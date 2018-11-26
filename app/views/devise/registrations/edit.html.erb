@@ -1,43 +1,124 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
-
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= devise_error_messages! %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-    <% if @minimum_password_length %>
-      <br />
-      <em><%= @minimum_password_length %> characters minimum</em>
-    <% end %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.password_field :current_password, autocomplete: "current-password" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Update" %>
-  </div>
+<%= content_for :nav do%>
+  <%= render "layouts/navbar" %>
 <% end %>
 
-<h3>Cancel my account</h3>
+<%= render "shared/notice" %>
 
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
 
-<%= link_to "Back", :back %>
+<div class = "container-box">
+<h2>Editar usuário</h2><br/>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+  <%= render "shared/notice" %>
+  <%= devise_error_messages! %>
+  <ul class="list-group form-text">
+    <li class="list-group-item">
+      <div class="form-group">
+        <strong><%= f.label "E-mail", class: "form-text" %></strong><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Email" %>
+      </div>
+    
+      <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+        <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+      <% end %>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="form-group">
+         <strong><%= f.label "Nome", class: "form-text" %></strong><br />
+        <%= f.text_field :nome, autofocus: true, autocomplete: "nome", class: "form-control", placeholder: :nome %>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="form-group">
+         <strong><%= f.label "Sobrenome", class: "form-text" %></strong><br />
+        <%= f.text_field :sobrenome, autocomplete: "sobrenome", class: "form-control", placeholder: :sobrenome %>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="form-group">
+         <strong><%= f.label "CEP", class: "form-text" %></strong><br />
+        <%= f.text_field :cep, autocomplete: "cep", class: "form-control", placeholder: :cep%>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="form-group">
+         <strong><%= f.label "País", class: "form-text" %></strong><br />
+        <%= f.text_field :pais, autocomplete: "pais", class: "form-control", placeholder: :pais %>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="form-group">
+         <strong><%= f.label "Telefone", class: "form-text" %></strong><br />
+        <%= f.text_field :telefone, autocomplete: "telefone", class: "form-control", placeholder: :telefone%>
+      </div>
+    </li>
+    
+    <li class = "list-group-item">
+      <strong><%= f.label "Classificação vegana", class: "form-text" %></strong><br/>
+      <center><%= f.select :tipo_usuario, ["Vegano","Vegetariano","Lactovegetariano","Ovolactovegetariano","Outros"], class: "dropdown form-text"%></center>
+    </li>
+
+  
+     <li class="list-group-item">
+        <div class="form-group">
+          <strong><%= f.label "Nova senha", class: "form-text" %> </strong>
+          <i class = "form-text">(Deixe em branco caso não queira alterar)</i><br />
+          
+          <%= f.password_field :password, autocomplete: "new-password", class: "form-control", placeholder: "Nova senha" %>
+          <% if @minimum_password_length %>
+            <br />
+            <center><small><em><%= @minimum_password_length %> caracteres no mínimo</em></small></center>
+          <% end %>
+          
+          
+        </div>
+      
+        <div class="form-group">
+          <strong><%= f.label "Confirmar nova senha", class: "form-text" %></strong><br />
+          <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control", placeholder: "Confirmar nova senha" %>
+        </div>
+      </li>
+      
+      <li class = "list-group-item list-group-item-warning">
+        <div class="form-group">
+          <strong><%= f.label "Senha atual", class: "form-text" %></strong>
+          <i class = "form-text">(Nós precisamos da senha atual para efetuar as mudanças)</i><br />
+          <%= f.password_field :current_password, autocomplete: "current-password", class: "form-control", placeholder: "Senha atual" %>
+        </div>
+        
+        <div class="actions">
+          <center><%= f.submit "Atualizar", class: "btn btn-primary-color" %></center>
+        </div>
+      </li>
+    </ul>
+  
+  <br/>
+  
+<% end %>
+
+<br/>
+
+<div class = "dangerzone form-text">
+  
+  <h4>Zona de perigo!</h4><br/>
+  <ul class="list-group form-text">
+     <li class="list-group-item">
+       <p>
+        <strong>Cancelar minha conta</strong><br/>
+        Uma vez que você exclua sua conta, não havera mais volta. Por favor, tenha certeza.
+        <%= button_to "Excluir minha conta", registration_path(resource_name), data: { confirm: "Tem certeza" }, class: "btn btn-danger", method: :delete %>
+      </p>
+     </li>
+  </ul>
+  
+</div>
+
+<%= link_to "Voltar", :back %>
+
+
+</div>

@@ -1,29 +1,35 @@
 class ComponenteNomeAlternativosController < ApplicationController
+  before_action :authenticate_usuario!
   before_action :set_componente_nome_alternativo, only: [:show, :edit, :update, :destroy]
 
   # GET /componente_nome_alternativos
   # GET /componente_nome_alternativos.json
   def index
+    authorize! :menage, :all
     @componente_nome_alternativos = ComponenteNomeAlternativo.all
   end
 
   # GET /componente_nome_alternativos/1
   # GET /componente_nome_alternativos/1.json
   def show
+    authorize! :menage, :all
   end
 
   # GET /componente_nome_alternativos/new
   def new
+    authorize! :menage, :all
     @componente_nome_alternativo = ComponenteNomeAlternativo.new
   end
 
   # GET /componente_nome_alternativos/1/edit
   def edit
+    authorize! :menage, :all
   end
 
   # POST /componente_nome_alternativos
   # POST /componente_nome_alternativos.json
   def create
+    authorize! :menage, :all
     @componente_nome_alternativo = ComponenteNomeAlternativo.new(componente_nome_alternativo_params)
 
     respond_to do |format|
@@ -40,6 +46,7 @@ class ComponenteNomeAlternativosController < ApplicationController
   # PATCH/PUT /componente_nome_alternativos/1
   # PATCH/PUT /componente_nome_alternativos/1.json
   def update
+    authorize! :menage, :all
     respond_to do |format|
       if @componente_nome_alternativo.update(componente_nome_alternativo_params)
         format.html { redirect_to @componente_nome_alternativo, notice: 'Componente nome alternativo was successfully updated.' }
@@ -54,6 +61,7 @@ class ComponenteNomeAlternativosController < ApplicationController
   # DELETE /componente_nome_alternativos/1
   # DELETE /componente_nome_alternativos/1.json
   def destroy
+    authorize! :menage, :all
     @componente_nome_alternativo.destroy
     respond_to do |format|
       format.html { redirect_to componente_nome_alternativos_url, notice: 'Componente nome alternativo was successfully destroyed.' }

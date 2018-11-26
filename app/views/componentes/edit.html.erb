@@ -1,6 +1,14 @@
-<h1>Editing Componente</h1>
+<%= content_for :nav do%>
+  <%= render "layouts/navbar" %>
+<% end %>
 
-<%= render 'form', componente: @componente %>
+<div class = "container-box">
+    <h2><center>Editar Componente</center></h2>
 
-<%= link_to 'Show', @componente %> |
-<%= link_to 'Back', componentes_path %>
+    <%= render 'form', componente: @componente %>
+    
+    <%= link_to 'Mostrar', @componente %> |
+    <%= link_to 'Voltar', componentes_path %>
+</div>
+
+
