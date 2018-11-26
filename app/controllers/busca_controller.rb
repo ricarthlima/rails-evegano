@@ -22,7 +22,7 @@ class BuscaController < ApplicationController
             end
         end
         
-        if menor_palavra[1] < 3
+        if menor_palavra[1] < 2
             redirect_to controller: "busca", action: 'buscar', texto: menor_palavra[0]
             
         else
