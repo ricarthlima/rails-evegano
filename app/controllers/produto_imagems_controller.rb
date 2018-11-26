@@ -13,8 +13,8 @@ class ProdutoImagemsController < ApplicationController
     @ocr =  img.to_s
     puts("----------------\n"+@ocr+"\n---------------")
     redirect_to controller: 'busca', action: 'buscar_ocr', ocr: @ocr
-    @produto_imagem.cover = nil #Código para apagar a imagem, falta só resolver o redirect_to
-    @produto_imagem.save
+    # @produto_imagem.cover = nil #Código para apagar a imagem, falta só resolver o redirect_to
+    # @produto_imagem.save
   end
 
   # GET /produto_imagems/new
