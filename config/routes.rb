@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   get "dev" => "dev#index"
   get "inicio" => "inicio#index"
   get "busca" => "busca#buscar"
+  get "busca_ocr" => "busca#buscar_ocr"
   get "produto_imagems/new/:id" => "produto_imagems#new" 
   get "perfil" => "perfil#index"
 

@@ -4,11 +4,17 @@ class BuscaController < ApplicationController
     
     def show
     end
-
+    
+    def buscar_ocr
+        @ocr = params[:ocr]
+        puts("-----------------\n"+@ocr.to_s+"\n--------------")
+        flash[:notice] = @ocr
+        redirect_to inicio_path
+    end
 
     def buscar
-        puts @sorry
         @nome_busca = params[:texto]
+       
         
         if busca_vazia
             redirect_to inicio_path

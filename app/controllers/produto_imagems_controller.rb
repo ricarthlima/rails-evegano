@@ -10,8 +10,9 @@ class ProdutoImagemsController < ApplicationController
   def show
     img = RTesseract.new(@produto_imagem.cover.path, :lang => "por")
     #Imprime o texto convertido
-    @sorry =  img.to_s
-    redirect_to busca_url(:@sorry => params[:@sorry])
+    @ocr =  img.to_s
+    #redirect_to busca_url(@sorry)
+    redirect_to controller: 'busca', action: 'buscar_ocr', ocr: @ocr
     @produto_imagem.cover = nil #Código para apagar a imagem, falta só resolver o redirect_to
     @produto_imagem.save
   end
