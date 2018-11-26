@@ -24,7 +24,9 @@ Rails.application.routes.draw do
   
   get "inicio" => "inicio#index"
   get "busca" => "busca#buscar"
-  get "cadastro_pmc/:busca", to: "cadastro_pmc#index", as: "cadastro_pmc"
+  get "busca_cod" => "busca#buscar_cod"
+  
+  
   get "produto_imagems/new/:id" => "produto_imagems#new" 
   get "perfil" => "perfil#index"
   get "historico" => "historico#index"

@@ -6,7 +6,19 @@ class BuscaController < ApplicationController
     
     def show
     end
-
+    
+    def buscar_cod
+        cod = params[:cod]
+        produtos = Produto.where("cod_barras = '"+cod+"'")
+        
+        if produtos.size > 0
+            redirect_to produtos[0]
+        else
+            flash[:notice] = "Não achamos nenhum produto com esse código de barras."
+            redirect_to inicio_path
+        end
+    end
+    
     def buscar
         @nome_busca = params[:texto]
         @proximos = leven(@nome_busca)
