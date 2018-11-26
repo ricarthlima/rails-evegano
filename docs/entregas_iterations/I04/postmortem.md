@@ -17,11 +17,12 @@
 ### Interação com Cliente
 |O que foi planejado?|Guilherme|Monalisa|Ricarth|Warley|Não foi feito|
 |--------------------|:-------:|:------:|:-----:|:----:|:-----------:|
-|Reuniões de validação com cliente|||||X|
+|Reuniões de validação com cliente||||X||
 
 ### Repositório GitHub
 |O que foi planejado?|Guilherme|Monalisa|Ricarth|Warley|Não foi feito|
 |--------------------|:-------:|:------:|:-----:|:----:|:-----------:|
+|Adição de novas HUs|||X|||
 
 ### Desenvolvimento
 |O que foi planejado?|Guilherme|Monalisa|Ricarth|Warley|Não foi feito|
@@ -32,8 +33,12 @@
 |Autenticação com o Facebook|||X|||
 |Autenticação com o Google|||X|||
 |Feature de análise de rótulos||||X||
-|Busca textual por Produto, Marca ou componente|||X|||
-
+|Finalização da busca textual por Produto, Marca ou componente|||X|||
+|Análise do código de barras||||X||
+|Implementação do Histórico de Busca|||X|||
+|Desenvolvimento das telas de Caso Bom, Caso Ruim e Caso Múltiplo|||X|||
+|Término do ambiente de desenvolvedores (Dev Console)|||X|||
+|Povoamento do banco||||||
 
 ## O que está planejado para a próxima iteração?
 |Objetivo|Encarregado|Como faremos?|
