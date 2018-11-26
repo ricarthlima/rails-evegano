@@ -19,9 +19,9 @@
   <body>
     <%= yield :nav %><br />
     <div class = "container">
-      <%= render "shared/notice" %>
-      <%= yield %>
+        <%= render "shared/notice" %>
+        <%= yield %>
+        <%= yield :footer %>
     </div>
-    
   </body>
 </html>

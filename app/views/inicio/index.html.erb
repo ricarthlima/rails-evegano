@@ -22,3 +22,7 @@
       <%= button_to "Ler Código de Barras", new_produto_imagem_url+"/barras/" ,class: "btn btn-success", method: :get%>
     </table>
 </center> </div>
+
+<%= content_for :footer do%>
+  <%= render "shared/footer" %>
+<% end %>
