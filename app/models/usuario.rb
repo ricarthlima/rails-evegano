@@ -1,4 +1,10 @@
 class Usuario < ApplicationRecord
+  has_many :usuario_busca_produtos, dependent: :destroy  
+  has_many :usuario_busca_marcas, dependent: :destroy 
+  has_many :usuario_busca_componentes, dependent: :destroy 
+  has_many :usuario_avalia_marcas, dependent: :destroy 
+  has_many :usuario_avalia_produtos, dependent: :destroy 
+  
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,

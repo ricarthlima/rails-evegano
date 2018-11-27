@@ -11,7 +11,14 @@ class MarcasController < ApplicationController
   # GET /marcas/1
   # GET /marcas/1.json
   def show
-    UsuarioBuscaMarca.create(usuario_id: current_usuario.id, marca_id: @marca.id, dt_busca: Time.now.to_s)
+    consulta = UsuarioBuscaMarca.where("usuario_id = " + current_usuario.id.to_s + " AND " + "marca_id = " + @marca.id.to_s)
+    if consulta.size > 0
+      consulta[0].dt_busca = Time.now.to_s
+      consulta[0].save
+    else
+      UsuarioBuscaMarca.create(usuario_id: current_usuario.id, marca_id: @marca.id, dt_busca: Time.now.to_s)
+    end
+    
   end
 
   # GET /marcas/new

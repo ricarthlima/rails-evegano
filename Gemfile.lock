@@ -368,7 +368,7 @@ DEPENDENCIES
   rails (~> 5.2.1)
   rails-i18n (~> 5.1)
   rspec-rails (~> 3.7)
-  rtesseract
+  rtesseract (~> 2.2)
   sassc-rails
   selenium-webdriver
   simplecov

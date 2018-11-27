@@ -1,8 +1,8 @@
 class HistoricoController < ApplicationController
     def index
-        produtos_buscados = UsuarioBuscaProduto.where("usuario_id = " + current_usuario.id.to_s)
-        marcas_buscadas = UsuarioBuscaMarca.where("usuario_id = " + current_usuario.id.to_s)
-        componentes_buscados = UsuarioBuscaComponente.where("usuario_id = " + current_usuario.id.to_s)
+        produtos_buscados = UsuarioBuscaProduto.where("usuario_id = " + current_usuario.id.to_s).order(dt_busca: :desc)
+        marcas_buscadas = UsuarioBuscaMarca.where("usuario_id = " + current_usuario.id.to_s).order(dt_busca: :desc)
+        componentes_buscados = UsuarioBuscaComponente.where("usuario_id = " + current_usuario.id.to_s).order(dt_busca: :desc)
         
         @produtos_buscados = Array.new
         @marcas_buscadas = Array.new

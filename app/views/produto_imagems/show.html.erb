@@ -1,14 +1,9 @@
 <%= content_for :nav do %>
-  <%= render "layout/navbar" %>
+  <%= render "layouts/navbar" %>
 <% end %>
 
 <p>
-  <%= image_tag @produto_imagem.cover.url(:thumb) %>
-</p>
-
-<p>
-  <strong>Tipo da Imagem:</strong>
-  <%= class_tipo_imagem(@produto_imagem.tipo) %>
+  <%= image_tag @produto_imagem.cover.url%>
 </p>
 
 <%= link_to 'Editar', edit_produto_imagem_path(@produto_imagem) %> |

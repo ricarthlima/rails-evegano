@@ -14,7 +14,13 @@ class ComponentesController < ApplicationController
   # GET /componentes/1
   # GET /componentes/1.json
   def show
-    UsuarioBuscaComponente.create(usuario_id: current_usuario.id, componente_id: @componente.id, dt_busca: Time.now.to_s)
+    consulta = UsuarioBuscaComponente.where("usuario_id = " + current_usuario.id.to_s + " AND " + "componente_id = " + @componente.id.to_s)
+    if consulta.size > 0
+      consulta[0].dt_busca = Time.now.to_s
+      consulta[0].save
+    else
+      UsuarioBuscaComponente.create(usuario_id: current_usuario.id, componente_id: @componente.id, dt_busca: Time.now.to_s)
+    end
   end
 
   # GET /componentes/new
