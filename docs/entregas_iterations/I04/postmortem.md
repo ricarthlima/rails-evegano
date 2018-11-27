@@ -28,8 +28,8 @@
 |O que foi planejado?|Guilherme|Monalisa|Ricarth|Warley|Não foi feito|
 |--------------------|:-------:|:------:|:-----:|:----:|:-----------:|
 |Criar testes com RSPEC|||X|||
-|Criar features com Cucumber||||||
-|Criar steps das Features||||||
+|Criar features com Cucumber|X|X|X|X||
+|Criar steps das Features|X|X||X||
 |Autenticação com o Facebook|||X|||
 |Autenticação com o Google|||X|||
 |Feature de análise de rótulos||||X||
@@ -38,14 +38,15 @@
 |Implementação do Histórico de Busca|||X|||
 |Desenvolvimento das telas de Caso Bom, Caso Ruim e Caso Múltiplo|||X|||
 |Término do ambiente de desenvolvedores (Dev Console)|||X|||
-|Povoamento do banco||||||
+|Povoamento do banco|X|X||||
 
 ## O que está planejado para a próxima iteração?
 |Objetivo|Encarregado|Como faremos?|
 |--------|:---------:|-------------|
-
+|Iniciar um plano de monetização|Todos|Estudando sobre como funciona a monetização de aplicações|
 
 ## Lições aprendidas
+- O OCR não satisfaz por completo nossa proposta de solução para leitura de imagem. Teremos que estudar outro meio de tornar essa funcionalidade praticável
 
 
 ## Referências
