@@ -4,7 +4,7 @@
 # Quarta Iteração
 ## Entregas
 
-- [Apresentação Final](https://github.com/ricarthlima/eo-project-es/blob/master/docs/entregas_iterations/I04/APT%2004.pptx)
+- [Apresentação Final](https://github.com/ricarthlima/eo-project-es/blob/master/docs/entregas_iterations/apresentacoes/APT-04.pdf)
 - [Histórias do Usuário](https://github.com/ricarthlima/eo-project-es/blob/master/docs/entregas_iterations/I04/HUs.md)
 - [Screencast](https://www.youtube.com/watch?v=m0zsF23sHjY)
 - [Postmortem](https://github.com/ricarthlima/eo-project-es/blob/master/docs/entregas_iterations/I04/postmortem.md)
