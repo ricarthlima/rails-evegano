@@ -1,5 +1,6 @@
 require "rubygems"
 require "rtesseract"
+
   
 class ProdutoImagemsController < ApplicationController
   before_action :authenticate_usuario!
@@ -8,12 +9,11 @@ class ProdutoImagemsController < ApplicationController
   # GET /produto_imagems/1
   # GET /produto_imagems/1.json
   def show
-    #img = RTesseract.new(@produto_imagem.cover.path, :processor => "mini_magick", :lang => "por")
-    #img.source = @produto_imagem.cover.path
-    #@ocr = img.to_s
-   # puts(@ocr)
+    img = RTesseract.new("./public/images/produto_imagem/18.png", :processor => "mini_magick", :lang => "por")
+    @ocr = img.to_s
+    puts(@ocr)
 
-    @ocr = "dereguejonso"
+    #@ocr = "dereguejonso"
 
     redirect_to controller: 'busca', action: 'buscar_ocr', ocr: @ocr
     @produto_imagem.cover = nil #Código para apagar a imagem, falta só resolver o redirect_to
