@@ -6,5 +6,5 @@
 
 - [Apresentação Final](https://github.com/ricarthlima/eo-project-es/blob/master/docs/entregas_iterations/apresentacoes/APT-04.pdf)
 - [Histórias do Usuário](https://github.com/ricarthlima/eo-project-es/blob/master/docs/entregas_iterations/I04/HUs.md)
-- [Screencast](https://www.youtube.com/watch?v=m0zsF23sHjY)
+- [Screencast](https://youtu.be/MjP3aQoCT28)
 - [Postmortem](https://github.com/ricarthlima/eo-project-es/blob/master/docs/entregas_iterations/I04/postmortem.md)
