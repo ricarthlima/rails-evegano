@@ -4,6 +4,6 @@
 # Quarta Iteração
 ## Entregas
 
-- [Históris do Usuário]()
+- [Histórias do Usuário](https://github.com/ricarthlima/eo-project-es/blob/master/docs/entregas_iterations/I04/HUs.md)
 - [Screencast]()
 - [Postmortem]()
