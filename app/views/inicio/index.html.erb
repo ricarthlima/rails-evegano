@@ -8,8 +8,8 @@
 
     <%= form_tag busca_path, method: :get do%>
       <div class="container btn-75 nopadding">
-        <div class = "row justify-content-md-center no-gutters">
-          <div class = "col-lg">
+        <div class = "row justify-content-md-center">
+          <div class = "col-lg px-lg-1">
             <%= text_field_tag :texto, @nome_busca, class: "form-control form100", placeholder: "Digite um produto, marca ou componente." %>
           </div>
           <div class = "col-sm-auto">
