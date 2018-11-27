@@ -5,5 +5,5 @@
 ## Entregas
 
 - [Histórias do Usuário](https://github.com/ricarthlima/eo-project-es/blob/master/docs/entregas_iterations/I04/HUs.md)
-- [Screencast]()
-- [Postmortem]()
+- [Screencast](https://www.youtube.com/watch?v=m0zsF23sHjY)
+- [Postmortem](https://github.com/ricarthlima/eo-project-es/blob/master/docs/entregas_iterations/I04/postmortem.md)
