@@ -1,7 +1,11 @@
 <% # encoding: utf-8 %>
 <meta charset="UTF-8"> 
+
+<%= content_for :nav do%>
+  <%= render "layouts/navbar" %>
+<% end %>
   
-<p id="notice"><%= notice %></p>
+<%= render "shared/notice" %>
 
 <h1>Produtos</h1>
 
