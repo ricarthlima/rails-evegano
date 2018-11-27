@@ -44,6 +44,9 @@
 |Objetivo|Encarregado|Como faremos?|
 |--------|:---------:|-------------|
 |Iniciar um plano de monetização|Todos|Estudando sobre como funciona a monetização de aplicações|
+|Estudar a viabilidade do uso de IA pra reconhecer os rotulos|Todos|Estudo|
+|Melhorias de design e front|Todos|Estudo|
+|Coleta e aplicação de feedback e maior escala de usuarios|Todos|Estudo|
 
 ## Lições aprendidas
 - O OCR não satisfaz por completo nossa proposta de solução para leitura de imagem. Teremos que estudar outro meio de tornar essa funcionalidade praticável
