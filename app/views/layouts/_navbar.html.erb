@@ -3,6 +3,7 @@
     <!-- Brand e logo -->
     <a class="navbar-brand" href=<%= inicio_path%>>
       <%= image_tag asset_path("logos/logo-64.png"), size: "30", class: "d-inline-block align-top"%>
+      <a class = "fonte">É vegano?</a>  
     </a>
     
     <!-- Botão Sanduíche -->
@@ -14,11 +15,13 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href=<%=historico_path%>>Histórico de Buscas</a>
+         
         </li>
       </ul>
       
       <%= link_to((current_usuario.nome), perfil_path, class: "nav-link text-nav") %>
+
+      <a class="nav-link text-nav" href=<%=historico_path%>>Histórico de Buscas</a>
 
       <% if current_usuario.dev then%>
           <%= link_to("Dev Console", dev_path, class: "btn btn-danger mr-sm-2")%>
