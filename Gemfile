@@ -128,6 +128,12 @@ group :development, :test do
   
   # Chame 'byebug' para debuggar
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner'
+  gem 'capybara', '>= 2.15'
+  gem 'selenium-webdriver'
+  
 end
 
 #-------------------------------------------------------------------------------
@@ -146,12 +152,12 @@ end
 #-------------------------------------------------------------------------------
 # GEMs apenas para Testes
 group :test do
-  # gem 'rspec'
+  #gem 'rspec'
   gem 'cucumber'
-  gem 'cucumber-rails', :require => false
-  gem 'database_cleaner'
-  gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
+  #gem 'cucumber-rails', :require => false
+  #gem 'database_cleaner'
+  #gem 'capybara', '>= 2.15'
+  #gem 'selenium-webdriver'
   gem 'chromedriver-helper'
   gem 'simplecov', require: false
 end
