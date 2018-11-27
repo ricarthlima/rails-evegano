@@ -4,8 +4,8 @@
 # É vegano? - Branch teste
 [![Build Status](https://travis-ci.org/ricarthlima/eo-project-es.svg?branch=master)](https://travis-ci.org/ricarthlima/eo-project-es) [![Maintainability](https://api.codeclimate.com/v1/badges/0e61f2854494f0689072/maintainability)](https://codeclimate.com/github/ricarthlima/eo-project-es/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/0e61f2854494f0689072/test_coverage)](https://codeclimate.com/github/ricarthlima/eo-project-es/test_coverage) [![Inline docs](http://inch-ci.org/github/ricarthlima/eo-project-es.svg?branch=master)](http://inch-ci.org/github/ricarthlima/eo-project-es)      
   
-A aplicação está disponível em https://evegano.herokuapp.com/  
-Screencast disponível em https://www.youtube.com/watch?v=m0zsF23sHjY
+O **É vegano?** está disponível em https://evegano.herokuapp.com/  
+O **Screencast do É vegano?** está disponível em https://youtu.be/MjP3aQoCT28
 
 
 ![logo](/logo.png)  
