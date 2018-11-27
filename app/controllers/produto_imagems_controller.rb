@@ -8,12 +8,13 @@ class ProdutoImagemsController < ApplicationController
   # GET /produto_imagems/1
   # GET /produto_imagems/1.json
   def show
-=begin
-    img = RTesseract.new(@produto_imagem.cover.path, :lang => "por")
-    #Imprime o texto convertido
-    # @ocr =  img.to_s
-=end
+    #img = RTesseract.new(@produto_imagem.cover.path, :processor => "mini_magick", :lang => "por")
+    #img.source = @produto_imagem.cover.path
+    #@ocr = img.to_s
+   # puts(@ocr)
+
     @ocr = "dereguejonso"
+
     redirect_to controller: 'busca', action: 'buscar_ocr', ocr: @ocr
     @produto_imagem.cover = nil #Código para apagar a imagem, falta só resolver o redirect_to
     @produto_imagem.save
