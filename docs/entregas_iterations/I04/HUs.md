@@ -42,7 +42,7 @@ Essas histórias serão atacadas na **Iteration 05**.
 |**para que eu** evitar que o sistema sofra um ataque de cadastros|
 |**eu quero** adicionar uma ferramenta de segurança como o reCaptcha.|
 
-|HU13|
+|HU14|
 |---|
 |**Como um** usuário experiente|
 |**para que eu** relatar erros ou discrepâncias nos objetos que eu busco|
