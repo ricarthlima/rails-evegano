@@ -1,5 +1,5 @@
 class ProdutosController < ApplicationController
-  before_action :authenticate_usuario!
+  #before_action :authenticate_usuario!
   before_action :set_produto, only: [:show, :edit, :update, :destroy]
 
   # GET /produtos

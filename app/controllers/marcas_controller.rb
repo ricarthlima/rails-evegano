@@ -1,5 +1,5 @@
 class MarcasController < ApplicationController
-  before_action :authenticate_usuario!
+  #before_action :authenticate_usuario!
   before_action :set_marca, only: [:show, :edit, :update, :destroy]
 
   # GET /marcas
