@@ -1,4 +1,5 @@
 class HistoricoController < ApplicationController
+    before_action :authenticate_usuario!
     def index
         produtos_buscados = UsuarioBuscaProduto.where("usuario_id = " + current_usuario.id.to_s).order(dt_busca: :desc)
         marcas_buscadas = UsuarioBuscaMarca.where("usuario_id = " + current_usuario.id.to_s).order(dt_busca: :desc)
