@@ -25,7 +25,8 @@ gem 'puma', '~> 3.11'
 # 2 - Bootstrap, CSS, JavaScript
 
 # Usar o Bootstrap como framework HTML+CSS+JavaScript
-gem 'bootstrap'
+gem "bootstrap", ">= 4.3.1"
+
 
 # Usar o JQuery
 gem 'jquery-rails'
@@ -44,7 +45,7 @@ gem 'coffee-rails', '~> 4.2'
 # 3 - Autenticação
 
 # Usar o Devise como Gerênciador de Autenticação
-gem 'devise'
+gem "devise", ">= 4.6.0"
 
 # Traduzir mensagens do Devise
 gem 'devise-i18n'
@@ -93,6 +94,13 @@ gem 'mini_racer'
 #gem "rmagick"
 
 gem 'rtesseract', '~> 2.2'
+
+gem "actionview", ">= 5.2.2.1"
+
+#gem "railties", ">= 5.2.2.1"
+
+
+
 
 #-------------------------------------------------------------------------------
 # 5 - Desativadas
