@@ -2,7 +2,8 @@
   <%= render "layouts/navbar" %>
 <% end %>
 
-<div class = "container-box"> <center>
+<div class = "container-box" style="padding: 50px 0px 50px 0px"> <center>
+    <div style="padding: 30px 0px 30px 0px"> 
     <%= image_tag("/assets/logos/logo-128.png", size: "64", class: "img_center") %>
     <h2 class = "titulo_centro">É vegano?</h2>
 
@@ -23,15 +24,7 @@
         <%= button_to "Buscar", nil, class: "btn btn-primary-color my-3" %>
       </div>
     <% end %>
-    
-    <div class = "horizontal_line my-4"></div>
-    
-    <span>Que tal buscar usando a câmera do seu celular?</span>
-    
-    <center><%= button_to "Ler Rótulo do Produto", new_produto_imagem_path, class: "btn btn-success my-3", method: :get%></center>
-</center> </div>
-
-
+    </div>
 
 
 <!-- Modal -->
