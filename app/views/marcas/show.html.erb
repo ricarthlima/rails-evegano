@@ -5,13 +5,8 @@
 <%= render "shared/notice" %>
   
 <div class = "container-box">
-  <h3>
-    <strong><%= @marca.nome %></strong>
-  </h3>
-  
-  <p>
-    <%= class_pmc_vegano(@marca.class_vegan)%></br>
-  </p>
+  <%= render "shared/pmc_basic_infos", pmc: @marca%>
+  <hr>
   
   <p>
     <strong>Descrição:</strong></br>

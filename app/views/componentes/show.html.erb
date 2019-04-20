@@ -5,15 +5,9 @@
 <%= render "shared/notice" %>
 
 <div class = "container-box">
-  <h3>
-    <strong>
-      <%= @componente.nome %>
-    </strong>
-  </h3>
   
-  <p>
-    <%= class_pmc_vegano(@componente.class_vegan)%></br>
-  </p>
+  <%= render "shared/pmc_basic_infos", pmc: @componente%>
+  <hr>
   
   <p>
     <strong>Código Europeu:</strong>
