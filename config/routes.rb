@@ -31,5 +31,7 @@ Rails.application.routes.draw do
   get "produto_imagems/new/:id" => "produto_imagems#new" 
   get "perfil" => "perfil#index"
   get "historico" => "historico#index"
+  
+  get "equipeone" => "welcome#equipeone"
 
 end
