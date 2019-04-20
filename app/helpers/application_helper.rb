@@ -2,13 +2,25 @@ module ApplicationHelper
     def class_pmc_vegano(i)
         case i
         when 0
-            return "Vegano"
+            return "É vegano!"
         when 1
-            return "Potencialmente Não-Vegano"
+            return "Potencialmente não vegano!"
         when 2
-            return "Não-vegano"
+            return "Não vegano!"
         end
     end
+    
+    def class_pmc_vegano_image(i)
+        case i
+        when 0
+            return "logos/logo-512.png"
+        when 1
+            return "warning.png"
+        when 2
+            return "cancel.png"
+        end
+    end
+        
     
     def class_usuario_vegano(i)
         case i
