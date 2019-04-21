@@ -1,7 +1,7 @@
 <%= form_with(model: usuario_busca_produto, local: true) do |form| %>
   <% if usuario_busca_produto.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(usuario_busca_produto.errors.count, "error") %> prohibited this usuario_busca_produto from being saved:</h2>
+      <h2 class = "color-font"><%= pluralize(usuario_busca_produto.errors.count, "error") %> prohibited this usuario_busca_produto from being saved:</h2>
 
       <ul>
       <% usuario_busca_produto.errors.full_messages.each do |message| %>

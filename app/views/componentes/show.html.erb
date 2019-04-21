@@ -29,7 +29,7 @@
     <%= @componente.justificativa %>
   </p>
   
-  <% if current_usuario.dev then%>
+  <% if usuario_signed_in? and current_usuario.dev then%>
     <%= link_to 'Editar', edit_componente_path(@componente) %> 
   <% end %>
   
