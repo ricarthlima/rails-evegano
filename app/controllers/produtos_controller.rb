@@ -13,12 +13,14 @@ class ProdutosController < ApplicationController
   # GET /produtos/1.json
   def show
     # Para adiciona no histórico du usuário
-    consulta = UsuarioBuscaProduto.where("usuario_id = " + current_usuario.id.to_s + " AND " + "produto_id = " + @produto.id.to_s)
-    if consulta.size > 0
-      consulta[0].dt_busca = Time.now.to_s
-      consulta[0].save
-    else
-      UsuarioBuscaProduto.create(usuario_id: current_usuario.id, produto_id: @produto.id, dt_busca: Time.now.to_s)
+    if usuario_signed_in?
+      consulta = UsuarioBuscaProduto.where("usuario_id = " + current_usuario.id.to_s + " AND " + "produto_id = " + @produto.id.to_s)
+      if consulta.size > 0
+        consulta[0].dt_busca = Time.now.to_s
+        consulta[0].save
+      else
+        UsuarioBuscaProduto.create(usuario_id: current_usuario.id, produto_id: @produto.id, dt_busca: Time.now.to_s)
+      end
     end
     
     # Para povoar a lista de componentes
