@@ -78,7 +78,7 @@ div.container-box{
 }
 
 .form-control{
-    width: 75%;
+    //width: 75%;
     margin: auto;
 }
 
@@ -200,4 +200,20 @@ hr{
     font-size: 0.5em;
     padding: 0px 2px;
     color: #88C057;
+}
+
+
+.sq25{
+    width: 25px;
+    height: 25px;
+}
+
+.btn-provider{
+    display: flex;
+    min-width: 100%;
+    border-style: solid;
+    border-color: #88c057; 
+    border-width: 1px;
+    border-radius: 3px;
+    margin-bottom: 10px;
 }
