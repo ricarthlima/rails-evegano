@@ -45,4 +45,32 @@ module ApplicationHelper
             return "Não desenvolvedor"
         end
     end
+    
+    def provider_to_name(prov)
+        case prov.to_s
+        when "facebook"
+            return "Facebook"
+        when "google_oauth2"
+            return "Google"
+        end
+    end
+    
+    
+    #Para o login no modal!
+    
+    def resource_name
+        :usuario
+    end
+    
+    def resource
+        @resource ||= Usuario.new
+    end
+    
+    def resource_class
+      Usuario
+    end
+    
+    def devise_mapping
+        @devise_mapping ||= Devise.mappings[:usuario]
+    end
 end
