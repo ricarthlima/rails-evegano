@@ -1,0 +1,88 @@
+<div 
+id = "modalRegistro"
+class = "modal fade"  tabindex="-1" role="dialog" aria-labelledby="modalRegistro" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        
+          <div class = "panel panel-default container-box"><center>
+            <%= image_tag("/assets/logos/logo-128.png", size: "64", class: "img_center") %>
+            <p>
+              <center class = "color-font">
+                <strong>Inscreva-se!</strong></br>
+                É vegano! É gratuito!
+              </center>
+            </p>
+            
+            <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+              <%= devise_error_messages! %>
+            
+              
+                <div class="form-group">
+                  <%= f.text_field :nome, autofocus: true, autocomplete: "nome", class: "form-control", placeholder: :nome %>
+                </div>
+                
+                <div class="form-group">
+                  <%= f.email_field :email, autocomplete: "email", class: "form-control", placeholder: :email%>
+                </div>
+              
+                <div class="form-group">
+                  <%= f.password_field :password, autocomplete: "new-password", class: "form-control", placeholder: :senha%>
+                  <% if @minimum_password_length %>
+                    <em>(no mínimo <%= @minimum_password_length %> caracteres)</em>
+                  <% end %>
+                </div>
+              
+                <div class="form-group">
+                  <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control", placeholder: :confirmacao_de_senha %>
+                </div>
+              
+                <div class="actions">
+                  <%= f.submit "CRIAR CONTA", class: "btn btn-primary-color form100" %>
+                </div>
+              
+            <% end %>
+            
+            </br>
+      
+            <div class = "row no-gutters">
+              <div class = "col">
+                <hr>
+              </div>
+              
+              <div class = "col-auto align-self-center" style = "padding: 0px 15px; color: #88c057;">
+                ou
+              </div>
+              
+              <div class = "col">
+                <hr>
+              </div>
+            </div>
+             
+            </br>
+          
+              <center>
+                <%- if devise_mapping.omniauthable? %>
+                  <div class = "col">
+                  <%- resource_class.omniauth_providers.each do |provider| %>
+                      <a class = "btn btn-provider" href = <%=omniauth_authorize_path(resource_name, provider)%>>
+                          <div class = "col-auto align-self-center">
+                              <img src = <%= "/assets/providers/#{OmniAuth::Utils.camelize(provider)}.png" %> style = "width: 25px; height: 25px;">
+                          </div>
+                          <div class = "col align-self-center nopadding" style = "text-align: left;">
+                            <small>Inscreva-se com sua conta <%= provider_to_name(provider) %></small>
+                          </div>
+                      </a>
+                  <% end -%>
+                  </div>
+                <% end -%>
+            </center>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
