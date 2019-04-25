@@ -1,7 +1,7 @@
 <%= form_with(model: componente, local: true) do |form| %>
   <% if componente.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(componente.errors.count, "error") %> prohibited this componente from being saved:</h2>
+      <h2 class = "color-font"><%= pluralize(componente.errors.count, "error") %> prohibited this componente from being saved:</h2>
 
       <ul>
       <% componente.errors.full_messages.each do |message| %>

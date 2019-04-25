@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   #devise_for :usuarios
   devise_for :usuarios, controllers: { omniauth_callbacks: 'usuarios/omniauth' }
 
-  root 'welcome#index'
+  root 'inicio#index'
   get "dev" => "dev#index"
   get "dev/remover/:id", to: "dev#remover", as: "remover_dev"
   get "dev/adicionar/", to: "dev#adicionar", as: "adicionar_dev"
@@ -31,5 +31,7 @@ Rails.application.routes.draw do
   get "produto_imagems/new/:id" => "produto_imagems#new" 
   get "perfil" => "perfil#index"
   get "historico" => "historico#index"
+  
+  get "equipeone" => "welcome#equipeone"
 
 end
