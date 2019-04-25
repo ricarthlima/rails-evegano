@@ -1,0 +1,21 @@
+<div class = "row">
+    <div class = "col-auto">
+      <img class = "external-image-size" src = "/assets/no_image.png">
+    </div>
+    
+    <div class = "col align-self-center">
+      
+      <div class = "row">
+        <h3 class = "pmc-name"><strong><%= pmc.nome %></strong></h3>
+      </div>
+      
+      <div class = "row selo-evegano">
+        <div class = "col-auto align-self-center" style = "padding: 0px 5px;">
+          <img src = "/assets/<%= class_pmc_vegano_image(pmc.class_vegan) %>" width = "50" height = "50">
+        </div>
+        <div class = "col align-self-center" style = "padding-left: 5px">
+          <strong><%= class_pmc_vegano(pmc.class_vegan)%></strong>
+        </div>
+      </div>
+    </div>
+</div>

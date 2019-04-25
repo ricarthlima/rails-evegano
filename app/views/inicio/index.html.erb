@@ -2,13 +2,14 @@
   <%= render "layouts/navbar" %>
 <% end %>
 
-<div class = "container-box"> <center>
+<div class = "container-box" style="padding: 50px 0px 50px 0px"> <center>
+    <div style="padding: 30px 0px 30px 0px"> 
     <%= image_tag("/assets/logos/logo-128.png", size: "64", class: "img_center") %>
-    <h2 class = "titulo_centro">É vegano?</h2>
+    <h2 class = "titulo_centro color-font">É vegano?</h2>
 
     <%= form_tag busca_path, method: :get do%>
       <div class="container btn-75 nopadding">
-        <div class = "row justify-content-md-center">
+        <div class = "row justify-content-md-center" style = "margin-top: 30px;">
           <div class = "col-lg px-lg-1">
             <%= text_field_tag :texto, @nome_busca, class: "form-control form100", placeholder: "Digite um produto, marca ou componente." %>
           </div>
@@ -23,16 +24,8 @@
         <%= button_to "Buscar", nil, class: "btn btn-primary-color my-3" %>
       </div>
     <% end %>
-    
-    <div class = "horizontal_line my-4"></div>
-    
-    <span>Que tal buscar usando a câmera do seu celular?</span>
-    
-    <center><%= button_to "Ler Rótulo do Produto", new_produto_imagem_path, class: "btn btn-success my-3", method: :get%></center>
-</center> </div>
-
-
-
+    </div>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="modalCodigoBarras" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -49,14 +42,10 @@
           <%= text_field_tag :cod, @cod_barra, class: "form-control form100", placeholder: "Ex.: 7896004720333 " %>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>-->
           <%= button_to "Buscar", nil, class: "btn btn-primary-color my-3" %>
         </div>
       <% end %>
     </div>
   </div>
 </div>
-
-<%= content_for :footer do%>
-  <%= render "shared/footer" %>
-<% end %>

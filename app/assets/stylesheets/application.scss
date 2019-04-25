@@ -18,12 +18,7 @@ body{
     background-color: #BDF2CC;
 }
 
-h1{
-    font-family: 'Mali', cursive;
-    color: #68C14D;
-}
-
-h2{
+.color-font{
     font-family: 'Mali', cursive;
     color: #68C14D;
 }
@@ -41,6 +36,14 @@ h2{
     color: #000000;
 }
 
+.mt-sm{
+    margin-top: 10px;
+}
+
+.mt-md{
+    margin-top: 20px;
+}
+
 div.horizontal_line{
     width: 75%; /* Line width */ 
     background-color: #68C14D; /* Line color */ 
@@ -51,11 +54,12 @@ div.horizontal_line{
 }
 
 div.container-box{
-    background-color: #FFFFFF;
+    background-color: #FFF;
     padding: 3%;
     margin-top: 5%;
     margin: auto;
-    border-radius: 1%;
+    border-radius: 15px;
+    
 }
 
 .btn-primary-color{
@@ -69,7 +73,7 @@ div.container-box{
 }
 
 .form-control{
-    width: 75%;
+    //width: 75%;
     margin: auto;
 }
 
@@ -113,6 +117,11 @@ div.dangerzone{
     padding-bottom: 3%;
 }
 
+.ccenter{
+    text-align: center;
+    justify-content: center;
+}
+
 .nopadding{
     padding: 0;
 }
@@ -130,4 +139,76 @@ div.dangerzone{
 .supercenter{
     width: 100%;
     height: 100%;
+}
+
+
+@media (max-width: 700px){
+    .external-image-size{
+        max-width: 80px;
+        height: auto;
+    }
+    
+    .selo-evegano{
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+        font-size: 1em;
+    }
+    
+    .pmc-name{
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 700px){
+    .external-image-size{
+        max-width: 150px;
+        height: auto;
+    }
+    
+    .selo-evegano{
+        max-width: 35%;
+        font-size: 1em;
+    }
+    
+    .pmc-name{
+        font-size: 1.8em;
+    }
+}
+
+.selo-evegano{
+    background: #F0F0F0;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #88c057; 
+    border-width: 2px;
+    padding: 5px 0px; 
+}
+
+hr{
+    color: #88c05750;
+    background-color: #88c05750;
+    border-color: #88c05750;
+}
+
+.fas-sm{
+    font-size: 0.5em;
+    padding: 0px 2px;
+    color: #88C057;
+}
+
+
+.sq25{
+    width: 25px;
+    height: 25px;
+}
+
+.btn-provider{
+    display: flex;
+    min-width: 100%;
+    border-style: solid;
+    border-color: #88c057; 
+    border-width: 1px;
+    border-radius: 3px;
+    margin-bottom: 10px;
 }

@@ -5,16 +5,10 @@
 <%= render "shared/notice" %>
 
 <div class = "container-box">
-  <h3>
-    <strong>
-    <%= @produto.nome %>
-    </strong>
-  </h3>
   
-  <p>
-  <%= class_pmc_vegano(@produto.class_vegan)%></br>
-  </p>
-  
+  <%= render "shared/pmc_basic_infos", pmc: @produto%>
+  <hr>
+
   <p>
     <strong>Marca:</strong>
     <%= link_to @produto.marca.nome, marcas_path(@produto.marca) %>
@@ -40,7 +34,7 @@
   </p>
   
   
-  <% if current_usuario.dev then%>
+  <% if usuario_signed_in? and current_usuario.dev then%>
     <%= link_to 'Editar', edit_produto_path(@produto) %>
   <% end %>
   
