@@ -363,6 +363,7 @@ DEPENDENCIES
   rack (>= 2.0.6)
   rails (~> 5.2.1)
   rails-i18n (~> 5.1)
+  railties (>= 5.2.2.1)
   rspec-rails (~> 3.7)
   rtesseract (~> 2.2)
   sassc-rails

@@ -97,7 +97,7 @@ gem 'rtesseract', '~> 2.2'
 
 gem "actionview", ">= 5.2.2.1"
 
-#gem "railties", ">= 5.2.2.1"
+gem "railties", ">= 5.2.2.1"
 
 
 
