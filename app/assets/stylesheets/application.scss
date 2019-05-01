@@ -62,12 +62,6 @@ div.container-box{
     
 }
 
-.btn-primary-color{
-    background-color: #ED8F20;
-    color: #FFFFFF;
-    font-weight: bold;
-}
-
 .btn-75{
     width: 75%;
 }
@@ -211,4 +205,21 @@ hr{
     border-width: 1px;
     border-radius: 3px;
     margin-bottom: 10px;
+}
+
+.btn-primary-evegano{
+    background: #ed8f20;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.btn-primary-evegano:hover{
+    background: #fca849;
+    color: #FFF;
+}
+
+.btn-secondary-evegano{
+    background: #e3aa75;
+    color: #000;
+    font-weight: bold;
 }
