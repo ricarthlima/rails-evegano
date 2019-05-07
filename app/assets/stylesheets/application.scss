@@ -28,8 +28,13 @@ body{
 }
 
 .navbar-evegano{
-    background-color: #f7d291;
+    background-color: #f7d29150;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.welcome-title{
+    font-size: 3vw;
+    font-weight: bold;
 }
 
 .text-nav{
@@ -42,6 +47,15 @@ body{
 
 .mt-md{
     margin-top: 20px;
+}
+
+
+.mr-sm{
+    margin-right: 10px;
+}
+
+.mt-md{
+    margin-right: 20px;
 }
 
 div.horizontal_line{
@@ -136,7 +150,7 @@ div.dangerzone{
 }
 
 
-@media (max-width: 700px){
+@media (max-width: 1000px){
     .external-image-size{
         max-width: 80px;
         height: auto;
@@ -152,9 +166,17 @@ div.dangerzone{
     .pmc-name{
         font-size: 1.2em;
     }
+    
+    .mobile-hide{
+        display: none;
+    }
+    
+    .mobile-nav-logo{
+        height: 35px;
+    }
 }
 
-@media (min-width: 700px){
+@media (min-width: 1000px){
     .external-image-size{
         max-width: 150px;
         height: auto;
