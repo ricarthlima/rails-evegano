@@ -23,6 +23,7 @@ Rails.application.routes.draw do
   get "dev/adicionar/", to: "dev#adicionar", as: "adicionar_dev"
   
   get "inicio" => "inicio#index"
+  get "welcome" => "inicio#go"
   
   get "busca" => "busca#buscar"
   get "busca_ocr" => "busca#buscar_ocr"

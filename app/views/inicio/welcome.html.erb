@@ -1,14 +1,21 @@
 <%= content_for :nav do%>
   <%= render "layouts/navbar" %>
 <% end %>
-
 <div class = "container-box">
-    <div class = "row">
+    <div class = "row align-items-center">
         <div class = "col">
-            <p class = "color-font welcome-title">Chega de ficar olhando rótulos!</p>
+            <p class = "welcome-title green-color">Chega de ficar olhando rótulos!</p>
+            Nós sabemos que você se preocupa com o que você compra e consume. O 
+            <strong class = "color-font">É vegano?</strong> te ajuda a descobrir se seu produto é ou não vegano, de quebra,
+            te dizemos qual a justificativa da classificação que demos.
+            <p class = "mt-sm">
+                <%= button_to "Comece agora - É de graça!", welcome_path, method: :get, class: "btn btn-primary-evegano"%></br>
+                <small>Quer saber mais? <a href = "#">Clica aqui</a> que a gente te conta.</small>
+            </p>
+            
         </div>
         <div class = "col">
-            
+            <img class = "welcome-image-lg" src = <%= asset_path("/assets/yoga.png") %>>
         </div>
     </div>
 </div>

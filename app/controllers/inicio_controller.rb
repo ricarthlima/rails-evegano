@@ -4,11 +4,15 @@ class InicioController < ApplicationController
             if cookies[:first_time] == "true" then
                 render :index
             else
-                cookies[:first_time] = "true"
                 render :welcome
             end
         end
         
+    end
+    
+    def go
+        cookies[:first_time] = "true"
+        render :index
     end
     
     #before_action :authenticate_usuario!
