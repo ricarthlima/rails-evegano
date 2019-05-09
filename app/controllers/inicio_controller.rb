@@ -11,8 +11,8 @@ class InicioController < ApplicationController
     end
     
     def go
+        index
         cookies[:first_time] = "true"
-        render :index
     end
     
     #before_action :authenticate_usuario!
