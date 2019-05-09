@@ -27,9 +27,13 @@ body{
     font-family: 'Mali', cursive;
 }
 
-.bg-green{
-    background-color: #88c057;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+.green-color{
+    color: #68C14D;
+}
+
+.navbar-evegano{
+    background-color: #f7d29150;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
 .text-nav{
@@ -42,6 +46,15 @@ body{
 
 .mt-md{
     margin-top: 20px;
+}
+
+
+.mr-sm{
+    margin-right: 10px;
+}
+
+.mt-md{
+    margin-right: 20px;
 }
 
 div.horizontal_line{
@@ -135,8 +148,7 @@ div.dangerzone{
     height: 100%;
 }
 
-
-@media (max-width: 700px){
+@media (max-width: 1000px){
     .external-image-size{
         max-width: 80px;
         height: auto;
@@ -152,9 +164,28 @@ div.dangerzone{
     .pmc-name{
         font-size: 1.2em;
     }
+    
+    .mobile-hide{
+        display: none;
+    }
+    
+    .mobile-nav-logo{
+        height: 35px;
+    }
+    
+    .welcome-image-lg{
+        height: auto;
+        max-width: 100%;
+        min-width: 350px;
+    }
+    
+    .welcome-title{
+        font-size: 5vw;
+        font-weight: bold;
+    }
 }
 
-@media (min-width: 700px){
+@media (min-width: 1000px){
     .external-image-size{
         max-width: 150px;
         height: auto;
@@ -167,6 +198,16 @@ div.dangerzone{
     
     .pmc-name{
         font-size: 1.8em;
+    }
+    
+    .welcome-image-lg{
+        height: 27vw;
+        max-height: 512px;
+    }
+    
+    .welcome-title{
+        font-size: 3vw;
+        font-weight: bold;
     }
 }
 
@@ -223,3 +264,4 @@ hr{
     color: #000;
     font-weight: bold;
 }
+
