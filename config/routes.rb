@@ -23,6 +23,7 @@ Rails.application.routes.draw do
   get "dev/adicionar/", to: "dev#adicionar", as: "adicionar_dev"
   
   get "inicio" => "inicio#index"
+  get "welcome" => "inicio#go"
   
   get "busca" => "busca#buscar"
   get "busca_ocr" => "busca#buscar_ocr"
@@ -32,8 +33,8 @@ Rails.application.routes.draw do
   get "perfil" => "perfil#index"
   get "historico" => "historico#index"
   
-  get "sobre_equipeone" => "welcome#sobre_equipeone"
-  get "sobre_evegano" => "welcome#sobre_evegano"
+  get "equipeone" => "welcome#equipeone"
   get "tour" => "welcome#tour"
+  
 
 end
