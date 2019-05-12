@@ -17,13 +17,12 @@ Rails.application.routes.draw do
   #devise_for :usuarios
   devise_for :usuarios, controllers: { omniauth_callbacks: 'usuarios/omniauth' }
 
-  root 'welcome#index'
+  root 'inicio#index'
   get "dev" => "dev#index"
   get "dev/remover/:id", to: "dev#remover", as: "remover_dev"
   get "dev/adicionar/", to: "dev#adicionar", as: "adicionar_dev"
   
   get "inicio" => "inicio#index"
-  get "welcome" => "inicio#go"
   
   get "busca" => "busca#buscar"
   get "busca_ocr" => "busca#buscar_ocr"
@@ -33,8 +32,7 @@ Rails.application.routes.draw do
   get "perfil" => "perfil#index"
   get "historico" => "historico#index"
   
-  get "equipeone" => "welcome#equipeone"
-  get "tour" => "welcome#tour"
-  
+  get "sobre_equipeone" => "welcome#sobre_equipeone"
+  get "sobre_evegano" => "welcome#sobre_evegano"
 
 end
