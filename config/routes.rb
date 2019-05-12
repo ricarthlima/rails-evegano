@@ -34,5 +34,7 @@ Rails.application.routes.draw do
   get "historico" => "historico#index"
   
   get "equipeone" => "welcome#equipeone"
+  get "tour" => "welcome#tour"
+  
 
 end

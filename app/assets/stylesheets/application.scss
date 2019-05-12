@@ -173,14 +173,8 @@ div.dangerzone{
         height: 35px;
     }
     
-    .welcome-image-lg{
-        height: auto;
-        max-width: 100%;
-        min-width: 350px;
-    }
-    
     .welcome-title{
-        font-size: 5vw;
+        font-size: 35px;
         font-weight: bold;
     }
 }
@@ -200,15 +194,15 @@ div.dangerzone{
         font-size: 1.8em;
     }
     
-    .welcome-image-lg{
-        height: 27vw;
-        max-height: 512px;
-    }
-    
     .welcome-title{
-        font-size: 3vw;
+        font-size: 5vh;
         font-weight: bold;
     }
+}
+
+
+.welcome-image-lg{
+    min-width: 260px;
 }
 
 .selo-evegano{
