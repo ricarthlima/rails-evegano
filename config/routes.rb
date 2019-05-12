@@ -32,7 +32,7 @@ Rails.application.routes.draw do
   get "perfil" => "perfil#index"
   get "historico" => "historico#index"
   
-  get "equipeone" => "welcome#equipeone"
-  get "telaapp" => "welcome#telaapp"
+  get "sobre_equipeone" => "welcome#sobre_equipeone"
+  get "sobre_evegano" => "welcome#sobre_evegano"
 
 end
