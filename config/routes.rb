@@ -37,5 +37,6 @@ Rails.application.routes.draw do
   get "sobre_evegano" => "welcome#sobre_evegano"
   get "tour" => "welcome#tour"
   
+  get "privacy" => "welcome#privacidade"
 
 end
