@@ -1,0 +1,49 @@
+<%= content_for :nav do%>
+  <%= render "layouts/navbar" %>
+<% end %>
+
+<div class = "container-box">
+    
+    <center>
+        <div class = "container mt-md">
+            <h1 class = "color-font">De Perdido a tudo na palma da sua mão!</h1>
+        </div>
+    
+        <br>
+    
+        <div class = "container mt-md">
+            <p>O "É vegano?" te proporciona de forma simples, informações sobre produtos, marcas e componentes. Bem como 
+            a classificação dos mesmos em: <b>Não Vegano</b>, <b>Pontecialmente Vegano</b> e <b>Vegano</b>.</p>
+        </div>
+    </center>
+    
+    <center><i class="fas fas-sm fa-circle"></i><i class="fas fas-sm fa-circle"></i><i class="fas fas-sm fa-circle"></i></center>
+    
+    <div class = "container mt-md">
+        <h3 class = "color-font" id = "sobre">Busque Produtos, Marcas e Componentes de forma simples!</h3>
+        <p>Faça uma pesquisa por <b>texto</b>, digitando o nome da marca, produto ou componente, 
+            ou busque o produto pelo <b>código de barra</b>. E tudo isso sem qualquer cadastro, ou impedimento.</p>
+            
+        <p>
+           <center><%= image_tag( root_url + "/assets/eveganoinicio.png", size: "900x550", :alt => "Tela Principal") -%></center>
+            
+        </p>    
+    </div>
+    
+    <center><i class="fas fas-sm fa-circle"></i><i class="fas fas-sm fa-circle"></i><i class="fas fas-sm fa-circle"></i></center>
+    
+    <div class = "container mt-md">
+        <h3 class = "color-font">Armazene seu histórico de buscas, e reveja informações rapidamente e sem complicação!</h3>
+        <p>Mas, nem tudo é totalmente livre haha. Caso você queira armazenar informações,
+        basta <b>criar uma conta</b> no "É vegano?", ou <b>fazer login</b>. Simples e Fácil!</p>
+        
+        <p>
+           <center><%= image_tag( root_url + "/assets/login.png", size: "900x550", :alt => "Cadastrar ou Logar") -%></center>
+            
+        </p>
+    </div>
+    
+    
+
+    
+</div>
